@@ -5,3 +5,21 @@
   scroll-behavior: smooth;
   text-decoration: none;
 }
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: #b5f8fe;
+  border-bottom: solid 2px black;
+  display: flex;
+}
+
+.navbar .linkjesRechts {
+  width: 50%;
+  height: 70%;
+  background-color: white;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
