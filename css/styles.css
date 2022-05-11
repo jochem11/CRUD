@@ -15,11 +15,67 @@
 }
 
 .navbar .linkjesRechts {
-  width: 50%;
-  height: 70%;
-  background-color: white;
+  width: fit-content;
+  height: 60%;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.navbar .linkjesRechts .login {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1.5s;
+}
+
+.navbar .linkjesRechts .login:hover,
+.navbar .linkjesRechts .contact:hover {
+  background-color: #89daff;
+}
+
+.navbar .linkjesRechts .login p,
+.navbar .linkjesRechts .contact p {
+  font-size: 15px;
+}
+
+.navbar .linkjesRechts .login .fa-person-circle-plus,
+.navbar .linkjesRechts .login .fa-user-tie,
+.navbar .linkjesRechts .contact .fa-id-card-clip {
+  font-size: 15px;
+}
+
+.navbar .linkjesRechts .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+  transition-duration: 1.5s;
+}
+
+.navbar .logoContainer {
+  width: 500px;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  display: flex;
+}
+
+.navbar .logoContainer h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+.navbar .logoContainer img {
+  height: 80px;
 }
