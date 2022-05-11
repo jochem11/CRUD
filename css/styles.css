@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
+  font-family: "Roboto Slab", serif;
 }
 
 .navbar {
@@ -78,4 +79,15 @@
 
 .navbar .logoContainer img {
   height: 80px;
+}
+
+/*//////////////////////////////////////|
+-----------overons plaatjes------------|
+////////////////////////////////////////|*/
+
+.overons_container {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  overflow: auto;
 }
