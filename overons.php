@@ -21,10 +21,10 @@
     <div class="overons_container">
         <h1>Welkom bij CRUDAirlines</h1>
         <div class="overons_tekst">
-            <p>Welkom bij de CRUDAirlines. Door RTL Nieuws in 2015 verkozen tot beste online reisbureau en in 2016, 2017, 2018 én 2019 tot populairste online reisbureau van Nederland. Maar dat niet alleen; sinds 2000 strijden wij al voor de laagste prijzen. En hierdoor gingen meer dan 250.000 trouwe klanten je al voor.</p>
+            <p>Welkom bij de CRUDAirlines. Door BBC news in 2000 verkozen tot beste online reisbureau van 2000 tot 2022 tot populairste online reisbureau van Nederland. Maar dat niet alleen; sinds 2000 strijden wij al voor de laagste prijzen. En hierdoor gingen meer dan 696.969 trouwe klanten je al voor.</p>
         </div>
         <div class="overons_geschiedenis">
-            <p>CRUDAirlines is in 2000 begonnen in Nijmegen en is groot geworden door zich volledig toe te leggen op goedkope vakanties. Een team van medewerkers belde in de begintijd elke dag de reisorganisaties of luchtvaartmaatschappijen waar we mee samenwerkten om de beste vakantie aanbiedingen op te halen. En eigenlijk doen we dat nog steeds, alleen is er nu veel meer geautomatiseerd en werken we nu vanuit Amsterdam. We zijn in al die jaren niets veranderd; we willen nog steeds alleen de beste deals en de aller-, aller laagste prijzen. En natuurlijk de beste accommodaties. In ons aanbod vind je er meer dan 10.000 verdeeld over meer dan 50 landen. Als je hier geen reis naar wens kunt vinden dan weten wij het ook niet meer.</p>
+            <p>CRUDAirlines is in 1969 begonnen in Nijmegen en is groot geworden door zich volledig toe te leggen op goedkope vakanties. Een team van medewerkers belde in de begintijd elke dag de reisorganisaties of luchtvaartmaatschappijen waar we mee samenwerkten om de beste vakantie aanbiedingen op te halen. En eigenlijk doen we dat nog steeds, alleen is er nu veel meer geautomatiseerd en werken we nu vanuit de hele wereld. We zijn in al die jaren niets veranderd; we willen nog steeds alleen de beste deals en de aller-, aller laagste prijzen. En natuurlijk de beste accommodaties. In ons aanbod vind je er meer dan 10.000 verdeeld over meer dan 50 landen. Als je hier geen reis naar wens kunt vinden dan weten wij het ook niet meer.</p>
         </div>
         <div class="overons_waarom">
             <h2>Waarom kunnen wij onze reizen zo voordelig aanbieden?</h2>
@@ -38,16 +38,16 @@
             </ul>
         </div>
         <div class="overons_veiligheid">
-            <p>Al sinds 2000 vallen alle aangeboden reizen onder de Stichting Garantiefonds Reisgelden (SGR:2626). Bovendien is dé VakantieDiscounter lid van het Algemeen Nederlands Verbond van Reisondernemingen (ANVR: 3072). Dé VakantieDiscounter.nl is volledig onafhankelijk en daarom in staat een zo objectief mogelijke selectie aan te bieden.</p>
+            <p>Al sinds 2000 vallen alle aangeboden reizen onder de Stichting Garantiefonds Reisgelden (SGR:2626). Bovendien is dé CRUDdiscounter lid van het Algemeen Nederlands Verbond van Reisondernemingen (ANVR: 3072). Dé CRUDdiscounter.nl is volledig onafhankelijk en daarom in staat een zo objectief mogelijke selectie aan te bieden.</p>
         </div>
         <div class="overons_belofte">
-            <p>Veel sites zeggen goedkoop te zijn, maar wij zíjn het. Andere bieden ‘korting’ en gooien er dan hoge boekingskosten bovenop. Bij dé VakantieDiscounter krijg je dezelfde lage prijs én geen boekings- of andere dubieuze kosten. Álle kortingen, álle aanbiedingen. Alle euro’s korting geven we één-op-één door. Dat lijkt normaal, maar wij weten: dat is het niet!</p>
+            <p>Veel sites zeggen goedkoop te zijn, maar wij zíjn het. Andere bieden ‘korting’ en gooien er dan hoge boekingskosten bovenop. Bij dé CRUDdiscounter krijg je dezelfde lage prijs én geen boekings- of andere dubieuze kosten. Álle kortingen, álle aanbiedingen. Alle euro’s korting geven we één-op-één door. Dat lijkt normaal, maar wij weten: dat is het niet!</p>
         </div>
         <div class="overons_adres">
             <h3>Adres</h3>
             <p>
                 <br>
-                dé VakantieDiscounter is onderdeel van Elmar Reizen B.V<br>
+                de CRUDdiscounter is onderdeel van CRUDAirlines<br>
                 Suikersilo-West 41<br>
                 1165 MP Halfweg<br>
                 Nederland<br>

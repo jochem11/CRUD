@@ -82,7 +82,7 @@
 }
 
 /*//////////////////////////////////////|
------------overons plaatjes------------|
+-----------overons------------|
 ////////////////////////////////////////|*/
 
 .overons_container {
@@ -90,4 +90,52 @@
   height: auto;
   padding: 50px;
   overflow: auto;
+  background-image: linear-gradient(#f75590, #ffe74c, #89daff);
+  font-weight: 550;
+}
+
+.overons_container .overons_container h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.overons_container .overons_tekst {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.overons_container .overons_tekst p {
+  font-size: 15px;
+}
+
+.overons_container .overons_geschiedenis {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.overons_container .overons_waarom h2 {
+  font-size: 35px;
+}
+
+.overons_container .overons_waarom {
+  width: 100%;
+  height: auto;
+}
+
+.overons_container .overons_waarom ul {
+  padding: 40px;
+}
+
+.overons_container .overons_veiligheid {
+  padding: 20px;
+}
+
+.overons_container .overons_belofte {
+  padding: 20px;
+}
+
+.overons_container .overons_adres {
+  padding: 20px;
 }
