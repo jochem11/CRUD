@@ -29,7 +29,7 @@
         <div class="overons_waarom">
             <h2>Waarom kunnen wij onze reizen zo voordelig aanbieden?</h2>
             <ul>
-                <li>Wij hebben géén dure winkels op dure locaties waar werknemers dagen zitten te wachten tot er iemand binnenkomt. Dé VakantieDiscounter heeft alles op één locatie en daar werken we 7 dagen in de week, ook in de avonduren. Wel zo efficiënt.</li>
+                <li>Wij hebben géén dure winkels op dure locaties waar werknemers dagen zitten te wachten tot er iemand binnenkomt. Dé CRUDdiscounter heeft alles op één locatie en daar werken we 7 dagen in de week, ook in de avonduren. Wel zo efficiënt.</li>
                 <li>Alles gaat via het internet en veel selfservice. Vanzelfsprekend kun je ons bellen als je een vraag hebt, maar in principe is alles via de website te regelen. We sturen ook alles per mail, inclusief de reisbescheiden. Betalingen kunnen gedaan worden via o.a. via iDEAL en VISA (gratis) en American Express (extra kosten). Hiermee besparen we kosten en dat komt weer terug in een nóg lagere prijs.</li>
                 <li>Volumes stapelen. Dé VakantieDiscounter is uitgegroeid tot hét vakantie discount en last minute kanaal van Nederland en we kopen groot in. We kopen ook liever meer in bij minder aanbieders omdat we daar nóg betere prijzen mee krijgen.</li>
                 <li>Niet álles willen doen. Alleen maar reizen die we echt goedkoper kunnen aanbieden. We doen dus ook heel veel niet. Traditioneel hebben we spectaculaire prijzen op zonvakanties naar de Middellandse Zee en verre zonbestemmingen.</li>
