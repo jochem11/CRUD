@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <!---header --->
+    <?php include ("navbar.php")?>
 
     <div class="contact_form">
         <form method="post">
