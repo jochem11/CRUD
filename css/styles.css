@@ -241,3 +241,37 @@
 .overons_container .overons_adres {
   padding: 20px;
 }
+
+/*//////////////////////////////////////|
+-----------contact------------|
+////////////////////////////////////////|*/
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #f75590);
+  padding: 50px;
+  color: #89daff;
+}
+
+.contact_form form {
+  width: auto;
+  height: auto;
+}
+
+.contact_form input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.contact_form input[type="submit"] {
+  background-color: #ffe74c;
+  box-shadow: 3px 3px #000;
+}
+
+.contact_form input[type="submit"]:active {
+  background-color: #f75590;
+  transform: translateY(4px);
+}

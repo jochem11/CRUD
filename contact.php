@@ -24,7 +24,7 @@
             <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required><br>
             <label for="rating">Rating: </label><br>
             <input type="text" name="rating" id="rating" placeholder="Rating: " required><br>
-            <input type="submit">
+            <input type="submit" value="submit">
         </form>
     </div>
 
