@@ -8,26 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="logoContainer">
-        <img src="pictures/nieuwe_logo.png" alt="logo" />
-        <h1>CRUDairlines</h1>
-      </div>
-      <div class="linkjesRechts">
-        <div class="contact">
-          <i class="fa-solid fa-id-card-clip"></i>
-          <p>contact</p>
-        </div>
-        <div class="login">
-          <i class="fa-solid fa-user-tie"></i>
-          <p>login</p>
-        </div>
-        <div class="login">
-          <i class="fa-solid fa-person-circle-plus"></i>
-          <p>sign up</p>
-        </div>
-      </div>
-    </div>
+      <?php include ("navbar.php");?>
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img
@@ -60,9 +41,29 @@
         <form action="" method="post">
           <div class="rij1">
             <div class="van-waar">
-              <input type="text" name="" id="" />
+              <input list="landen" name="landen" placeholder="van" />
+              <datalist id="landen">
+                <option value="Nederland">Nederland</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Polen">Polen</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Griekenland">Griekenland</option>
+              </datalist>
             </div>
-            <div class="van-waar"></div>
+            <div class="van-waar">
+              <input list="landen2" name="landen2" placeholder="naar" />
+              <datalist id="landen2">
+                <option value="Nederland">Nederland</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Polen">Polen</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Griekenland">Griekenland</option>
+              </datalist>
+            </div>
           </div>
         </form>
       </div>
