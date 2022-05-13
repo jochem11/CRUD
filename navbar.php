@@ -4,10 +4,10 @@
         <h1>CRUDairlines</h1>
       </div>
       <div class="linkjesRechts">
-        <div class="contact">
+        <a href="contact.php"><div class="contact">
           <i class="fa-solid fa-id-card-clip"></i>
           <p>contact</p>
-        </div>
+        </div></a>
         <div class="login">
           <i class="fa-solid fa-user-tie"></i>
           <p>login</p>

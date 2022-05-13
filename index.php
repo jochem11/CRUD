@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-      <?php include ("navbar.php");?>
+    <?php include ("navbar.php");?>
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img
@@ -41,7 +41,7 @@
         <form action="" method="post">
           <div class="rij1">
             <div class="van-waar">
-              <input list="landen" name="landen" placeholder="van" />
+              <input list="landen" name="landen" placeholder="from" required />
               <datalist id="landen">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -53,7 +53,7 @@
               </datalist>
             </div>
             <div class="van-waar">
-              <input list="landen2" name="landen2" placeholder="naar" />
+              <input list="landen2" name="landen2" placeholder="to" required />
               <datalist id="landen2">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -63,6 +63,30 @@
                 <option value="Frankrijk">Frankrijk</option>
                 <option value="Griekenland">Griekenland</option>
               </datalist>
+            </div>
+          </div>
+          <div class="rij2">
+            <div class="rij2Blok">
+              <i class="fa-solid fa-calendar"></i>
+              <input type="datetime-local" name="date" required />
+            </div>
+            <div class="rij2Blok">
+              <i class="fa-solid fa-users"></i>
+              <input
+                type="number"
+                name="aantal"
+                placeholder="amount"
+                value="2"
+                min="0"
+                required
+              />
+            </div>
+            <div class="rij2Blok">
+              <i class="fa-brands fa-atlassian"></i>
+              <select name="class" required>
+                <option value="First_Class">First Class</option>
+                <option value="Second_Class">Second Class</option>
+              </select>
             </div>
           </div>
         </form>
