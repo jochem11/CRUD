@@ -190,7 +190,7 @@
 .overons_container {
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 100px;
   overflow: auto;
   background-image: linear-gradient(#f75590, #ffe74c, #89daff);
   font-weight: 550;
@@ -240,6 +240,23 @@
 
 .overons_container .overons_adres {
   padding: 20px;
+}
+
+@media only screen and (max-width: 610px) {
+  .overons_container {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  .overons_container {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 /*//////////////////////////////////////|
