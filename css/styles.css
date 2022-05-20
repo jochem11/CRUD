@@ -36,12 +36,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition-duration: 1.5s;
+  transition-duration: 0.4s;
 }
 
 .navbar .linkjesRechts .login:hover,
 .navbar .linkjesRechts .contact:hover {
-  background-color: #89daff;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
 }
 
 .navbar .linkjesRechts .login p,
@@ -61,8 +62,9 @@
   align-items: center;
   width: fit-content;
   height: 100%;
+  width: 100px;
   cursor: pointer;
-  transition-duration: 1.5s;
+  transition-duration: 0.4s;
 }
 
 .navbar .logoContainer {
@@ -162,9 +164,18 @@
   justify-content: center;
 }
 
+.slideshow-container .boekcontainer .rij1 .van-waar .labelInput {
+  width: 100%;
+  height: fit-content;
+}
+
 .slideshow-container .boekcontainer .rij1 .van-waar input {
   width: 100%;
   height: 24px;
+  padding-top: 12px;
+  border: none;
+  background-color: #89daff;
+  border-bottom: 2px solid black;
 }
 
 .slideshow-container .boekcontainer .rij2 {
@@ -274,4 +285,69 @@
 .contact_form input[type="submit"]:active {
   background-color: #f75590;
   transform: translateY(4px);
+}
+/*///////////////////////////////////////|
+-------------------login-----------------|
+/////////////////////////////////////////|*/
+
+.logincontainer {
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.logincontainer .loginveld {
+  width: 400px;
+  height: fit-content;
+  background-color: #89daff;
+}
+
+.logincontainer .loginveld .pictureContainer {
+  width: 300px;
+  height: auto;
+  background-color: lightgreen;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.logincontainer .loginveld .pictureContainer img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.logincontainer .invoerContainer {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+}
+
+.logincontainer .invoerContainer p {
+  margin-bottom: 3px;
+}
+
+.logincontainer .invoerContainer input {
+  width: 100%;
+  height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+}
+
+.logincontainer .invoerContainer button {
+  width: 65px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: auto;
+  display: block;
+  margin-top: 10px;
+  background-color: #547cff;
 }

@@ -41,28 +41,45 @@
         <form action="" method="post">
           <div class="rij1">
             <div class="van-waar">
-              <input list="landen" name="landen" placeholder="from" required />
-              <datalist id="landen">
-                <option value="Nederland">Nederland</option>
-                <option value="België">België</option>
-                <option value="Duitsland">Duitsland</option>
-                <option value="Polen">Polen</option>
-                <option value="Spanje">Spanje</option>
-                <option value="Frankrijk">Frankrijk</option>
-                <option value="Griekenland">Griekenland</option>
-              </datalist>
+              <div class="labelInput">
+                <label for="from">from</label>
+                <input
+                  list="landen"
+                  name="landen"
+                  placeholder="from"
+                  id="from-to-boekcontainer"
+                  required
+                />
+                <datalist id="landen">
+                  <option value="Nederland">Nederland</option>
+                  <option value="België">België</option>
+                  <option value="Duitsland">Duitsland</option>
+                  <option value="Polen">Polen</option>
+                  <option value="Spanje">Spanje</option>
+                  <option value="Frankrijk">Frankrijk</option>
+                  <option value="Griekenland">Griekenland</option>
+                </datalist>
+              </div>
             </div>
             <div class="van-waar">
-              <input list="landen2" name="landen2" placeholder="to" required />
-              <datalist id="landen2">
-                <option value="Nederland">Nederland</option>
-                <option value="België">België</option>
-                <option value="Duitsland">Duitsland</option>
-                <option value="Polen">Polen</option>
-                <option value="Spanje">Spanje</option>
-                <option value="Frankrijk">Frankrijk</option>
-                <option value="Griekenland">Griekenland</option>
-              </datalist>
+              <div class="labelInput">
+                <label for="to">to</label>
+                <input
+                  list="landen2"
+                  name="landen2"
+                  placeholder="to"
+                  required
+                />
+                <datalist id="landen2">
+                  <option value="Nederland">Nederland</option>
+                  <option value="België">België</option>
+                  <option value="Duitsland">Duitsland</option>
+                  <option value="Polen">Polen</option>
+                  <option value="Spanje">Spanje</option>
+                  <option value="Frankrijk">Frankrijk</option>
+                  <option value="Griekenland">Griekenland</option>
+                </datalist>
+              </div>
             </div>
           </div>
           <div class="rij2">
@@ -89,7 +106,24 @@
               </select>
             </div>
           </div>
+          <button type="submit">stuur</button>
         </form>
+      </div>
+    </div>
+    <div class="logincontainer">
+      <div class="loginveld">
+        <div class="pictureContainer">
+          <img src="pictures/loginPicture.png" alt="loginPicture" />
+        </div>
+        <div class="invoerContainer">
+          <form action="post">
+            <p>name</p>
+            <input type="text" name="name" placeholder="name:" required />
+            <p>password</p>
+            <input type="password" name="pw" placeholder="password" required />
+            <button type="submit">send</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="js/main.js"></script>

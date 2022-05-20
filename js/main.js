@@ -16,3 +16,14 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 5000);
 }
+
+let login = document.querySelector("#loginBtn");
+let loginContainer = document.querySelector(".logincontainer");
+login.addEventListener("click", (e) => {
+  loginContainer.style.display = "flex";
+  window.onclick = (e) => {
+    if (e.target == loginContainer) {
+      loginContainer.style.display = "none";
+    }
+  };
+});
