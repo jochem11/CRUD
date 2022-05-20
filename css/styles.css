@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
+  list-style-type: none;
   font-family: "Roboto Slab", serif;
 }
 
@@ -190,7 +191,7 @@
 .overons_container {
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 100px;
   overflow: auto;
   background-image: linear-gradient(#f75590, #ffe74c, #89daff);
   font-weight: 550;
@@ -242,6 +243,23 @@
   padding: 20px;
 }
 
+@media only screen and (max-width: 610px) {
+  .overons_container {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  .overons_container {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+}
+
 /*//////////////////////////////////////|
 -----------contact------------|
 ////////////////////////////////////////|*/
@@ -252,7 +270,10 @@
   width: 100%;
   height: auto;
   background-image: linear-gradient(#576490, #f75590);
-  padding: 50px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
   color: #89daff;
 }
 
@@ -274,4 +295,83 @@
 .contact_form input[type="submit"]:active {
   background-color: #f75590;
   transform: translateY(4px);
+}
+
+/*//////////////////////////////////////|
+-----------footer------------|
+////////////////////////////////////////|*/
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background-color: #576490;
+  color: #fff;
+}
+
+.footer_lijst {
+  width: 100%;
+  height: auto;
+}
+
+.footer .footer_lijst ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer .footer_lijst h3 {
+  margin: 75px;
+  font-size: 25px;
+  color: #ffe74c;
+}
+
+.footer .footer_lijst li {
+  font-size: 15px;
+}
+
+.footer .footer_lijst a {
+  color: #89daff;
+  transition: 1s;
+  font-size: 15px;
+}
+
+.footer .footer_lijst a:hover {
+  text-decoration: underline;
+  color: #f75590;
+}
+
+.footer .footer_lijst .download_crudairlines_footer img {
+  background-color: #fff;
+  width: 135px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .footer {
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer {
+    padding-top: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer .footer_lijst h3 {
+    margin: 15px;
+  }
 }

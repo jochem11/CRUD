@@ -1,3 +1,19 @@
+<?php
+    include('includes/connect.php');
+
+    if(isset($_POST['submit'])) {
+        
+        $sql = "INSERT INTO contact (naam, email, titel, bericht) VALUES(:naam, :email, :titel, :bericht)";
+          
+        $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":naam", $_POST['naam']);
+        $stmt->bindParam(":email", $_POST['email']);
+        $stmt->bindParam(":titel", $_POST['titel']);
+        $stmt->bindParam(":bericht", $_POST['bericht']);
+        $stmt->execute();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +36,11 @@
             <input type="text" name="titel" id="titel" placeholder="Titel: " required><br>
             <label for="naam">Naam: </label><br>
             <input type="text" name="naam" id="naam" placeholder="Naam: " required><br>
-            <label for="bericht">Bericht:</label><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email" placeholder="Titel: " required><br>
+            <label for="rating">Bericht: </label><br>
             <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required><br>
-            <label for="rating">Rating: </label><br>
-            <input type="text" name="rating" id="rating" placeholder="Rating: " required><br>
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" name="submit" id="submit">
         </form>
     </div>
 
