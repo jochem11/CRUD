@@ -11,13 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-
-    <!-- header website -->
-
-
-    
+    <?php include ("navbar.php")?>
     <div class="overons_container">
         <h1>Welkom bij CRUDAirlines</h1>
         <div class="overons_tekst">

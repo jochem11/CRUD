@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $db = 'minicrud';
+    $db = 'crud';
     $user = 'root';
     $pass = '';
     $charset = 'utf8mb4';
