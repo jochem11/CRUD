@@ -307,6 +307,7 @@
   background-color: #f75590;
   transform: translateY(4px);
 }
+
 /*///////////////////////////////////////|
 -------------------login-----------------|
 /////////////////////////////////////////|*/
@@ -449,4 +450,55 @@
   .footer .footer_lijst h3 {
     margin: 15px;
   }
+}
+
+/*///////////////////////////////////////|
+-------------------admin-----------------|
+/////////////////////////////////////////|*/
+
+.navbar_admin {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f75590, #ffe74c, #b5f8fe);
+}
+
+.navbar_admin ul {
+  display: flex;
+  justify-content: center;
+  width: 100;
+  height: auto;
+}
+
+.navbar_admin li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar_admin a {
+  color: #576490;
+  transition: 1s;
+}
+
+.navbar_admin a:hover {
+  color: #21897e;
+  text-decoration: underline;
+}
+
+.welkom_admin {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #b5f8fe, #89daff);
+}
+
+.welkom_admin p {
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
 }
