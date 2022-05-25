@@ -18,12 +18,23 @@ function showSlides() {
 }
 
 let login = document.querySelector("#loginBtn");
-let loginContainer = document.querySelector(".logincontainer");
+let loginContainer = document.querySelector("#logincontainer");
 login.addEventListener("click", (e) => {
   loginContainer.style.display = "flex";
   window.onclick = (e) => {
     if (e.target == loginContainer) {
       loginContainer.style.display = "none";
+    }
+  };
+});
+
+let signUp = document.querySelector("#signUpBtn");
+let signupcontianer = document.querySelector("#signupcontainer");
+signUp.addEventListener("click", (e) => {
+  signupcontianer.style.display = "flex";
+  window.onclick = (e) => {
+    if (e.target == signupcontianer) {
+      signupcontianer.style.display = "none";
     }
   };
 });

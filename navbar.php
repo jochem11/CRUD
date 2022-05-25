@@ -12,7 +12,7 @@
           <i class="fa-solid fa-user-tie"></i>
           <p>login</p>
         </div>
-        <div class="login">
+        <div class="login" id="signUpBtn">
           <i class="fa-solid fa-person-circle-plus"></i>
           <p>sign up</p>
         </div>

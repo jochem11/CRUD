@@ -85,7 +85,12 @@
           <div class="rij2">
             <div class="rij2Blok">
               <i class="fa-solid fa-calendar"></i>
-              <input type="datetime-local" name="date" required />
+              <input
+                type="datetime-local"
+                name="date"
+                placeholder="date-time"
+                required
+              />
             </div>
             <div class="rij2Blok">
               <i class="fa-solid fa-users"></i>
@@ -93,7 +98,6 @@
                 type="number"
                 name="aantal"
                 placeholder="amount"
-                value="2"
                 min="0"
                 required
               />
@@ -106,11 +110,11 @@
               </select>
             </div>
           </div>
-          <button type="submit">stuur</button>
+          <button type="submit">search flights</button>
         </form>
       </div>
     </div>
-    <div class="logincontainer">
+    <div class="logincontainer" id="logincontainer">
       <div class="loginveld">
         <div class="pictureContainer">
           <img src="pictures/loginPicture.png" alt="loginPicture" />
@@ -126,6 +130,23 @@
         </div>
       </div>
     </div>
+    <div class="logincontainer" id="signupcontainer">
+      <div class="signupContainer">
+        <div class="pictureContainer">
+          <img src="pictures/loginPicture.png" alt="loginPicture" />
+        </div>
+        <div class="invoerContainer">
+          <form action="NewAcc.php" method="post">
+            <p>name</p>
+            <input type="text" name="name" placeholder="name:" required />
+            <p>password</p>
+            <input type="password" name="pw" placeholder="password" required />
+            <button type="submit">send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <?php include("footer.php")?>
     <script src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/33689bd479.js"
