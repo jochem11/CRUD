@@ -130,6 +130,27 @@
         </div>
       </div>
     </div>
+    <div class="vluchtencontainer">
+      <div class="vlucht">
+      <div class="plaatje">plaatje</div>
+        <div class="tekst">
+          <div class="van-naar">
+            <div class="van">van</div>
+            <div class="naar">naar</div>
+          </div>
+          <div class="tijden">
+            <div class="begintijd">begintijd</div>
+            <div class="eindtijd">eindtijd</div>
+          </div>
+          <div class="zitplaatsen">aantal zitplaatsen</div>
+          <div class="prijs-aantal">
+            <div class="prijs">prijs</div>
+            <div class="aantal-pers">aantal</div>
+          </div>
+          <div class="stuur">stuur</div>
+        </div>
+      </div>
+    </div>
     <div class="logincontainer" id="signupcontainer">
       <div class="signupContainer">
         <div class="pictureContainer">
