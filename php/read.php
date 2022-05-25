@@ -5,14 +5,12 @@
     $sql_contact = "SELECT * FROM contact";
     $stmt_contact = $connect->prepare($sql_contact);
     $stmt_contact->execute();
-    $rowCount_contact = $stmt_contact->rowCount();
     $result_contact = $stmt_contact->fetchAll(); 
 
     //read van review 
     $sql_review = "SELECT * FROM review";
     $stmt_review = $connect->prepare($sql_review);
-    $stmt_review->execute();
-    $rowCount_review = $stmt_review->rowCount();
+    $stmt_review->execute();    
     $result_review = $stmt_review->fetchAll(); 
 
 ?>
@@ -35,6 +33,7 @@
 
     <div class="contact_container_read">
         <p>Contact</p>
+        <p><a href="php/create.php">Voeg hier een nieuwe account aan!</a></p>
         <table class="table_container_read">
             <tr class="table_contact">
                 <th>ID</th>
@@ -45,24 +44,22 @@
                 <th>Update/Delete</th>
             </tr>
             <?php
-                foreach($result_contact as $contact) {
                 
+                foreach($result_contact as $contact) {
+                    
+            
+                echo '<tr>';
+                    echo '<td>'. $contact['ID'] .'</td>';
+                    echo '<td>'. $contact['naam'] .'</td>';
+                    echo '<td>'. $contact['email'] .'</td>';
+                    echo '<td>'. $contact['titel'] .'</td>';
+                    echo '<td>'. $contact['bericht'] .'</td>';
+                    echo '<td><a href="php/update.php?ID='.$contact['ID'].'">Update</a></td>';
+                    echo '<td><a href="php/delete.php?ID='.$contact['ID'].'">Delete</a></td>';
+                echo '</tr>'; 
+            }
             ?>
-                <tr>
-                    <td><?php echo $contact['ID'];?></td>
-                    <td><?php echo $contact['naam'];?></td>
-                    <td><?php echo $contact['email'];?></td>
-                    <td><?php echo $contact['titel'];?></td>
-                    <td><?php echo $contact['bericht'];?></td>
-                    <td><a class="create-knop" href="create.php?id=<?php echo $rowCount_contact['ID']; ?>">
-                    </a><a class="update-knop" href="php/update.php?id=<?php echo $rowCount_contact['ID']; ?>" name="update">
-                    update</a>&nbsp;<a class="delete-knop" href="delete.php?id=<?php echo $rowCount_contact['ID']; ?>"  name="delete">
-                    delete</a></td>
-                </tr>
-
-            <?php   }   
-    
-            ?>
+            
         </table>
     </div>
 
@@ -80,23 +77,20 @@
                 <th>Update/Delete</th>
             </tr>
             <?php
-                foreach($result_review as $review) {
                 
-            ?>
-                <tr>
-                    <td><?php echo $review['ID'];?></td>
-                    <td><?php echo $review['naam'];?></td>
-                    <td><?php echo $review['titel'];?></td>
-                    <td><?php echo $review['bericht'];?></td>
-                    <td><?php echo $review['rating'];?></td>
-                    <td><a class="create-knop" href="create.php?id=<?php echo $rowCount_contact['ID']; ?>">
-                    </a><a class="update-knop" href="php/update.php?id=<?php echo $rowCount_contact['ID']; ?>" name="update">
-                    update</a>&nbsp;<a class="delete-knop" href="delete.php?id=<?php echo $rowCount_contact['ID']; ?>"  name="delete">
-                    delete</a></td>
-                </tr>
-
-            <?php   }   
-    
+                foreach($result_review as $review) {
+                    
+            
+                echo '<tr>';
+                    echo '<td>'. $review['ID'] .'</td>';
+                    echo '<td>'. $review['naam'] .'</td>';
+                    echo '<td>'. $review['titel'] .'</td>';
+                    echo '<td>'. $review['bericht'] .'</td>';
+                    echo '<td>'. $review['rating'] .'</td>';
+                    echo '<td><a href="php/update.php?ID='.$review['ID'].'">Update</a></td>';
+                    echo '<td><a href="php/delete.php?ID='.$review['ID'].'">Delete</a></td>';
+                echo '</tr>'; 
+            }
             ?>
         </table>
     </div>
