@@ -452,11 +452,9 @@
 .footer .footer_lijst ul {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
+  gap: 5fr;
 }
 
 .footer .footer_lijst h3 {
@@ -558,9 +556,77 @@
 
 .welkom_admin p {
   margin: 10px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
+
+.contact_container_read {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact_container_read td {
+  border: 3px solid #000;
+  padding: 5px;
+}
+
+.table_container_read {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.table_container_read td {
+  border: 3px solid #000;
+  padding: 5px;
+}
+
+/*///////////////////////////////////////|
+---------------review------------------|
+/////////////////////////////////////////|*/
+
+.review_form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  background-image: linear-gradient(#576490, #89daff);
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  color: #ffe74c;
+}
+
+.review_form form {
+  width: auto;
+  height: auto;
+}
+
+.review_form input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.review_form input[type="submit"] {
+  background-color: #f75590;
+  box-shadow: 3px 3px #000;
+}
+
+.review_form input[type="submit"]:active {
+  background-color: #ffe74c;
+  transform: translateY(4px);
+}
+
 /*///////////////////////////////////////|
 ---------------vluchten------------------|
 /////////////////////////////////////////|*/
