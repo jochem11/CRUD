@@ -1,14 +1,14 @@
 <?php
-    include('includes/connect.php');
+include('includes/connect.php');
 
-    if(isset($_POST['submit'])) {
-        
-        $sql = "INSERT INTO contact (naam, email, titel, bericht) VALUES(:naam, :email, :titel, :bericht)";
-          
-        $stmt = $connect->prepare($sql); $stmt->bindParam(":naam",
-$_POST['naam']); $stmt->bindParam(":email", $_POST['email']);
-$stmt->bindParam(":titel", $_POST['titel']); $stmt->bindParam(":bericht",
-$_POST['bericht']); $stmt->execute(); } ?>
+if (isset($_POST['submit'])) {
+
+  $sql = "INSERT INTO contact (naam, email, titel, bericht) VALUES(:naam, :email, :titel, :bericht)";
+
+  $stmt = $connect->prepare($sql); $stmt->bindParam(":naam", $_POST['naam']);
+$stmt->bindParam(":email", $_POST['email']); $stmt->bindParam( ":titel",
+$_POST['titel'] ); $stmt->bindParam(":bericht", $_POST['bericht']);
+$stmt->execute(); } ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +25,9 @@ $_POST['bericht']); $stmt->execute(); } ?>
     />
     <title>Contact</title>
   </head>
+
   <body>
-    <?php include ("navbar.php")?>
+    <?php include("navbar.php") ?>
 
     <div class="contact_form">
       <form method="post">
@@ -66,7 +67,7 @@ $_POST['bericht']); $stmt->execute(); } ?>
       </form>
     </div>
 
-    <!---footer --->
+    <?php include("footer.php") ?>
 
     <script
       src="https://kit.fontawesome.com/33689bd479.js"
