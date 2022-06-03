@@ -131,25 +131,36 @@
       </div>
     </div>
     <div class="vluchtencontainer">
+    <form action="" method="post">
       <div class="vlucht">
       <div class="plaatje">plaatje</div>
         <div class="tekst">
           <div class="van-naar">
-            <div class="van">van</div>
-            <div class="naar">naar</div>
+            <div class="van">Nederland</div>
+            <div class="tussenstuk">naar</div>
+            <div class="naar">Italië</div>
           </div>
           <div class="tijden">
-            <div class="begintijd">begintijd</div>
-            <div class="eindtijd">eindtijd</div>
+            <div class="begintijd">12:30-5-22</div>
+            <div class="tot">tot</div>
+            <div class="eindtijd">15:00-5-25</div>
           </div>
-          <div class="zitplaatsen">aantal zitplaatsen</div>
+          <div class="zitplaatsen">zitplaatsen over: 58</div>
           <div class="prijs-aantal">
-            <div class="prijs">prijs</div>
-            <div class="aantal-pers">aantal</div>
+            <div class="prijs"><p>prijs per ticket: </br> &euro; 58,00</p></div>
+            <div class="aantal-pers">
+              <div>
+                <p>aantal tickets:</p>
+                <input type="number" name="tickets" min="0">
+              </div>
           </div>
-          <div class="stuur">stuur</div>
+          </div>
+          <div class="stuur">
+            <button type="submit">stuur</button>
+          </div>
         </div>
       </div>
+      </form>
     </div>
     <div class="logincontainer" id="signupcontainer">
       <div class="signupContainer">

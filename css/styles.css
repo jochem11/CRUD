@@ -595,6 +595,8 @@
   height: 100%;
   width: 25%;
   background-color: green;
+  overflow: hidden;
+  border-right: 2px solid black;
 }
 
 .vluchtencontainer .vlucht .tekst .van-naar {
@@ -602,18 +604,34 @@
   height: 15%;
   background-color: purple;
   display: flex;
+  border-bottom: 2px solid black;
 }
 
 .vluchtencontainer .vlucht .tekst .van-naar .van {
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vluchtencontainer .vlucht .van-naar .tussenstuk {
+  width: 20%;
+  height: 100%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vluchtencontainer .vlucht .van-naar .naar {
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vluchtencontainer .vlucht .tekst .tijden {
@@ -624,21 +642,40 @@
 }
 
 .vluchtencontainer .vlucht .tekst .tijden .begintijd {
-  width: 50%;
+  width: 33%;
   height: 100%;
   background-color: mediumspringgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vluchtencontainer .vlucht .tekst .tijden .tot {
+  width: 34%;
+  height: 100%;
+  background-color: darkorchid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vluchtencontainer .vlucht .tijden .eindtijd {
-  width: 50%;
+  width: 33%;
   height: 100%;
   background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vluchtencontainer .vlucht .zitplaatsen {
   width: 100%;
   height: 15%;
   background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
 }
 
 .vluchtencontainer .vlucht .prijs-aantal {
@@ -652,16 +689,40 @@
   width: 50%;
   height: 100%;
   background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
 }
 
 .vluchtencontainer .vlucht .prijs-aantal .aantal-pers {
   width: 50%;
   height: 100%;
   background-color: dimgray;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
+}
+
+.vluchtencontainer .vlucht .prijs-aantal .aantal-pers input {
+  width: 20%;
+  font-size: 15px;
 }
 
 .vluchtencontainer .vlucht .stuur {
   height: 15%;
   width: 100%;
   background-color: paleturquoise;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.vluchtencontainer .vlucht .stuur button {
+  height: 90%;
+  width: 40%;
+  background-color: orange;
+  border-radius: 5px;
 }
