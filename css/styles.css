@@ -768,7 +768,6 @@
 .vluchtencontainer .vlucht .plaatje {
   height: 100%;
   width: 25%;
-  background-color: green;
   overflow: hidden;
   border-right: 2px solid black;
 }
@@ -783,7 +782,6 @@
 .vluchtencontainer .vlucht .tekst .van-naar .van {
   width: 40%;
   height: 100%;
-  background-color: chartreuse;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,7 +790,6 @@
 .vluchtencontainer .vlucht .van-naar .tussenstuk {
   width: 20%;
   height: 100%;
-  background-color: lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -801,7 +798,6 @@
 .vluchtencontainer .vlucht .van-naar .naar {
   width: 40%;
   height: 100%;
-  background-color: forestgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -817,7 +813,6 @@
 .vluchtencontainer .vlucht .tekst .tijden .begintijd {
   width: 33%;
   height: 100%;
-  background-color: mediumspringgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,7 +821,6 @@
 .vluchtencontainer .vlucht .tekst .tijden .tot {
   width: 34%;
   height: 100%;
-  background-color: darkorchid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -835,7 +829,6 @@
 .vluchtencontainer .vlucht .tijden .eindtijd {
   width: 33%;
   height: 100%;
-  background-color: lightskyblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -844,7 +837,6 @@
 .vluchtencontainer .vlucht .zitplaatsen {
   width: 100%;
   height: 15%;
-  background-color: blanchedalmond;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -870,7 +862,6 @@
 .vluchtencontainer .vlucht .prijs-aantal .aantal-pers {
   width: 50%;
   height: 100%;
-  background-color: dimgray;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -885,7 +876,6 @@
 .vluchtencontainer .vlucht .stuur {
   height: 15%;
   width: 100%;
-  background-color: paleturquoise;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -897,4 +887,14 @@
   width: 40%;
   background-color: orange;
   border-radius: 5px;
+}
+/*////////////////////////////////////////|
+----------------reviews-------------------|
+//////////////////////////////////////////|*/
+
+.revieuwcontainer {
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+  background-color: green;
 }
