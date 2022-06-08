@@ -852,6 +852,7 @@
 .vluchtencontainer .vlucht .prijs-aantal .prijs {
   width: 50%;
   height: 100%;
+  background-color: greenyellow;
   display: flex;
   align-items: center;
   justify-content: left;
