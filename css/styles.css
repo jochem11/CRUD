@@ -341,11 +341,13 @@
 .contact_form input[type="submit"] {
   background-color: #ffe74c;
   box-shadow: 3px 3px #000;
+  border-radius: 25px;
 }
 
 .contact_form input[type="submit"]:active {
   background-color: #f75590;
   transform: translateY(4px);
+  border-radius: 25px;
 }
 
 /*///////////////////////////////////////|
@@ -590,6 +592,104 @@
   padding: 5px;
 }
 
+.create_form_contact {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #f75590);
+  padding: 10px;
+}
+
+.create_form_contact p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.create_form_contact form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create_form_contact a {
+  color: #fff;
+}
+
+.create_form_contact input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.create_form_contact label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.create_form_contact input[type="submit"] {
+  background-color: #ffe74c;
+  box-shadow: 3px 3px #000;
+  border-radius: 25px;
+}
+
+.create_form_contact input[type="submit"]:active {
+  background-color: #f75590;
+  transform: translateY(4px);
+  border-radius: 25px;
+}
+
+/*  create review    */
+
+.create_form_review {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #b5f8fe);
+  padding: 10px;
+}
+
+.create_form_review a {
+  color: #000;
+}
+
+.create_form_review p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.create_form_review form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create_form_review input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.create_form_review label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.create_form_review input[type="submit"] {
+  background-color: #ffe74c;
+  box-shadow: 3px 3px #000;
+  border-radius: 25px;
+}
+
+.create_form_review input[type="submit"]:active {
+  background-color: #f75590;
+  transform: translateY(4px);
+  border-radius: 25px;
+}
+
 /*///////////////////////////////////////|
 ---------------review------------------|
 /////////////////////////////////////////|*/
@@ -620,11 +720,13 @@
 .review_form input[type="submit"] {
   background-color: #f75590;
   box-shadow: 3px 3px #000;
+  border-radius: 25px;
 }
 
 .review_form input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
+  border-radius: 25px;
 }
 
 /*///////////////////////////////////////|
@@ -661,6 +763,8 @@
   height: 100%;
   width: 25%;
   background-color: green;
+  overflow: hidden;
+  border-right: 2px solid black;
 }
 
 .vluchtencontainer .vlucht .tekst .van-naar {
@@ -668,18 +772,34 @@
   height: 15%;
   background-color: purple;
   display: flex;
+  border-bottom: 2px solid black;
 }
 
 .vluchtencontainer .vlucht .tekst .van-naar .van {
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vluchtencontainer .vlucht .van-naar .tussenstuk {
+  width: 20%;
+  height: 100%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vluchtencontainer .vlucht .van-naar .naar {
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vluchtencontainer .vlucht .tekst .tijden {
@@ -690,21 +810,40 @@
 }
 
 .vluchtencontainer .vlucht .tekst .tijden .begintijd {
-  width: 50%;
+  width: 33%;
   height: 100%;
   background-color: mediumspringgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vluchtencontainer .vlucht .tekst .tijden .tot {
+  width: 34%;
+  height: 100%;
+  background-color: darkorchid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vluchtencontainer .vlucht .tijden .eindtijd {
-  width: 50%;
+  width: 33%;
   height: 100%;
   background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vluchtencontainer .vlucht .zitplaatsen {
   width: 100%;
   height: 15%;
   background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
 }
 
 .vluchtencontainer .vlucht .prijs-aantal {
@@ -718,16 +857,40 @@
   width: 50%;
   height: 100%;
   background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
 }
 
 .vluchtencontainer .vlucht .prijs-aantal .aantal-pers {
   width: 50%;
   height: 100%;
   background-color: dimgray;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
+}
+
+.vluchtencontainer .vlucht .prijs-aantal .aantal-pers input {
+  width: 20%;
+  font-size: 15px;
 }
 
 .vluchtencontainer .vlucht .stuur {
   height: 15%;
   width: 100%;
   background-color: paleturquoise;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.vluchtencontainer .vlucht .stuur button {
+  height: 90%;
+  width: 40%;
+  background-color: orange;
+  border-radius: 5px;
 }
