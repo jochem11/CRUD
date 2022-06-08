@@ -341,11 +341,13 @@
 .contact_form input[type="submit"] {
   background-color: #ffe74c;
   box-shadow: 3px 3px #000;
+  border-radius: 25px;
 }
 
 .contact_form input[type="submit"]:active {
   background-color: #f75590;
   transform: translateY(4px);
+  border-radius: 25px;
 }
 
 /*///////////////////////////////////////|
@@ -590,6 +592,104 @@
   padding: 5px;
 }
 
+.create_form_contact {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #f75590);
+  padding: 10px;
+}
+
+.create_form_contact p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.create_form_contact form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create_form_contact a {
+  color: #fff;
+}
+
+.create_form_contact input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.create_form_contact label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.create_form_contact input[type="submit"] {
+  background-color: #ffe74c;
+  box-shadow: 3px 3px #000;
+  border-radius: 25px;
+}
+
+.create_form_contact input[type="submit"]:active {
+  background-color: #f75590;
+  transform: translateY(4px);
+  border-radius: 25px;
+}
+
+/*  create review    */
+
+.create_form_review {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #b5f8fe);
+  padding: 10px;
+}
+
+.create_form_review a {
+  color: #000;
+}
+
+.create_form_review p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.create_form_review form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create_form_review input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.create_form_review label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.create_form_review input[type="submit"] {
+  background-color: #ffe74c;
+  box-shadow: 3px 3px #000;
+  border-radius: 25px;
+}
+
+.create_form_review input[type="submit"]:active {
+  background-color: #f75590;
+  transform: translateY(4px);
+  border-radius: 25px;
+}
+
 /*///////////////////////////////////////|
 ---------------review------------------|
 /////////////////////////////////////////|*/
@@ -620,11 +720,13 @@
 .review_form input[type="submit"] {
   background-color: #f75590;
   box-shadow: 3px 3px #000;
+  border-radius: 25px;
 }
 
 .review_form input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
+  border-radius: 25px;
 }
 
 /*///////////////////////////////////////|
