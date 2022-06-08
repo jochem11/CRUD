@@ -100,54 +100,58 @@
         </form>
       </div>
     </div>
-  </div>
-  <div class="vluchtencontainer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 150">
+      <path fill="#0099ff" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,272C480,288,600,288,720,266.7C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+    <div class="vluchtencontainer">
     <form action="" method="post">
       <div class="vlucht">
         <div class="plaatje">plaatje</div>
         <div class="tekst">
           <div class="van-naar">
             <div class="van">Nederland</div>
-            <div class="tussenstuk">naar</div>
+            <div class="tussenstuk">to</div>
             <div class="naar">Italië</div>
           </div>
           <div class="tijden">
             <div class="begintijd">12:30-5-22</div>
-            <div class="tot">tot</div>
+            <div class="tot">until</div>
             <div class="eindtijd">15:00-5-25</div>
           </div>
           <div class="zitplaatsen">zitplaatsen over: 58</div>
           <div class="prijs-aantal">
-            <div class="prijs">
-              <p>prijs per ticket: </br> &euro; 58,00</p>
-            </div>
+            <div class="prijs"><p>prijs per ticket: </br> &euro; 58,00</p></div>
             <div class="aantal-pers">
               <div>
                 <p>aantal tickets:</p>
                 <input type="number" name="tickets" min="0">
               </div>
-            </div>
+          </div>
           </div>
           <div class="stuur">
             <button type="submit">stuur</button>
           </div>
         </div>
       </div>
-    </form>
-  </div>
-  <div class="logincontainer" id="signupcontainer">
-    <div class="signupContainer">
-      <div class="pictureContainer">
-        <img src="pictures/loginPicture.png" alt="loginPicture" />
-      </div>
-      <div class="invoerContainer">
-        <form action="NewAcc.php" method="post">
-          <p>name</p>
-          <input type="text" name="name" placeholder="name:" required />
-          <p>password</p>
-          <input type="password" name="pw" placeholder="password" required />
-          <button type="submit">send</button>
-        </form>
+      </form>
+    </div>
+    <div class="revieuwcontainer">
+
+    </div>
+    <div class="logincontainer" id="signupcontainer">
+      <div class="signupContainer">
+        <div class="pictureContainer">
+          <img src="pictures/loginPicture.png" alt="loginPicture" />
+        </div>
+        <div class="invoerContainer">
+          <form action="php/NewAcc.php" method="post">
+            <p>name</p>
+            <input type="text" name="name" placeholder="name:" required />
+            <p>password</p>
+            <input type="password" name="pw" placeholder="password" required />
+            <button type="submit">send</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
