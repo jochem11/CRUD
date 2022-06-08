@@ -640,15 +640,21 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: blue;
+  background-color: #547cff;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.vluchtencontainer svg {
+  background-color: white;
+  margin-top: -6%;
+  width: 100%;
 }
 
 .vluchtencontainer .vlucht {
   width: 450px;
   height: 250px;
-  background-color: white;
+  background-image: linear-gradient(#f75590, wheat);
   display: flex;
 }
 
@@ -660,7 +666,6 @@
 .vluchtencontainer .vlucht .plaatje {
   height: 100%;
   width: 25%;
-  background-color: green;
   overflow: hidden;
   border-right: 2px solid black;
 }
@@ -668,7 +673,6 @@
 .vluchtencontainer .vlucht .tekst .van-naar {
   width: 100%;
   height: 15%;
-  background-color: purple;
   display: flex;
   border-bottom: 2px solid black;
 }
@@ -676,7 +680,6 @@
 .vluchtencontainer .vlucht .tekst .van-naar .van {
   width: 40%;
   height: 100%;
-  background-color: chartreuse;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -685,7 +688,6 @@
 .vluchtencontainer .vlucht .van-naar .tussenstuk {
   width: 20%;
   height: 100%;
-  background-color: lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -694,7 +696,6 @@
 .vluchtencontainer .vlucht .van-naar .naar {
   width: 40%;
   height: 100%;
-  background-color: forestgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,14 +704,13 @@
 .vluchtencontainer .vlucht .tekst .tijden {
   width: 100%;
   height: 15%;
-  background-color: #f75590;
   display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .vluchtencontainer .vlucht .tekst .tijden .begintijd {
   width: 33%;
   height: 100%;
-  background-color: mediumspringgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -719,7 +719,6 @@
 .vluchtencontainer .vlucht .tekst .tijden .tot {
   width: 34%;
   height: 100%;
-  background-color: darkorchid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -728,7 +727,6 @@
 .vluchtencontainer .vlucht .tijden .eindtijd {
   width: 33%;
   height: 100%;
-  background-color: lightskyblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -737,7 +735,6 @@
 .vluchtencontainer .vlucht .zitplaatsen {
   width: 100%;
   height: 15%;
-  background-color: blanchedalmond;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -747,14 +744,12 @@
 .vluchtencontainer .vlucht .prijs-aantal {
   height: 40%;
   width: 100%;
-  background-color: chocolate;
   display: flex;
 }
 
 .vluchtencontainer .vlucht .prijs-aantal .prijs {
   width: 50%;
   height: 100%;
-  background-color: greenyellow;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -764,7 +759,6 @@
 .vluchtencontainer .vlucht .prijs-aantal .aantal-pers {
   width: 50%;
   height: 100%;
-  background-color: dimgray;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -779,7 +773,6 @@
 .vluchtencontainer .vlucht .stuur {
   height: 15%;
   width: 100%;
-  background-color: paleturquoise;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -791,4 +784,14 @@
   width: 40%;
   background-color: orange;
   border-radius: 5px;
+}
+/*////////////////////////////////////////|
+----------------reviews-------------------|
+//////////////////////////////////////////|*/
+
+.revieuwcontainer {
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+  background-color: green;
 }
