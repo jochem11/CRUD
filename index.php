@@ -100,56 +100,104 @@
         </form>
       </div>
     </div>
-    </div>
-    <div class="vluchtencontainer">
+  </div>
+  <div class="vluchtencontainer">
     <form action="" method="post">
       <div class="vlucht">
         <div class="plaatje">plaatje</div>
         <div class="tekst">
           <div class="van-naar">
             <div class="van">Nederland</div>
-            <div class="tussenstuk">to</div>
+            <div class="tussenstuk">naar</div>
             <div class="naar">Italië</div>
           </div>
           <div class="tijden">
             <div class="begintijd">12:30-5-22</div>
-            <div class="tot">until</div>
+            <div class="tot">tot</div>
             <div class="eindtijd">15:00-5-25</div>
           </div>
           <div class="zitplaatsen">zitplaatsen over: 58</div>
           <div class="prijs-aantal">
-            <div class="prijs"><p>prijs per ticket: </br> &euro; 58,00</p></div>
+            <div class="prijs">
+              <p>prijs per ticket: </br> &euro; 58,00</p>
+            </div>
             <div class="aantal-pers">
               <div>
                 <p>aantal tickets:</p>
                 <input type="number" name="tickets" min="0">
               </div>
-          </div>
+            </div>
           </div>
           <div class="stuur">
             <button type="submit">stuur</button>
           </div>
         </div>
       </div>
-      </form>
-    </div>
-    <div class="revieuwcontainer">
-
-    </div>
-    <div class="logincontainer" id="signupcontainer">
-      <div class="signupContainer">
-        <div class="pictureContainer">
-          <img src="pictures/loginPicture.png" alt="loginPicture" />
+    </form>
+  </div>
+  <div class="revieuwcontainer">
+    <div class="bovenbalk">
+      <div class="filterButton">
+        <div class="button" id="filter">
+          <img src="pictures/filterLogo.png" alt="filetr" width="30%" height="100%">
+          <p>filter</p>
         </div>
-        <div class="invoerContainer">
-          <form action="php/NewAcc.php" method="post">
-            <p>name</p>
-            <input type="text" name="name" placeholder="name:" required />
-            <p>password</p>
-            <input type="password" name="pw" placeholder="password" required />
-            <button type="submit">send</button>
-          </form>
+      </div>
+      <div class="MakeReview">
+        <button>make your review</button>
+      </div>
+      <div class="aantalReviews">
+        <p>reviews(20)</p>
+    </div>
+      <div class="filters">
+        <div class="from-to">
+        <div class="from">
+          <div class="tekst-input">
+            <p>from</p>
+            <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+            <datalist id="landen">
+              <option value="Nederland">Nederland</option>
+              <option value="België">België</option>
+              <option value="Duitsland">Duitsland</option>
+              <option value="Polen">Polen</option>
+              <option value="Spanje">Spanje</option>
+              <option value="Frankrijk">Frankrijk</option>
+              <option value="Griekenland">Griekenland</option>
+            </datalist>
+          </div>
         </div>
+        <div class="to">
+          <div class="tekst-input">
+            <p>to</p>
+            <input list="landen" name="landen" placeholder="to" id="from-to-boekcontainer" required />
+            <datalist id="landen">
+              <option value="Nederland">Nederland</option>
+              <option value="België">België</option>
+              <option value="Duitsland">Duitsland</option>
+              <option value="Polen">Polen</option>
+              <option value="Spanje">Spanje</option>
+              <option value="Frankrijk">Frankrijk</option>
+              <option value="Griekenland">Griekenland</option>
+            </datalist>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="logincontainer" id="signupcontainer">
+    <div class="signupContainer">
+      <div class="pictureContainer">
+        <img src="pictures/loginPicture.png" alt="loginPicture" />
+      </div>
+      <div class="invoerContainer">
+        <form action="NewAcc.php" method="post">
+          <p>name</p>
+          <input type="text" name="name" placeholder="name:" required />
+          <p>password</p>
+          <input type="password" name="pw" placeholder="password" required />
+          <button type="submit">send</button>
+        </form>
       </div>
     </div>
   </div>
