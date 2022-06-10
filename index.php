@@ -138,6 +138,56 @@
       </div>
     </form>
   </div>
+  <div class="revieuwcontainer">
+    <div class="bovenbalk">
+      <div class="filterButton">
+        <div class="button" id="filter">
+          <img src="pictures/filterLogo.png" alt="filetr" width="30%" height="100%">
+          <p>filter</p>
+        </div>
+      </div>
+      <div class="MakeReview">
+        <button>make your review</button>
+      </div>
+      <div class="aantalReviews">
+        <p>reviews(20)</p>
+    </div>
+      <div class="filters">
+        <div class="from-to">
+        <div class="from">
+          <div class="tekst-input">
+            <p>from</p>
+            <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+            <datalist id="landen">
+              <option value="Nederland">Nederland</option>
+              <option value="België">België</option>
+              <option value="Duitsland">Duitsland</option>
+              <option value="Polen">Polen</option>
+              <option value="Spanje">Spanje</option>
+              <option value="Frankrijk">Frankrijk</option>
+              <option value="Griekenland">Griekenland</option>
+            </datalist>
+          </div>
+        </div>
+        <div class="to">
+          <div class="tekst-input">
+            <p>to</p>
+            <input list="landen" name="landen" placeholder="to" id="from-to-boekcontainer" required />
+            <datalist id="landen">
+              <option value="Nederland">Nederland</option>
+              <option value="België">België</option>
+              <option value="Duitsland">Duitsland</option>
+              <option value="Polen">Polen</option>
+              <option value="Spanje">Spanje</option>
+              <option value="Frankrijk">Frankrijk</option>
+              <option value="Griekenland">Griekenland</option>
+            </datalist>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <div class="logincontainer" id="signupcontainer">
     <div class="signupContainer">
       <div class="pictureContainer">
