@@ -70,7 +70,7 @@ $result_review = $stmt_review->fetchAll();
     <div class="contact_container_review">
         <p>Review</p>
         <p><a href="http://localhost/CRUD/php/create.php">Voeg hier een nieuwe reviews toe!</a></p>
-        <table class="table_container_read">
+        <table class="table_container_review">
             <tr class="table_review">
                 <th>ID</th>
                 <th>Naam</th>

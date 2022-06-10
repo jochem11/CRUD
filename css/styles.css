@@ -4,7 +4,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
-  list-style-type: none;
   font-family: "Roboto Slab", serif;
 }
 
@@ -316,21 +315,32 @@
 ////////////////////////////////////////|*/
 
 .contact_form {
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: auto;
   background-image: linear-gradient(#576490, #f75590);
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  color: #89daff;
+  padding: 100px;
+}
+
+.contact_form h2 {
+  text-align: center;
+  margin: 10px;
+  color: #b5f8fe;
 }
 
 .contact_form form {
-  width: auto;
+  width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_form label {
+  font-size: 20px;
+  font-style: italic;
+  margin: 3px;
+  color: #b5f8fe;
 }
 
 .contact_form input {
@@ -339,15 +349,15 @@
 }
 
 .contact_form input[type="submit"] {
-  background-color: #ffe74c;
+  background-color: #f75590;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .contact_form input[type="submit"]:active {
-  background-color: #f75590;
+  background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////|
@@ -457,6 +467,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
   gap: 5fr;
+  list-style-type: none;
 }
 
 .footer .footer_lijst h3 {
@@ -565,11 +576,16 @@
 .contact_container_read {
   width: 100%;
   height: auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.contact_container_read table {
+  border: 3px solid #000;
+  padding: 5px;
 }
 
 .contact_container_read td {
@@ -577,7 +593,7 @@
   padding: 5px;
 }
 
-.table_container_read {
+.table_container_review {
   width: 100%;
   height: auto;
   display: flex;
@@ -587,10 +603,17 @@
   flex-wrap: wrap;
 }
 
-.table_container_read td {
+.contact_container_review table {
   border: 3px solid #000;
   padding: 5px;
 }
+
+.contact_container_review td {
+  border: 3px solid #000;
+  padding: 5px;
+}
+
+/* create form contact */
 
 .create_form_contact {
   width: 100%;
@@ -629,15 +652,15 @@
 }
 
 .create_form_contact input[type="submit"] {
-  background-color: #ffe74c;
+  background-color: #f75590;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .create_form_contact input[type="submit"]:active {
-  background-color: #f75590;
+  background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*  create review    */
@@ -679,15 +702,137 @@
 }
 
 .create_form_review input[type="submit"] {
-  background-color: #ffe74c;
+  background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .create_form_review input[type="submit"]:active {
-  background-color: #f75590;
+  background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
+}
+
+/* update contact form*/
+
+.update_form_contact {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #b5f8fe);
+  padding: 10px;
+}
+
+.update_form_contact h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.update_form_contact p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.update_form_contact form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.update_form_contact a {
+  color: #fff;
+  transition: 1s;
+}
+
+.update_form_contact a:hover {
+  color: #f75590;
+  text-decoration: underline;
+}
+
+.update_form_contact input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.update_form_contact label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.update_form_contact input[type="submit"] {
+  background-color: #b5f8fe;
+  box-shadow: 3px 3px #000;
+  border-radius: 5px;
+}
+
+.update_form_contact input[type="submit"]:active {
+  background-color: #ffe74c;
+  transform: translateY(4px);
+  border-radius: 5px;
+}
+
+/* update review form */
+
+.update_form_review {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #f75590);
+  padding: 10px;
+}
+
+.update_form_review h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.update_form_review a {
+  color: #000;
+  transition: 1s;
+}
+
+.update_form_review a:hover {
+  color: #b5f8fe;
+  text-decoration: underline;
+}
+
+.update_form_review p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.update_form_review form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.update_form_review input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.update_form_review label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.update_form_review input[type="submit"] {
+  background-color: #f75590;
+  box-shadow: 3px 3px #000;
+  border-radius: 5px;
+}
+
+.update_form_review input[type="submit"]:active {
+  background-color: #ffe74c;
+  transform: translateY(4px);
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////|
@@ -695,21 +840,32 @@
 /////////////////////////////////////////|*/
 
 .review_form {
-  display: flex;
   width: 100%;
-  justify-content: center;
   height: auto;
-  background-image: linear-gradient(#576490, #89daff);
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  background-image: linear-gradient(#576490, #b5f8fe);
+  padding: 80px;
+}
+
+.review_form h2 {
+  text-align: center;
+  margin: 10px;
   color: #ffe74c;
 }
 
 .review_form form {
-  width: auto;
+  width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review_form label {
+  font-size: 20px;
+  font-style: italic;
+  margin: 3px;
+  color: #ffe74c;
 }
 
 .review_form input {
@@ -718,15 +874,15 @@
 }
 
 .review_form input[type="submit"] {
-  background-color: #f75590;
+  background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .review_form input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////|
@@ -883,6 +1039,7 @@
   background-color: orange;
   border-radius: 5px;
 }
+
 /*////////////////////////////////////////|
 ----------------reviews-------------------|
 //////////////////////////////////////////|*/
@@ -988,4 +1145,53 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/*////////////////////////////////////////|
+----------------algemene voorwaarden-------------------|
+//////////////////////////////////////////|*/
+
+.algemene_voorwaarden {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #21897e;
+}
+
+.algemene_voorwaarden p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.algemene_voorwaarden a {
+  color: #000;
+  transition: 1s;
+}
+
+.algemene_voorwaarden a:hover {
+  color: #ffe74c;
+  transition: 1s;
+  text-decoration: underline;
+}
+
+.algemene_voorwaarden_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#b5f8fe, #ffe74c, #f75590);
+}
+
+.algemene_voorwaarden_container
+  .algemene_voorwaarden_container_valse_berichten
+  ul {
+  padding-left: 15px;
+  list-style-type: disc;
 }

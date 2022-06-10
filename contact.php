@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
@@ -31,15 +31,16 @@ if (isset($_POST['submit'])) {
   <?php include("navbar.php") ?>
 
   <div class="contact_form">
+    <h2>Neem contact op!</h2>
     <form method="post">
-      <label for="titel">Titel: </label><br />
-      <input type="text" name="titel" id="titel" placeholder="Titel: " required /><br />
-      <label for="naam">Naam: </label><br />
-      <input type="text" name="naam" id="naam" placeholder="Naam: " required /><br />
-      <label for="email">Email:</label><br />
-      <input type="text" name="email" id="email" placeholder="Titel: " required /><br />
-      <label for="rating">Bericht: </label><br />
-      <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required /><br />
+      <label for="titel">Titel: </label>
+      <input type="text" name="titel" id="titel" placeholder="Titel: " required />
+      <label for="naam">Naam: </label>
+      <input type="text" name="naam" id="naam" placeholder="Naam: " required />
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" placeholder="Titel: " required />
+      <label for="rating">Bericht: </label>
+      <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required />
       <input type="submit" value="submit" name="submit" id="submit" />
     </form>
   </div>

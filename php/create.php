@@ -54,7 +54,7 @@ if (isset($_POST['naam']) && isset($_POST['titel']) && isset($_POST['bericht']) 
             <input type="text" name="naam" placeholder="Naam contact" required>
             <label for="email">Email contact</label>
             <input type="text" name="email" placeholder="Email contact" id="email" required>
-            <label for="titel">titel contact</label>
+            <label for="titel">Titel contact</label>
             <input type="text" name="titel" placeholder="Titel contact" id="titel" required>
             <label for="bericht">Bericht contact</label>
             <input type="text" name="bericht" placeholder="Bericht contact" id="bericht" required>

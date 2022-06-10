@@ -29,18 +29,17 @@ if (isset($_POST['submit'])) {
 
 <body>
     <?php include("navbar.php") ?>
-    <a href="http://185.102.25.165/OS/closed/closed.html"></a>
-    <a href="http://185.102.25.165/OS/"></a>
     <div class="review_form">
+        <h2>Voeg hier een review toe!</h2>
         <form method="post">
-            <label for="naam">Naam: </label><br />
-            <input type="text" name="naam" id="naam" placeholder="Naam: " required /><br />
-            <label for="titel">Titel: </label><br />
-            <input type="text" name="titel" id="titel" placeholder="Titel: " required /><br />
-            <label for="bericht">Bericht:</label><br />
-            <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required /><br />
-            <label for="rating">Rating: </label><br />
-            <input type="text" name="rating" id="rating" placeholder="Kies tussen de 1 en 5: " required /><br />
+            <label for="naam">Naam: </label>
+            <input type="text" name="naam" id="naam" placeholder="Naam: " required />
+            <label for="titel">Titel: </label>
+            <input type="text" name="titel" id="titel" placeholder="Titel: " required />
+            <label for="bericht">Bericht:</label>
+            <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required />
+            <label for="rating">Rating: </label>
+            <input type="text" name="rating" id="rating" placeholder="Kies tussen de 1 en 5: " required />
             <input type="submit" value="submit" name="submit" id="submit" />
         </form>
     </div>
