@@ -4,7 +4,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
-  list-style-type: none;
   font-family: "Roboto Slab", serif;
 }
 
@@ -322,6 +321,12 @@
   padding: 100px;
 }
 
+.contact_form h2 {
+  text-align: center;
+  margin: 10px;
+  color: #b5f8fe;
+}
+
 .contact_form form {
   width: 100%;
   height: auto;
@@ -346,13 +351,13 @@
 .contact_form input[type="submit"] {
   background-color: #f75590;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .contact_form input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////|
@@ -462,6 +467,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
   gap: 5fr;
+  list-style-type: none;
 }
 
 .footer .footer_lijst h3 {
@@ -607,6 +613,8 @@
   padding: 5px;
 }
 
+/* create form contact */
+
 .create_form_contact {
   width: 100%;
   height: auto;
@@ -646,13 +654,13 @@
 .create_form_contact input[type="submit"] {
   background-color: #f75590;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .create_form_contact input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*  create review    */
@@ -696,13 +704,13 @@
 .create_form_review input[type="submit"] {
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .create_form_review input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /* update contact form*/
@@ -757,13 +765,13 @@
 .update_form_contact input[type="submit"] {
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .update_form_contact input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /* update review form */
@@ -818,13 +826,13 @@
 .update_form_review input[type="submit"] {
   background-color: #f75590;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .update_form_review input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////|
@@ -836,6 +844,12 @@
   height: auto;
   background-image: linear-gradient(#576490, #b5f8fe);
   padding: 80px;
+}
+
+.review_form h2 {
+  text-align: center;
+  margin: 10px;
+  color: #ffe74c;
 }
 
 .review_form form {
@@ -862,13 +876,13 @@
 .review_form input[type="submit"] {
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .review_form input[type="submit"]:active {
   background-color: #ffe74c;
   transform: translateY(4px);
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////|
@@ -1029,6 +1043,7 @@
   background-color: orange;
   border-radius: 5px;
 }
+
 /*////////////////////////////////////////|
 ----------------reviews-------------------|
 //////////////////////////////////////////|*/
@@ -1038,4 +1053,54 @@
   height: 100%;
   width: 100%;
   background-color: green;
+}
+
+/*////////////////////////////////////////|
+----------------algemene voorwaarden-------------------|
+//////////////////////////////////////////|*/
+
+.algemene_voorwaarden {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #21897e;
+}
+
+.algemene_voorwaarden p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.algemene_voorwaarden a {
+  color: #000;
+  transition: 1s;
+}
+
+.algemene_voorwaarden a:hover {
+  color: #ffe74c;
+  transition: 1s;
+  text-decoration: underline;
+}
+
+.algemene_voorwaarden_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#b5f8fe, #ffe74c, #f75590);
+}
+
+.algemene_voorwaarden_container
+  .algemene_voorwaarden_container_valse_berichten
+  ul {
+  padding-left: 15px;
+  list-style-type: disc;
 }

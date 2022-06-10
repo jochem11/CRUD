@@ -30,6 +30,7 @@ if (isset($_POST['submit'])) {
 <body>
     <?php include("navbar.php") ?>
     <div class="review_form">
+        <h2>Voeg hier een review toe!</h2>
         <form method="post">
             <label for="naam">Naam: </label>
             <input type="text" name="naam" id="naam" placeholder="Naam: " required />

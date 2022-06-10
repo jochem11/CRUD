@@ -31,6 +31,7 @@ if (isset($_POST['submit'])) {
   <?php include("navbar.php") ?>
 
   <div class="contact_form">
+    <h2>Neem contact op!</h2>
     <form method="post">
       <label for="titel">Titel: </label>
       <input type="text" name="titel" id="titel" placeholder="Titel: " required />
