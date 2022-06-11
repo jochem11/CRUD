@@ -1120,28 +1120,73 @@
 .revieuwcontainer .bovenbalk .filters {
   height: fit-content;
   padding-bottom: 5px;
-  width: 100%;
+  width: 50%;
   background-color: #b5f8fe;
+  display: none;
 }
 
 .revieuwcontainer .bovenbalk .filters .from-to {
   width: 100%;
-  height: fit-content;
-}
-
-.revieuwcontainer .bovenbalk .filters .from-to .from {
-  width: 100%;
-  height: 60px;
-  background-color: darkcyan;
+  height: 70px;
+  background-color:crimson;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .to {
+.revieuwcontainer .bovenbalk .filters .from-to .from {
+  width: 50%;
+  height: 100%;
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revieuwcontainer .bovenbalk .filters .from-to .from p,
+.revieuwcontainer .bovenbalk .filters .from-to .to p {
+  font-size: 11px;
+}
+
+.revieuwcontainer .bovenbalk .filters .from-to .from input {
   width: 100%;
-  height: 60px;
-  background-color: darkblue;
+}
+
+.revieuwcontainer .bovenbalk .filters .from-to .to {
+  width: 50%;
+  height: 100%;
+  background-color:lightcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revieuwcontainer .bovenbalk .filters .title {
+  width: 100%;
+  height: 70px;
+  background-color:lavender ;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revieuwcontainer .bovenbalk .filters .bericht {
+  width: 100%;
+  height: fit-content;
+  background-color: darkslateblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revieuwcontainer .bovenbalk .filters .bericht textarea {
+  resize: none;
+}
+
+.revieuwcontainer .bovenbalk .filters .rating {
+  border-block-end-width: 100%;
+  height: 50px;
+  background-color: mediumblue;
   display: flex;
   align-items: center;
   justify-content: center;

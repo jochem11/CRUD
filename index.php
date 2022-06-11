@@ -101,9 +101,6 @@
       </div>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 150">
-    <path fill="#0099ff" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,272C480,288,600,288,720,266.7C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-  </svg>
   <div class="vluchtencontainer">
     <form action="" method="post">
       <div class="vlucht">
@@ -140,7 +137,7 @@
   </div>
   <div class="revieuwcontainer">
     <div class="bovenbalk">
-      <div class="filterButton">
+      <div class="filterButton" id="filerbutton">
         <div class="button" id="filter">
           <img src="pictures/filterLogo.png" alt="filetr" width="30%" height="100%">
           <p>filter</p>
@@ -152,39 +149,65 @@
       <div class="aantalReviews">
         <p>reviews(20)</p>
     </div>
-      <div class="filters">
+      <div class="filters" id="filters">
+        <form action="" method="post">
         <div class="from-to">
-        <div class="from">
-          <div class="tekst-input">
-            <p>from</p>
-            <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
-            <datalist id="landen">
-              <option value="Nederland">Nederland</option>
-              <option value="België">België</option>
-              <option value="Duitsland">Duitsland</option>
-              <option value="Polen">Polen</option>
-              <option value="Spanje">Spanje</option>
-              <option value="Frankrijk">Frankrijk</option>
-              <option value="Griekenland">Griekenland</option>
-            </datalist>
+          <div class="from">
+            <div>
+              <p>from</p>
+              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+              <datalist id="landen">
+                <option value="Nederland">Nederland</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Polen">Polen</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Griekenland">Griekenland</option>
+              </datalist>
+            </div>
+          </div>
+          <div class="to">
+            <div>
+              <p>to</p>
+              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+              <datalist id="landen">
+                <option value="Nederland">Nederland</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Polen">Polen</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Griekenland">Griekenland</option>
+              </datalist>
+            </div>
           </div>
         </div>
-        <div class="to">
-          <div class="tekst-input">
-            <p>to</p>
-            <input list="landen" name="landen" placeholder="to" id="from-to-boekcontainer" required />
-            <datalist id="landen">
-              <option value="Nederland">Nederland</option>
-              <option value="België">België</option>
-              <option value="Duitsland">Duitsland</option>
-              <option value="Polen">Polen</option>
-              <option value="Spanje">Spanje</option>
-              <option value="Frankrijk">Frankrijk</option>
-              <option value="Griekenland">Griekenland</option>
-            </datalist>
+        <div class="title">
+          <div>
+            <p>title</p>
+            <input type="text" placeholder="title" name="title">
+         </div>
+        </div>
+        <div class="bericht">
+            <div>
+              <p>bericht</p>
+              <textarea name="bericht" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="rating">
+          <div>
+            <p>rating</p>
+            <select name="rating">
+              <option value="1">&#9733;</option>
+              <option value="2">&#9733; &#9733;</option>
+              <option value="3">&#9733; &#9733; &#9733;</option>
+              <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
+              <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+            </select>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
   </div>
