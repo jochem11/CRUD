@@ -1191,6 +1191,100 @@
   align-items: center;
   justify-content: center;
 }
+
+.revieuwcontainer .revieuws {
+  min-height: 200px;
+  height: 100%;
+  width: 100%;
+  background-color: #b5f8fe;
+  border-top: 2px solid rgba(0, 0, 0, 0.781);
+}
+
+.revieuwcontainer .revieuws .revieuw {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  background-color: rgb(94, 94, 119);
+  padding-left: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.566);
+}
+
+.revieuwcontainer .revieuws .revieuw .user {
+  height: 50px;
+  width: 50%;
+  background-color: darkgreen;
+}
+
+.revieuwcontainer .revieuws .revieuw .from-to {
+  width: 30%;
+  height: 50px;
+  display: flex;
+}
+
+.revieuwcontainer .revieuws .revieuw .from-to .from {
+  width: 40%;
+  height: 100%;
+  background-color: darkgrey;
+  display: flex;
+  align-items: center;
+}
+
+.revieuwcontainer .revieuws .revieuw .from-to .tussenstuk {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(56, 46, 46);
+  display: flex;
+  align-items: center;
+  
+}
+
+.revieuwcontainer .revieuws .revieuw .from-to .to {
+  width: 40%;
+  height: 100%;
+  background-color: darksalmon;
+  display: flex;
+  align-items: center;
+}
+
+.revieuwcontainer .revieuws .revieuw .title {
+  height: 50px;
+  width: 50%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.revieuwcontainer .revieuws .revieuw .message {
+  width: 50%;
+  height: fit-content;
+  background-color: chocolate;
+}
+
+.revieuwcontainer .revieuws .revieuw .rating {
+  padding-top: 10px;
+  height: 40px;
+  width: 50%;
+  background-color: darkgoldenrod;
+}
+
+.revieuwcontainer .revieuws .revieuw .rateRevieuw {
+  padding-top: 10px;
+  width: 50%;
+  height: fit-content;
+  background-color: ghostwhite;
+  margin-bottom: 5px;
+}
+
+.revieuwcontainer .revieuws .revieuw .rateRevieuw p {
+  padding-bottom: 10px;
+}
+
+.revieuwcontainer .revieuws .revieuw .rateRevieuw form button {
+  float: right;
+  margin-right: 10px;
+}
+
 /*////////////////////////////////////////|
 ----------------algemene voorwaarden-------------------|
 //////////////////////////////////////////|*/

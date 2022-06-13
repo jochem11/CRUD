@@ -210,6 +210,50 @@
       </form>
     </div>
   </div>
+  <div class="revieuws">
+    <div class="revieuw">
+      <div class="user">
+        <p>UserName</p>
+      </div>
+      <div class="from-to">
+        <div class="from">
+          <p>Nederland</p>
+        </div>
+        <div class="tussenstuk">
+          <p> --- </p>
+        </div>
+        <div class="to">
+          <p>Nederland</p>
+        </div>
+      </div>
+      <div class="title">
+        <h4>Title</h4>
+      </div>
+      <div class="message">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit enim, quasi, harum delectus temporibus hic officiis amet sint corporis cupiditate eveniet veniam repellat maxime animi impedit voluptas, eligendi facere! Similique nemo officia cupiditate nostrum rem beatae. Eos, illum iusto non sint facere pariatur ut incidunt maxime. Perferendis consequatur perspiciatis voluptate?
+        </p>
+      </div>
+      <div class="rating">
+        <p>
+          rating:   &#9733; &#9733; &#9733; &#9733; &#9733;
+        </p>
+      </div>
+      <div class="rateRevieuw">
+        <p>rate this revieuw:</p>
+        <form action="" method="post">
+          <select name="rating">
+            <option value="1">&#9733;</option>
+            <option value="2">&#9733; &#9733;</option>
+            <option value="3">&#9733; &#9733; &#9733;</option>
+            <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
+            <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+          </select>
+          <button type="submit">Rate</button>
+        </form>
+      </div>
+    </div>
+  </div>
   </div>
   <div class="logincontainer" id="signupcontainer">
     <div class="signupContainer">
