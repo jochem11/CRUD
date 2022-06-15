@@ -56,6 +56,7 @@
     </div>
     <?php include("footer.php") ?>
     <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

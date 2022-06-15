@@ -132,56 +132,103 @@
       </div>
       <div class="aantalReviews">
         <p>reviews(20)</p>
-    </div>
+      </div>
       <div class="filters" id="filters">
         <form action="" method="post">
-        <div class="from-to">
-          <div class="from">
-            <div>
-              <p>from</p>
-              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
-              <datalist id="landen">
-                <option value="Nederland">Nederland</option>
-                <option value="België">België</option>
-                <option value="Duitsland">Duitsland</option>
-                <option value="Polen">Polen</option>
-                <option value="Spanje">Spanje</option>
-                <option value="Frankrijk">Frankrijk</option>
-                <option value="Griekenland">Griekenland</option>
-              </datalist>
+          <div class="from-to">
+            <div class="from">
+              <div>
+                <p>from</p>
+                <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+                <datalist id="landen">
+                  <option value="Nederland">Nederland</option>
+                  <option value="België">België</option>
+                  <option value="Duitsland">Duitsland</option>
+                  <option value="Polen">Polen</option>
+                  <option value="Spanje">Spanje</option>
+                  <option value="Frankrijk">Frankrijk</option>
+                  <option value="Griekenland">Griekenland</option>
+                </datalist>
+              </div>
+            </div>
+            <div class="to">
+              <div>
+                <p>to</p>
+                <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+                <datalist id="landen">
+                  <option value="Nederland">Nederland</option>
+                  <option value="België">België</option>
+                  <option value="Duitsland">Duitsland</option>
+                  <option value="Polen">Polen</option>
+                  <option value="Spanje">Spanje</option>
+                  <option value="Frankrijk">Frankrijk</option>
+                  <option value="Griekenland">Griekenland</option>
+                </datalist>
+              </div>
             </div>
           </div>
-          <div class="to">
+          <div class="title">
             <div>
-              <p>to</p>
-              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
-              <datalist id="landen">
-                <option value="Nederland">Nederland</option>
-                <option value="België">België</option>
-                <option value="Duitsland">Duitsland</option>
-                <option value="Polen">Polen</option>
-                <option value="Spanje">Spanje</option>
-                <option value="Frankrijk">Frankrijk</option>
-                <option value="Griekenland">Griekenland</option>
-              </datalist>
+              <p>title</p>
+              <input type="text" placeholder="title" name="title">
             </div>
           </div>
-        </div>
-        <div class="title">
-          <div>
-            <p>title</p>
-            <input type="text" placeholder="title" name="title">
-         </div>
-        </div>
-        <div class="bericht">
+          <div class="bericht">
             <div>
               <p>bericht</p>
               <textarea name="bericht" cols="30" rows="10"></textarea>
             </div>
+          </div>
+          <div class="rating">
+            <div>
+              <p>rating</p>
+              <select name="rating">
+                <option value="1">&#9733;</option>
+                <option value="2">&#9733; &#9733;</option>
+                <option value="3">&#9733; &#9733; &#9733;</option>
+                <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
+                <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="user">
+          <p>UserName</p>
+        </div>
+        <div class="from-to">
+          <div class="tekst">
+            <p>trip:</p>
+          </div>
+          <div class="from">
+            <p>Nederland</p>
+          </div>
+          <div class="tussenstuk">
+            <p> --- </p>
+          </div>
+          <div class="to">
+            <p>Nederland</p>
+          </div>
+        </div>
+        <div class="title">
+          <h4>Title</h4>
+        </div>
+        <div class="message">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit enim, quasi, harum delectus temporibus hic officiis amet sint corporis cupiditate eveniet veniam repellat maxime animi impedit voluptas, eligendi facere! Similique nemo officia cupiditate nostrum rem beatae. Eos, illum iusto non sint facere pariatur ut incidunt maxime. Perferendis consequatur perspiciatis voluptate?
+          </p>
         </div>
         <div class="rating">
-          <div>
-            <p>rating</p>
+          <p>
+            rating: &#9733; &#9733; &#9733; &#9733; &#9733;
+          </p>
+        </div>
+        <div class="ratereview">
+          <p>rate this review:</p>
+          <form action="" method="post">
             <select name="rating">
               <option value="1">&#9733;</option>
               <option value="2">&#9733; &#9733;</option>
@@ -189,8 +236,10 @@
               <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
               <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
             </select>
-          </div>
+            <button type="submit">Rate</button>
+          </form>
         </div>
+      </div>
       </form>
     </div>
   </div>

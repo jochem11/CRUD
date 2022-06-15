@@ -310,7 +310,7 @@
   }
 }
 
-/*//////////////////////////////////////|
+/*/ /////////////////////////////////////|
 -----------contact------------|
 ////////////////////////////////////////|*/
 
@@ -444,7 +444,7 @@
   background-color: #89daff;
 }
 
-/*//////////////////////////////////////|
+/*/ /////////////////////////////////////|
 -----------footer------------|
 ////////////////////////////////////////|*/
 
@@ -464,10 +464,13 @@
 .footer .footer_lijst ul {
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
-  gap: 5fr;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .footer .footer_lijst h3 {
@@ -980,7 +983,7 @@
   border-radius: 5px;
 }
 
-/*///////////////////////////////////////|
+/*/ //////////////////////////////////////|
 ---------------vluchten------------------|
 /////////////////////////////////////////|*/
 
@@ -1393,23 +1396,7 @@
   background-color: #89daff;
 }
 
-.NewReviewContainer .NewReview .from-to {
-  width: 100%;
-  height: 60px;
-  background-color: #547cff;
-  display: flex;
-}
-
-.NewReviewContainer .NewReview .from-to .from {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: green;
-}
-
-/*////////////////////////////////////////|
+/*/ ///////////////////////////////////////|
 ----------------algemene voorwaarden-------------------|
 //////////////////////////////////////////|*/
 
@@ -1490,9 +1477,49 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  background-image: linear-gradient(#f75590, #ffe74c, #b5f8fe);
+  overflow: hidden;
+}
+
+.privacy_beleid_container p {
+  width: 100%;
+  height: auto;
+}
+
+.over_dit_privacy_beleid {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .privacy_beleid_container {
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-left: 50px;
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .privacy_beleid_container {
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .privacy_beleid_container {
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
 }
 
 .accordion {
+  height: auto;
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -1500,9 +1527,38 @@
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
   font-size: 15px;
   transition: 0.4s;
+}
+
+@media only screen and (max-width: 500px) {
+  .accordion {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .accordion {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .accordion {
+    width: 70%;
+  }
 }
 
 .active,
@@ -1511,9 +1567,34 @@
 }
 
 .panel {
+  width: 100%;
   padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (max-width: 500px) {
+  .panel {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .panel {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .panel {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .panel {
+    width: 70%;
+  }
 }
