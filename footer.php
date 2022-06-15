@@ -38,9 +38,9 @@
         </nav>
     </div>
     <div class="algemene_voorwaarden">
-        <a href="algemenvoorwaarden.php">Algemene voorwaarden</a>
+        <a href="algemenevoorwaarden.php">Algemene voorwaarden</a>
         <p>||</p>
-        <a href="https://www.youtube.com">Privacybeleid</a>
+        <a href="privacy.php">Privacybeleid</a>
     </div>
 </body>
 
