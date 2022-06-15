@@ -1139,14 +1139,14 @@
 ----------------reviews-------------------|
 //////////////////////////////////////////|*/
 
-.revieuwcontainer {
+.reviewcontainer {
   min-height: 400px;
   height: 100%;
   width: 100%;
   background-color: green;
 }
 
-.revieuwcontainer .bovenbalk {
+.reviewcontainer .bovenbalk {
   width: 100%;
   height: fit-content;
   background-color: white;
@@ -1157,15 +1157,14 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filterButton {
+.reviewcontainer .bovenbalk .filterButton {
   width: 33%;
   height: 50px;
-  background-color: blue;
   display: flex;
   align-items: center;
 }
 
-.revieuwcontainer .bovenbalk .filterButton .button {
+.reviewcontainer .bovenbalk .filterButton .button {
   width: 50%;
   height: 90%;
   background-color: white;
@@ -1175,46 +1174,45 @@
   cursor: pointer;
 }
 
-.revieuwcontainer .bovenbalk .filterButton .button p {
+.reviewcontainer .bovenbalk .filterButton .button p {
   font-size: 30px;
   margin-left: 10px;
 }
 
-.revieuwcontainer .bovenbalk .MakeReview {
+.reviewcontainer .bovenbalk .MakeReview {
   width: 34%;
   height: 50px;
-  background-color: blanchedalmond;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .MakeReview button {
+.reviewcontainer .bovenbalk .MakeReview button {
   width: 80%;
   height: 90%;
-  background-color: cornsilk;
+  background-color: #f6f6f6;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-size: 30px;
+  cursor: pointer;
 }
 
-.revieuwcontainer .bovenbalk .aantalReviews {
+.reviewcontainer .bovenbalk .aantalReviews {
   width: 33%;
   height: 50px;
-  background-color: #f75590;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .aantalReviews p {
+.reviewcontainer .bovenbalk .aantalReviews p {
   font-size: 30px;
   margin-right: 10px;
 }
 
-.revieuwcontainer .bovenbalk .filters {
+.reviewcontainer .bovenbalk .filters {
   height: fit-content;
   padding-bottom: 5px;
   width: 50%;
@@ -1222,7 +1220,7 @@
   display: none;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to {
+.reviewcontainer .bovenbalk .filters .from-to {
   width: 100%;
   height: 70px;
   background-color: crimson;
@@ -1231,7 +1229,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .from {
+.reviewcontainer .bovenbalk .filters .from-to .from {
   width: 50%;
   height: 100%;
   background-color: greenyellow;
@@ -1240,16 +1238,16 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .from p,
-.revieuwcontainer .bovenbalk .filters .from-to .to p {
+.reviewcontainer .bovenbalk .filters .from-to .from p,
+.reviewcontainer .bovenbalk .filters .from-to .to p {
   font-size: 11px;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .from input {
+.reviewcontainer .bovenbalk .filters .from-to .from input {
   width: 100%;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .to {
+.reviewcontainer .bovenbalk .filters .from-to .to {
   width: 50%;
   height: 100%;
   background-color: lightcyan;
@@ -1258,7 +1256,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .title {
+.reviewcontainer .bovenbalk .filters .title {
   width: 100%;
   height: 70px;
   background-color: lavender;
@@ -1267,7 +1265,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .bericht {
+.reviewcontainer .bovenbalk .filters .bericht {
   width: 100%;
   height: fit-content;
   background-color: darkslateblue;
@@ -1276,11 +1274,11 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .bericht textarea {
+.reviewcontainer .bovenbalk .filters .bericht textarea {
   resize: none;
 }
 
-.revieuwcontainer .bovenbalk .filters .rating {
+.reviewcontainer .bovenbalk .filters .rating {
   border-block-end-width: 100%;
   height: 50px;
   background-color: mediumblue;
@@ -1289,105 +1287,126 @@
   justify-content: center;
 }
 
-.revieuwcontainer .revieuws {
+.reviewcontainer .reviews {
   min-height: 200px;
   height: 100%;
   width: 100%;
-  background-color: #b5f8fe;
+  background-color: white;
   border-top: 2px solid rgba(0, 0, 0, 0.781);
+  display: flex;
+  justify-content: center;
 }
 
-.revieuwcontainer .revieuws .revieuw {
-  width: 100%;
+.reviewcontainer .reviews .review {
+  width: 50%;
   min-height: 100px;
   height: 100%;
-  background-color: rgb(94, 94, 119);
+  margin-left: 10px;
   padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.566);
+  font-size: 120%;
+  margin-top: 10px;
+  border: 1px solid darkgrey;
 }
 
-.revieuwcontainer .revieuws .revieuw .user {
+.reviewcontainer .reviews .review .user {
   height: 50px;
   width: 50%;
-  background-color: darkgreen;
+  display: flex;
+  align-items: center;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to {
-  width: 30%;
+.reviewcontainer .reviews .review .from-to {
+  width: 100%;
   height: 50px;
   display: flex;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to .tekst {
-  width: 10%;
+.reviewcontainer .reviews .review .from-to .tekst {
+  width: fit-content;
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reviewcontainer .reviews .review .from-to .from {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reviewcontainer .reviews .review .from-to .tussenstuk {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.reviewcontainer .reviews .review .from-to .to {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reviewcontainer .reviews .review .title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reviewcontainer .reviews .review .message {
+  width: 100%;
+  height: fit-content;
+}
+
+.reviewcontainer .reviews .review .rating {
+  padding-top: 10px;
+  height: 40px;
+  width: 100%;
+  padding-bottom: 3px;
+}
+
+.NewReviewContainer {
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewReviewContainer .NewReview {
+  width: 50%;
+  min-height: 100px;
+  height: fit-content;
+  background-color: #89daff;
+}
+
+.NewReviewContainer .NewReview .from-to {
+  width: 100%;
+  height: 60px;
+  background-color: #547cff;
+  display: flex;
+}
+
+.NewReviewContainer .NewReview .from-to .from {
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: darkorange;
-}
-
-.revieuwcontainer .revieuws .revieuw .from-to .from {
-  width: 40%;
-  height: 100%;
-  background-color: darkgrey;
-  display: flex;
-  align-items: center;
-}
-
-.revieuwcontainer .revieuws .revieuw .from-to .tussenstuk {
-  width: 20%;
-  height: 100%;
-  background-color: rgb(56, 46, 46);
-  display: flex;
-  align-items: center;
-}
-
-.revieuwcontainer .revieuws .revieuw .from-to .to {
-  width: 40%;
-  height: 100%;
-  background-color: darksalmon;
-  display: flex;
-  align-items: center;
-}
-
-.revieuwcontainer .revieuws .revieuw .title {
-  height: 50px;
-  width: 50%;
-  background-color: aliceblue;
-  display: flex;
-  align-items: center;
-}
-
-.revieuwcontainer .revieuws .revieuw .message {
-  width: 50%;
-  height: fit-content;
-  background-color: chocolate;
-}
-
-.revieuwcontainer .revieuws .revieuw .rating {
-  padding-top: 10px;
-  height: 40px;
-  width: 50%;
-  background-color: darkgoldenrod;
-}
-
-.revieuwcontainer .revieuws .revieuw .rateRevieuw {
-  padding-top: 10px;
-  width: 50%;
-  height: fit-content;
-  background-color: ghostwhite;
-  margin-bottom: 5px;
-}
-
-.revieuwcontainer .revieuws .revieuw .rateRevieuw p {
-  padding-bottom: 10px;
-}
-
-.revieuwcontainer .revieuws .revieuw .rateRevieuw form button {
-  float: right;
-  margin-right: 10px;
+  background-color: green;
 }
 
 /*////////////////////////////////////////|

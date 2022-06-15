@@ -85,22 +85,6 @@
       </form>
     </div>
   </div>
-  <div class="logincontainer" id="logincontainer">
-    <div class="loginveld">
-      <div class="pictureContainer">
-        <img src="pictures/loginPicture.png" alt="loginPicture" />
-      </div>
-      <div class="invoerContainer">
-        <form action="post">
-          <p>name</p>
-          <input type="text" name="name" placeholder="name:" required />
-          <p>password</p>
-          <input type="password" name="pw" placeholder="password" required />
-          <button type="submit">send</button>
-        </form>
-      </div>
-    </div>
-  </div>
   <div class="vluchtencontainer">
     <form action="" method="post">
       <div class="vlucht">
@@ -135,7 +119,7 @@
       </div>
     </form>
   </div>
-  <div class="revieuwcontainer">
+  <div class="reviewcontainer">
     <div class="bovenbalk">
       <div class="filterButton" id="filerbutton">
         <div class="button" id="filter">
@@ -210,8 +194,8 @@
       </form>
     </div>
   </div>
-  <div class="revieuws">
-    <div class="revieuw">
+  <div class="reviews">
+    <div class="review">
       <div class="user">
         <p>UserName</p>
       </div>
@@ -242,21 +226,22 @@
           rating:   &#9733; &#9733; &#9733; &#9733; &#9733;
         </p>
       </div>
-      <div class="rateRevieuw">
-        <p>rate this revieuw:</p>
-        <form action="" method="post">
-          <select name="rating">
-            <option value="1">&#9733;</option>
-            <option value="2">&#9733; &#9733;</option>
-            <option value="3">&#9733; &#9733; &#9733;</option>
-            <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
-            <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
-          </select>
-          <button type="submit">Rate</button>
-        </form>
-      </div>
     </div>
   </div>
+  </div>
+  <div class="NewReviewContainer">
+    <div class="NewReview">
+        <form action="" method="post">
+          <div class="from-to">
+            <div class="from">
+              <div>
+                
+              </div>
+            </div>
+            <div class="to"></div>
+          </div>
+        </form>
+    </div>
   </div>
   <div class="logincontainer" id="signupcontainer">
     <div class="signupContainer">
@@ -265,6 +250,22 @@
       </div>
       <div class="invoerContainer">
         <form action="NewAcc.php" method="post">
+          <p>name</p>
+          <input type="text" name="name" placeholder="name:" required />
+          <p>password</p>
+          <input type="password" name="pw" placeholder="password" required />
+          <button type="submit">send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="logincontainer" id="logincontainer">
+    <div class="loginveld">
+      <div class="pictureContainer">
+        <img src="pictures/loginPicture.png" alt="loginPicture" />
+      </div>
+      <div class="invoerContainer">
+        <form action="post">
           <p>name</p>
           <input type="text" name="name" placeholder="name:" required />
           <p>password</p>
