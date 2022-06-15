@@ -1163,7 +1163,6 @@
 .reviewcontainer .bovenbalk .filterButton {
   width: 33%;
   height: 50px;
-  background-color: blue;
   display: flex;
   align-items: center;
 }
@@ -1186,7 +1185,6 @@
 .reviewcontainer .bovenbalk .MakeReview {
   width: 34%;
   height: 50px;
-  background-color: blanchedalmond;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1195,18 +1193,18 @@
 .reviewcontainer .bovenbalk .MakeReview button {
   width: 80%;
   height: 90%;
-  background-color: cornsilk;
+  background-color: #f6f6f6;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .reviewcontainer .bovenbalk .aantalReviews {
   width: 33%;
   height: 50px;
-  background-color: #f75590;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1296,101 +1294,106 @@
   min-height: 200px;
   height: 100%;
   width: 100%;
-  background-color: #b5f8fe;
+  background-color: white;
   border-top: 2px solid rgba(0, 0, 0, 0.781);
+  display: flex;
+  justify-content: center;
 }
 
 .reviewcontainer .reviews .review {
-  width: 100%;
+  width: 50%;
   min-height: 100px;
   height: 100%;
-  background-color: rgb(94, 94, 119);
+  margin-left: 10px;
   padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.566);
+  font-size: 120%;
+  margin-top: 10px;
+  border: 1px solid darkgrey;
 }
 
 .reviewcontainer .reviews .review .user {
   height: 50px;
   width: 50%;
-  background-color: darkgreen;
+  display: flex;
+  align-items: center;
 }
 
 .reviewcontainer .reviews .review .from-to {
-  width: 30%;
+  width: 100%;
   height: 50px;
   display: flex;
 }
 
 .reviewcontainer .reviews .review .from-to .tekst {
-  width: 10%;
+  width: fit-content;
+  margin-right: 10px;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: darkorange;
 }
 
 .reviewcontainer .reviews .review .from-to .from {
-  width: 40%;
+  width: fit-content;
   height: 100%;
-  background-color: darkgrey;
   display: flex;
   align-items: center;
 }
 
 .reviewcontainer .reviews .review .from-to .tussenstuk {
-  width: 20%;
+  width: fit-content;
   height: 100%;
-  background-color: rgb(56, 46, 46);
   display: flex;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .reviewcontainer .reviews .review .from-to .to {
-  width: 40%;
+  width: fit-content;
   height: 100%;
-  background-color: darksalmon;
   display: flex;
   align-items: center;
 }
 
 .reviewcontainer .reviews .review .title {
   height: 50px;
-  width: 50%;
-  background-color: aliceblue;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .reviewcontainer .reviews .review .message {
-  width: 50%;
+  width: 100%;
   height: fit-content;
-  background-color: chocolate;
 }
 
 .reviewcontainer .reviews .review .rating {
   padding-top: 10px;
   height: 40px;
-  width: 50%;
-  background-color: darkgoldenrod;
+  width: 100%;
+  padding-bottom: 3px;
 }
 
-.reviewcontainer .reviews .review .ratereview {
-  padding-top: 10px;
+.NewReviewContainer {
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewReviewContainer .NewReview {
   width: 50%;
+  min-height: 100px;
   height: fit-content;
-  background-color: ghostwhite;
-  margin-bottom: 5px;
-}
-
-.reviewcontainer .reviews .review .ratereview p {
-  padding-bottom: 10px;
-}
-
-.reviewcontainer .reviews .review .ratereview form button {
-  float: right;
-  margin-right: 10px;
+  background-color: #89daff;
 }
 
 /*/ ///////////////////////////////////////|
