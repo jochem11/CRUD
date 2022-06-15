@@ -56,8 +56,8 @@ $result_review = $stmt_review->fetchAll();
                 echo '<td>' . $contact['email'] . '</td>';
                 echo '<td>' . $contact['titel'] . '</td>';
                 echo '<td>' . $contact['bericht'] . '</td>';
-                echo '<td><a href="php/update.php?ID=' . $contact['ID'] . '">Update</a></td>';
-                echo '<td><a href="php/delete.php?ID=' . $contact['ID'] . '">Delete</a></td>';
+                echo '<td class="contact_update_knop"><a href="php/update.php?ID=' . $contact['ID'] . '">Update</a></td>';
+                echo '<td class="contact_delete_knop"><a href="php/delete.php?ID=' . $contact['ID'] . '">Delete</a></td>';
                 echo '</tr>';
             }
             ?>
@@ -67,7 +67,7 @@ $result_review = $stmt_review->fetchAll();
 
     <!--table van review-->
 
-    <div class="contact_container_review">
+    <div class="review_container_read">
         <p>Review</p>
         <p><a href="http://localhost/CRUD/php/create.php">Voeg hier een nieuwe reviews toe!</a></p>
         <table class="table_container_review">
@@ -90,8 +90,8 @@ $result_review = $stmt_review->fetchAll();
                 echo '<td>' . $review['titel'] . '</td>';
                 echo '<td>' . $review['bericht'] . '</td>';
                 echo '<td>' . $review['rating'] . '</td>';
-                echo '<td><a href="php/update.php?ID=' . $review['ID'] . '">Update</a></td>';
-                echo '<td><a href="php/delete.php?ID=' . $review['ID'] . '">Delete</a></td>';
+                echo '<td class="review_update_knop"><a href="php/update.php?ID=' . $review['ID'] . '">Update</a></td>';
+                echo '<td class="review_delete_knop"><a href="php/delete.php?ID=' . $review['ID'] . '">Delete</a></td>';
                 echo '</tr>';
             }
             ?>
