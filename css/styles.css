@@ -310,7 +310,7 @@
   }
 }
 
-/*//////////////////////////////////////|
+/*/ /////////////////////////////////////|
 -----------contact------------|
 ////////////////////////////////////////|*/
 
@@ -444,7 +444,7 @@
   background-color: #89daff;
 }
 
-/*//////////////////////////////////////|
+/*/ /////////////////////////////////////|
 -----------footer------------|
 ////////////////////////////////////////|*/
 
@@ -464,10 +464,13 @@
 .footer .footer_lijst ul {
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
-  gap: 5fr;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .footer .footer_lijst h3 {
@@ -980,7 +983,7 @@
   border-radius: 5px;
 }
 
-/*///////////////////////////////////////|
+/*/ //////////////////////////////////////|
 ---------------vluchten------------------|
 /////////////////////////////////////////|*/
 
@@ -1139,14 +1142,14 @@
 ----------------reviews-------------------|
 //////////////////////////////////////////|*/
 
-.revieuwcontainer {
+.reviewcontainer {
   min-height: 400px;
   height: 100%;
   width: 100%;
   background-color: green;
 }
 
-.revieuwcontainer .bovenbalk {
+.reviewcontainer .bovenbalk {
   width: 100%;
   height: fit-content;
   background-color: white;
@@ -1157,7 +1160,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filterButton {
+.reviewcontainer .bovenbalk .filterButton {
   width: 33%;
   height: 50px;
   background-color: blue;
@@ -1165,7 +1168,7 @@
   align-items: center;
 }
 
-.revieuwcontainer .bovenbalk .filterButton .button {
+.reviewcontainer .bovenbalk .filterButton .button {
   width: 50%;
   height: 90%;
   background-color: white;
@@ -1175,12 +1178,12 @@
   cursor: pointer;
 }
 
-.revieuwcontainer .bovenbalk .filterButton .button p {
+.reviewcontainer .bovenbalk .filterButton .button p {
   font-size: 30px;
   margin-left: 10px;
 }
 
-.revieuwcontainer .bovenbalk .MakeReview {
+.reviewcontainer .bovenbalk .MakeReview {
   width: 34%;
   height: 50px;
   background-color: blanchedalmond;
@@ -1189,7 +1192,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .MakeReview button {
+.reviewcontainer .bovenbalk .MakeReview button {
   width: 80%;
   height: 90%;
   background-color: cornsilk;
@@ -1200,7 +1203,7 @@
   font-size: 30px;
 }
 
-.revieuwcontainer .bovenbalk .aantalReviews {
+.reviewcontainer .bovenbalk .aantalReviews {
   width: 33%;
   height: 50px;
   background-color: #f75590;
@@ -1209,12 +1212,12 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .aantalReviews p {
+.reviewcontainer .bovenbalk .aantalReviews p {
   font-size: 30px;
   margin-right: 10px;
 }
 
-.revieuwcontainer .bovenbalk .filters {
+.reviewcontainer .bovenbalk .filters {
   height: fit-content;
   padding-bottom: 5px;
   width: 50%;
@@ -1222,7 +1225,7 @@
   display: none;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to {
+.reviewcontainer .bovenbalk .filters .from-to {
   width: 100%;
   height: 70px;
   background-color: crimson;
@@ -1231,7 +1234,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .from {
+.reviewcontainer .bovenbalk .filters .from-to .from {
   width: 50%;
   height: 100%;
   background-color: greenyellow;
@@ -1240,16 +1243,16 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .from p,
-.revieuwcontainer .bovenbalk .filters .from-to .to p {
+.reviewcontainer .bovenbalk .filters .from-to .from p,
+.reviewcontainer .bovenbalk .filters .from-to .to p {
   font-size: 11px;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .from input {
+.reviewcontainer .bovenbalk .filters .from-to .from input {
   width: 100%;
 }
 
-.revieuwcontainer .bovenbalk .filters .from-to .to {
+.reviewcontainer .bovenbalk .filters .from-to .to {
   width: 50%;
   height: 100%;
   background-color: lightcyan;
@@ -1258,7 +1261,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .title {
+.reviewcontainer .bovenbalk .filters .title {
   width: 100%;
   height: 70px;
   background-color: lavender;
@@ -1267,7 +1270,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .bericht {
+.reviewcontainer .bovenbalk .filters .bericht {
   width: 100%;
   height: fit-content;
   background-color: darkslateblue;
@@ -1276,11 +1279,11 @@
   justify-content: center;
 }
 
-.revieuwcontainer .bovenbalk .filters .bericht textarea {
+.reviewcontainer .bovenbalk .filters .bericht textarea {
   resize: none;
 }
 
-.revieuwcontainer .bovenbalk .filters .rating {
+.reviewcontainer .bovenbalk .filters .rating {
   border-block-end-width: 100%;
   height: 50px;
   background-color: mediumblue;
@@ -1289,7 +1292,7 @@
   justify-content: center;
 }
 
-.revieuwcontainer .revieuws {
+.reviewcontainer .reviews {
   min-height: 200px;
   height: 100%;
   width: 100%;
@@ -1297,7 +1300,7 @@
   border-top: 2px solid rgba(0, 0, 0, 0.781);
 }
 
-.revieuwcontainer .revieuws .revieuw {
+.reviewcontainer .reviews .review {
   width: 100%;
   min-height: 100px;
   height: 100%;
@@ -1307,19 +1310,19 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0.566);
 }
 
-.revieuwcontainer .revieuws .revieuw .user {
+.reviewcontainer .reviews .review .user {
   height: 50px;
   width: 50%;
   background-color: darkgreen;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to {
+.reviewcontainer .reviews .review .from-to {
   width: 30%;
   height: 50px;
   display: flex;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to .tekst {
+.reviewcontainer .reviews .review .from-to .tekst {
   width: 10%;
   height: 100%;
   display: flex;
@@ -1328,7 +1331,7 @@
   background-color: darkorange;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to .from {
+.reviewcontainer .reviews .review .from-to .from {
   width: 40%;
   height: 100%;
   background-color: darkgrey;
@@ -1336,7 +1339,7 @@
   align-items: center;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to .tussenstuk {
+.reviewcontainer .reviews .review .from-to .tussenstuk {
   width: 20%;
   height: 100%;
   background-color: rgb(56, 46, 46);
@@ -1344,7 +1347,7 @@
   align-items: center;
 }
 
-.revieuwcontainer .revieuws .revieuw .from-to .to {
+.reviewcontainer .reviews .review .from-to .to {
   width: 40%;
   height: 100%;
   background-color: darksalmon;
@@ -1352,7 +1355,7 @@
   align-items: center;
 }
 
-.revieuwcontainer .revieuws .revieuw .title {
+.reviewcontainer .reviews .review .title {
   height: 50px;
   width: 50%;
   background-color: aliceblue;
@@ -1360,20 +1363,20 @@
   align-items: center;
 }
 
-.revieuwcontainer .revieuws .revieuw .message {
+.reviewcontainer .reviews .review .message {
   width: 50%;
   height: fit-content;
   background-color: chocolate;
 }
 
-.revieuwcontainer .revieuws .revieuw .rating {
+.reviewcontainer .reviews .review .rating {
   padding-top: 10px;
   height: 40px;
   width: 50%;
   background-color: darkgoldenrod;
 }
 
-.revieuwcontainer .revieuws .revieuw .rateRevieuw {
+.reviewcontainer .reviews .review .ratereview {
   padding-top: 10px;
   width: 50%;
   height: fit-content;
@@ -1381,16 +1384,16 @@
   margin-bottom: 5px;
 }
 
-.revieuwcontainer .revieuws .revieuw .rateRevieuw p {
+.reviewcontainer .reviews .review .ratereview p {
   padding-bottom: 10px;
 }
 
-.revieuwcontainer .revieuws .revieuw .rateRevieuw form button {
+.reviewcontainer .reviews .review .ratereview form button {
   float: right;
   margin-right: 10px;
 }
 
-/*////////////////////////////////////////|
+/*/ ///////////////////////////////////////|
 ----------------algemene voorwaarden-------------------|
 //////////////////////////////////////////|*/
 
@@ -1471,9 +1474,49 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  background-image: linear-gradient(#f75590, #ffe74c, #b5f8fe);
+  overflow: hidden;
+}
+
+.privacy_beleid_container p {
+  width: 100%;
+  height: auto;
+}
+
+.over_dit_privacy_beleid {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .privacy_beleid_container {
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-left: 50px;
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .privacy_beleid_container {
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .privacy_beleid_container {
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
 }
 
 .accordion {
+  height: auto;
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -1481,9 +1524,38 @@
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
   font-size: 15px;
   transition: 0.4s;
+}
+
+@media only screen and (max-width: 500px) {
+  .accordion {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .accordion {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .accordion {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .accordion {
+    width: 70%;
+  }
 }
 
 .active,
@@ -1492,9 +1564,34 @@
 }
 
 .panel {
+  width: 100%;
   padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (max-width: 500px) {
+  .panel {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .panel {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .panel {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .panel {
+    width: 70%;
+  }
 }
