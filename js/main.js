@@ -39,13 +39,13 @@ signUp.addEventListener("click", (e) => {
   };
 });
 
-let filters = document.querySelector('#filters');
-let filterBtn = document.querySelector('#filerbutton')
+let filters = document.querySelector("#filters");
+let filterBtn = document.querySelector("#filerbutton");
 filterBtn.addEventListener("click", (e) => {
-  filters.style.display = "block";
-  if (filters.style.display == 'block') {
+  if (filters.style.display == "block") {
     filterBtn.addEventListener("click", (e) => {
       filters.style.display = "none";
     });
-  };
+  }
+  filters.style.display = "block";
 });

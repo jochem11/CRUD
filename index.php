@@ -216,6 +216,9 @@
         <p>UserName</p>
       </div>
       <div class="from-to">
+        <div class="tekst">
+          <p>trip:</p>
+        </div>
         <div class="from">
           <p>Nederland</p>
         </div>
