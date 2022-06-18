@@ -390,77 +390,6 @@
   border-radius: 5px;
 }
 
-.contact_linkjes_container {
-  width: 100%;
-  height: auto;
-  padding: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #ffdbb5;
-  text-align: center;
-}
-
-.contact_linkjes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.contact_linkjes_instagram {
-  margin: 10px;
-}
-
-.contact_linkjes_instagram a {
-  color: #000;
-  transition: 1s;
-}
-
-.contact_linkjes_instagram a:hover {
-  color: #b5f8fe;
-}
-
-.contact_linkjes_facebook {
-  margin: 10px;
-}
-
-.contact_linkjes_facebook a {
-  color: #000;
-  transition: 1s;
-}
-
-.contact_linkjes_facebook a:hover {
-  color: #f75590;
-}
-
-.contact_linkjes_youtube {
-  margin: 10px;
-}
-
-.contact_linkjes_youtube a {
-  color: #000;
-  transition: 1s;
-}
-
-.contact_linkjes_youtube a:hover {
-  color: #b5f8fe;
-}
-
-.contact_linkjes_twitter {
-  margin: 10px;
-}
-
-.contact_linkjes_twitter a {
-  color: #000;
-  transition: 1s;
-}
-
-.contact_linkjes_twitter a:hover {
-  color: #f75590;
-}
-
 /*///////////////////////////////////////|
 -------------------login-----------------|
 /////////////////////////////////////////|*/
@@ -552,14 +481,85 @@
 .footer {
   width: 100%;
   height: auto;
-  padding: 50px;
   background-color: #576490;
   color: #fff;
+}
+
+.contact_linkjes_container {
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ffdbb5;
+  text-align: center;
+}
+
+.contact_linkjes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact_linkjes_instagram {
+  margin: 10px;
+}
+
+.contact_linkjes_instagram a {
+  color: #000;
+  transition: 1s;
+}
+
+.contact_linkjes_instagram a:hover {
+  color: #b5f8fe;
+}
+
+.contact_linkjes_facebook {
+  margin: 10px;
+}
+
+.contact_linkjes_facebook a {
+  color: #000;
+  transition: 1s;
+}
+
+.contact_linkjes_facebook a:hover {
+  color: #f75590;
+}
+
+.contact_linkjes_youtube {
+  margin: 10px;
+}
+
+.contact_linkjes_youtube a {
+  color: #000;
+  transition: 1s;
+}
+
+.contact_linkjes_youtube a:hover {
+  color: #b5f8fe;
+}
+
+.contact_linkjes_twitter {
+  margin: 10px;
+}
+
+.contact_linkjes_twitter a {
+  color: #000;
+  transition: 1s;
+}
+
+.contact_linkjes_twitter a:hover {
+  color: #f75590;
 }
 
 .footer_lijst {
   width: 100%;
   height: auto;
+  background-color: #f75590;
 }
 
 .footer .footer_lijst ul {
@@ -569,6 +569,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 50px;
 }
 
 .footer .footer_lijst h3 {

@@ -13,6 +13,30 @@
 </head>
 
 <body>
+    <div class="footer">
+        <nav class="footer_lijst">
+            <ul>
+                <h3 class="contact_opties_footer">Neem contact op<br>
+                    <li><a href="contact.php">Contact</a></li>
+                </h3>
+                <h3 class="over_crudairlines_footer">Over CRUDAirlines<br>
+                    <li><a href="aboutus.php">Over ons</a></li>
+                </h3>
+                <h3 class="download_crudairlines_footer">Download CRUDAirlines<br>
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="pictures/download_foto_apple.png" alt="apple download image"></a><br><a href="https://www.youtube.com/" target="_blank"><img src="pictures/download_foto_samsung.png" alt="download play store foto"></a></li>
+                </h3>
+                <h3 class="reisgidsen_footer">Reisgidsen<br>
+                    <li><a href="https://www.youtube.com/">Afrika</li></a>
+                </h3>
+                <h3 class="topbestemmingen_footer">Topbestemmingen<br>
+                    <li><a href="https://www.youtube.com/">Bangkok<br></li></a><a href="https://www.youtube.com">Los Angeles</a>
+                </h3>
+                <h3 class="populaire_landen_footer">Populaire landen<br>
+                    <li><a href="https://www.youtube.com/">Canada<br></li></a><a href="https://www.youtube.com">Japan</a>
+                </h3>
+            </ul>
+        </nav>
+    </div>
     <div class="contact_linkjes_container">
         <h2>Volg ons op de sociale media</h2>
         <div class="contact_linkjes">
@@ -41,30 +65,6 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <nav class="footer_lijst">
-            <ul>
-                <h3 class="contact_opties_footer">Neem contact op<br>
-                    <li><a href="contact.php">Contact</a></li>
-                </h3>
-                <h3 class="over_crudairlines_footer">Over CRUDAirlines<br>
-                    <li><a href="aboutus.php">Over ons</a></li>
-                </h3>
-                <h3 class="download_crudairlines_footer">Download CRUDAirlines<br>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="pictures/download_foto_apple.png" alt="apple download image"></a><br><a href="https://www.youtube.com/" target="_blank"><img src="pictures/download_foto_samsung.png" alt="download play store foto"></a></li>
-                </h3>
-                <h3 class="reisgidsen_footer">Reisgidsen<br>
-                    <li><a href="https://www.youtube.com/">Afrika</li></a>
-                </h3>
-                <h3 class="topbestemmingen_footer">Topbestemmingen<br>
-                    <li><a href="https://www.youtube.com/">Bangkok<br></li></a><a href="https://www.youtube.com">Los Angeles</a>
-                </h3>
-                <h3 class="populaire_landen_footer">Populaire landen<br>
-                    <li><a href="https://www.youtube.com/">Canada<br></li></a><a href="https://www.youtube.com">Japan</a>
-                </h3>
-            </ul>
-        </nav>
     </div>
     <div class="algemene_voorwaarden">
         <a href="algemenevoorwaarden.php">Algemene voorwaarden</a>
