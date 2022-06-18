@@ -1834,3 +1834,62 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+/*////////////////////////////////////////////|
+---------------------profile------------------|
+//////////////////////////////////////////////|*/
+
+.sidenav {
+  margin-top: 100px;
+  height: 100vh;
+  position: fixed;
+  background-color: #547cff;
+  width: 80px;
+  z-index: 100;
+}
+
+.sidenav .content {
+  height: fit-content;
+  width: 100%;
+}
+
+.sidenav .content a {
+  height: 80px;
+  position: relative;
+  width: 100%;
+  transition: 0.3s;
+  font-size: 18px;
+  color: white;
+  padding: 12px;
+  left: -95px;
+  display: flex;
+  align-items: center;
+  background-color: #547cff;
+  border-bottom: 1px solid white;
+}
+
+.sidenav .content a p {
+  height: 80px;
+  background-color: #547cff;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-top: 25px;
+  border-bottom: 1px solid white;
+}
+
+.sidenav .content a p i {
+  padding-right: 34px;
+}
+
+.sidenav .content a p .booked_flights {
+  margin-left: -15px;
+}
+
+.sidenav .content a p .cancelled_flights {
+  padding-right: 31px;
+  margin-left: -32px;
+}
+
+.sidenav .content a:hover {
+  left: 0;
+}
