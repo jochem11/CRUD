@@ -29,6 +29,10 @@ if (isset($_POST['submit'])) {
 
 <body>
     <?php include("navbar.php") ?>
+    <div class="wil_je_een_review_achterlaten">
+        <h2>Wil je iets kwijtraken?</h2>
+        <h2>Laat het dan achter!</h2>
+    </div>
     <div class="review_form">
         <h2>Voeg hier een review toe!</h2>
         <form method="post">

@@ -13,6 +13,35 @@
 </head>
 
 <body>
+    <div class="contact_linkjes_container">
+        <h2>Volg ons op de sociale media</h2>
+        <div class="contact_linkjes">
+            <div class="contact_linkjes_instagram">
+                <a href="https://www.instagram.com/officialrickastley/"><img src="pictures/instagram_link_logo.png" alt="instagram link"></a>
+                <a href="https://www.instagram.com/officialrickastley/">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="contact_linkjes_facebook">
+                <a href="https://www.facebook.com/RickAstley"><img src="pictures/facebook_link_logo.png" alt="facebook link"></a>
+                <a href="https://www.facebook.com/RickAstley">
+                    <p>Facebook</p>
+                </a>
+            </div>
+            <div class="contact_linkjes_youtube">
+                <a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw"><img src="pictures/youtube_link_logo.png" alt="youtube link"></a>
+                <a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw">
+                    <p>Youtube</p>
+                </a>
+            </div>
+            <div class="contact_linkjes_twitter">
+                <a href="https://twitter.com/rickastley"><img src="pictures/twitter_link_logo.png" alt="twitter logo"></a>
+                <a href="https://twitter.com/rickastley">
+                    <p>Twitter</p>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <nav class="footer_lijst">
             <ul>

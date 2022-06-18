@@ -274,7 +274,9 @@
               <button type="submit"> Send Review</button>
             </div>
           </div>
-        </form>
+          <div class="to"></div>
+        </div>
+      </form>
     </div>
   </div>
   <div class="logincontainer" id="signupcontainer">
@@ -299,12 +301,12 @@
         <img src="pictures/loginPicture.png" alt="loginPicture" />
       </div>
       <div class="invoerContainer">
-        <form action="post">
-          <p>name</p>
-          <input type="text" name="name" placeholder="name:" required />
-          <p>password</p>
-          <input type="password" name="pw" placeholder="password" required />
-          <button type="submit">send</button>
+        <form method="post" action="php/checklogin.php">
+          <p>Name</p>
+          <input type="text" name="naam" placeholder="name:" required />
+          <p>Password</p>
+          <input type="password" name="wachtwoord" placeholder="password:" required />
+          <input type="submit" value="send"></input>
         </form>
       </div>
     </div>
