@@ -127,7 +127,7 @@
           <p>filter</p>
         </div>
       </div>
-      <div class="MakeReview">
+      <div class="MakeReview" id="newRvw">
         <button>make your review</button>
       </div>
       <div class="aantalReviews">
@@ -139,43 +139,25 @@
             <div class="from">
               <div>
                 <p>from</p>
-                <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
-                <datalist id="landen">
-                  <option value="Nederland">Nederland</option>
-                  <option value="België">België</option>
-                  <option value="Duitsland">Duitsland</option>
-                  <option value="Polen">Polen</option>
-                  <option value="Spanje">Spanje</option>
-                  <option value="Frankrijk">Frankrijk</option>
-                  <option value="Griekenland">Griekenland</option>
-                </datalist>
+                <input type="input" class="form__field" placeholder="From" name="from" id='name' required />
               </div>
             </div>
             <div class="to">
               <div>
                 <p>to</p>
-                <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
-                <datalist id="landen">
-                  <option value="Nederland">Nederland</option>
-                  <option value="België">België</option>
-                  <option value="Duitsland">Duitsland</option>
-                  <option value="Polen">Polen</option>
-                  <option value="Spanje">Spanje</option>
-                  <option value="Frankrijk">Frankrijk</option>
-                  <option value="Griekenland">Griekenland</option>
-                </datalist>
+                <input type="input" class="form__field" placeholder="To" name="to" id='name' required />
               </div>
             </div>
           </div>
           <div class="title">
             <div>
               <p>title</p>
-              <input type="text" placeholder="title" name="title">
+              <input type="input" class="form__field" placeholder="Title" name="title" id='name' required />
             </div>
           </div>
           <div class="bericht">
             <div>
-              <p>bericht</p>
+              <p>message</p>
               <textarea name="bericht" cols="30" rows="10"></textarea>
             </div>
           </div>
@@ -190,6 +172,7 @@
                 <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
               </select>
             </div>
+            <button type="submit">filter</button>
           </div>
         </form>
       </div>
@@ -226,31 +209,69 @@
             rating: &#9733; &#9733; &#9733; &#9733; &#9733;
           </p>
         </div>
-        <div class="ratereview">
-          <p>rate this review:</p>
-          <form action="" method="post">
-            <select name="rating">
-              <option value="1">&#9733;</option>
-              <option value="2">&#9733; &#9733;</option>
-              <option value="3">&#9733; &#9733; &#9733;</option>
-              <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
-              <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
-            </select>
-            <button type="submit">Rate</button>
-          </form>
-        </div>
       </div>
       </form>
     </div>
   </div>
   </div>
-  <div class="NewReviewContainer">
+  <div class="NewReviewContainer" id="RvwCtnr">
     <div class="NewReview">
-      <form action="" method="post">
-        <div class="from-to">
-          <div class="from">
+        <form action="" method="post">
+          <div class="from-to">
+            <div class="from">
+              <div>
+                <p>from</p>
+                <input list="from" type="input" class="form__field" placeholder="from" name="from" id='name' required />
+                <datalist id="from">
+                  <option value="Nederland">Nederland</option>
+                  <option value="België">België</option>
+                  <option value="Duitsland">Duitsland</option>
+                  <option value="Polen">Polen</option>
+                  <option value="Spanje">Spanje</option>
+                  <option value="Frankrijk">Frankrijk</option>
+                  <option value="Griekenland">Griekenland</option>
+                </datalist>
+              </div>
+            </div>
+            <div class="to">
+              <div>
+                <p>to</p>
+                <input list="to" type="input" class="form__field" placeholder="from" name="to" id='name' required />
+                <datalist id="to">
+                  <option value="Nederland">Nederland</option>
+                  <option value="België">België</option>
+                  <option value="Duitsland">Duitsland</option>
+                  <option value="Polen">Polen</option>
+                  <option value="Spanje">Spanje</option>
+                  <option value="Frankrijk">Frankrijk</option>
+                  <option value="Griekenland">Griekenland</option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+          <div class="title">
             <div>
-
+              <p>Title</p>
+              <input type="input" class="form__field" placeholder="from" name="title" id='name' required />
+            </div>
+          </div>
+          <div class="message">
+            <div>
+              <p>message</p>
+              <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="Rate-Send">
+            <div>
+              <p>rating</p>
+              <select name="rating">
+                <option value="1">&#9733;</option>
+                <option value="2">&#9733; &#9733;</option>
+                <option value="3">&#9733; &#9733; &#9733;</option>
+                <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
+                <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+              </select>
+              <button type="submit"> Send Review</button>
             </div>
           </div>
           <div class="to"></div>
