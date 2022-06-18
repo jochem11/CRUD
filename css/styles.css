@@ -1146,7 +1146,6 @@
   min-height: 400px;
   height: 100%;
   width: 100%;
-  background-color: green;
 }
 
 .reviewcontainer .bovenbalk {
@@ -1218,42 +1217,100 @@
 .reviewcontainer .bovenbalk .filters {
   height: fit-content;
   padding-bottom: 5px;
-  width: 50%;
-  background-color: #b5f8fe;
+  width: 100%;
+  background-color: lightgrey;
   display: none;
+  justify-content: center;
+}
+
+.reviewcontainer .bovenbalk .filters form {
+  width: 50%;
 }
 
 .reviewcontainer .bovenbalk .filters .from-to {
   width: 100%;
-  height: 70px;
-  background-color: crimson;
+  height: fit-content;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .reviewcontainer .bovenbalk .filters .from-to .from {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background-color: greenyellow;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.reviewcontainer .bovenbalk .filters .from-to .from p,
-.reviewcontainer .bovenbalk .filters .from-to .to p {
-  font-size: 11px;
+.reviewcontainer .bovenbalk .filters .from-to .from div,
+.reviewcontainer .bovenbalk .filters .from-to .to div {
+  width: 100%;
+  height: 100%;
 }
 
-.reviewcontainer .bovenbalk .filters .from-to .from input {
+.reviewcontainer .bovenbalk .filters .from-to .from input,
+.reviewcontainer .bovenbalk .filters .from-to .to input {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.reviewcontainer .bovenbalk .filters .from-to .from p,
+.reviewcontainer .bovenbalk .filters .from-to .to p {
+  margin-top: 5px;
+  padding-left: 5%;
+  font-size: 13px;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
   width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
 }
 
 .reviewcontainer .bovenbalk .filters .from-to .to {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background-color: lightcyan;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1261,33 +1318,60 @@
 
 .reviewcontainer .bovenbalk .filters .title {
   width: 100%;
-  height: 70px;
-  background-color: lavender;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.reviewcontainer .bovenbalk .filters .title div {
+  width: 90%;
+  height: fit-content;
 }
 
 .reviewcontainer .bovenbalk .filters .bericht {
   width: 100%;
   height: fit-content;
-  background-color: darkslateblue;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.reviewcontainer .bovenbalk .filters .bericht div {
+  width: 90%;
+}
+
+.reviewcontainer .bovenbalk .filters .bericht p {
+  margin-top: 5px;
 }
 
 .reviewcontainer .bovenbalk .filters .bericht textarea {
   resize: none;
+  width: 100%;
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  margin-top: 5px;
 }
 
 .reviewcontainer .bovenbalk .filters .rating {
-  border-block-end-width: 100%;
+  width: 100%;
   height: 50px;
-  background-color: mediumblue;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.reviewcontainer .bovenbalk .filters .rating div {
+  width: 78%;
+}
+
+.reviewcontainer .bovenbalk .filters .rating button {
+  padding: 7px 40px 7px 40px;
+  border-radius: 10px;
+  background-color: #547cff;
 }
 
 .reviewcontainer .reviews {
@@ -1384,7 +1468,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 20;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -1394,8 +1478,96 @@
   min-height: 100px;
   height: fit-content;
   background-color: #89daff;
+  border-radius: 10px;
 }
 
+.NewReviewContainer .NewReview .from-to {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.NewReviewContainer .NewReview .from-to .from {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewReviewContainer .NewReview .from-to .from div,
+.NewReviewContainer .NewReview .from-to .to div {
+  width: 90%;
+}
+
+.NewReviewContainer .NewReview .from-to .to {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewReviewContainer .NewReview .title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.NewReviewContainer .NewReview .title div {
+  width: 95%;
+}
+
+.NewReviewContainer .NewReview .message {
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewReviewContainer .NewReview .message div {
+  width: 95%;
+}
+
+.NewReviewContainer .NewReview .message div textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  margin-top: 5px;
+}
+
+.NewReviewContainer .NewReview .Rate-Send {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.NewReviewContainer .NewReview .Rate-Send div {
+  width: 100%;
+}
+
+.NewReviewContainer .NewReview .Rate-Send button {
+  float: right;
+  padding: 7px 40px 7px 40px;
+  border-radius: 10px;
+  background-color: #547cff;
+}
 /*/ ///////////////////////////////////////|
 ----------------algemene voorwaarden-------------------|
 //////////////////////////////////////////|*/

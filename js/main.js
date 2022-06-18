@@ -42,9 +42,20 @@ signUp.addEventListener("click", (e) => {
 let filters = document.querySelector("#filters");
 let filterBtn = document.querySelector("#filerbutton");
 filterBtn.addEventListener("click", (e) => {
-  if (filters.style.display == "block") {
+  if (filters.style.display == "flex") {
     filters.style.display = "none";
   } else {
-    filters.style.display = "block";
+    filters.style.display = "flex";
   }
+});
+
+let RvwBtn = document.querySelector("#newRvw");
+let RvwCtnr = document.querySelector("#RvwCtnr");
+RvwBtn.addEventListener("click", (e) => {
+  RvwCtnr.style.display = "flex";
+  window.onclick = (e) => {
+    if (e.target == RvwCtnr) {
+      RvwCtnr.style.display = "none";
+    }
+  };
 });
