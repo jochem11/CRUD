@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- <?php include("navbar.php"); ?> -->
+    <?php include("navbar.php"); ?>
     <div class="privacy_beleid_container">
         <h2>Privacybeleid</h2><br>
         <p>In ons privacybeleid leggen we uit hoe we uw persoonlijke gegevens verzamelen en gebruiken wanneer u met ons reist, onze website bezoekt, onze mobiele app gebruikt of op een andere manier met ons communiceert. Zorg ervoor dat u het beleid zorgvuldig leest.</p><br>
@@ -256,15 +256,15 @@
         var a;
 
         for (a = 0; a < accordion.length; a++) {
-        accordion[a].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-            } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
+            accordion[a].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
         }
     </script>
     <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>

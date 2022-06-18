@@ -29,7 +29,10 @@ if (isset($_POST['submit'])) {
 
 <body>
   <?php include("navbar.php") ?>
-
+  <div class="wil_je_contact_opnemen">
+    <h2>Wil je met ons contact opnemen?</h2>
+    <h2>Wij staan er altijd open voor!</h2>
+  </div>
   <div class="contact_form">
     <h2>Neem contact op!</h2>
     <form method="post">
@@ -44,7 +47,6 @@ if (isset($_POST['submit'])) {
       <input type="submit" value="submit" name="submit" id="submit" />
     </form>
   </div>
-
   <?php include("footer.php") ?>
   <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>
