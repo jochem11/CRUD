@@ -15,23 +15,57 @@
   </head>
   <body>
     <?php include("navbar.php"); ?>
-    <div class="sidenav">
-      <div class="content">
-        <a href="#"
-          >profile
-          <p><i class="fa-solid fa-user"></i></p
-        ></a>
-        <a href="#"
-          >booked flights
-          <p><i class="fa-solid fa-plane-departure booked_flights"></i></p
-        ></a>
-        <a href="#"
-          >cancelled flights
-          <p><i class="fa-solid fa-plane-circle-xmark cancelled_flights"></i></p
-        ></a>
+    <?php include("sidenav.php"); ?>
+    <main class="main-profile">
+      <div class="profilecontainer">
+        <div class="profilepic">
+          <img src="pictures/Profile-PNG-File.png" alt="profilepic" />
+        </div>
+        <div class="data">
+          <form action="" method="post">
+            <p>Name</p>
+            <div class="input-edit">
+              <input
+                value="Name"
+                type="input"
+                class="form__field"
+                placeholder="Name"
+                name="Name"
+                id="name"
+                required
+              />
+              <button type="submit" name="Name">Change</button>
+            </div>
+            <p>e-mail</p>
+            <div class="input-edit">
+              <input
+                value="pik@pik.pik"
+                type="input"
+                class="form__field"
+                placeholder="e-mail"
+                name="e-mail"
+                id="name"
+                required
+              />
+              <button type="submit" name="e-mail">Change</button>
+            </div>
+            <p>Password</p>
+            <div class="input-edit">
+              <input
+                value="Password"
+                type="password"
+                class="form__field"
+                placeholder="Password"
+                name="password"
+                id="name"
+                required
+              />
+              <button type="submit" name="pw">Change</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-    <main></main>
+    </main>
     <script src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/33689bd479.js"

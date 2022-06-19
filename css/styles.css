@@ -1409,7 +1409,7 @@
   font-size: 1.3rem;
   padding: 7px 0;
   background: transparent;
-  transition: border-color 0.2s;
+  transition: border-color 0.5s;
 }
 
 .form__field:focus {
@@ -1836,7 +1836,7 @@
 }
 
 /*////////////////////////////////////////////|
----------------------profile------------------|
+---------------------sidenav------------------|
 //////////////////////////////////////////////|*/
 
 .sidenav {
@@ -1879,6 +1879,7 @@
 
 .sidenav .content a p i {
   padding-right: 34px;
+  background-color: #547cff;
 }
 
 .sidenav .content a p .booked_flights {
@@ -1890,6 +1891,62 @@
   margin-left: -32px;
 }
 
+.sidenav .content a p .Logout {
+  margin-left: -7px;
+}
+
 .sidenav .content a:hover {
   left: 0;
+}
+
+.main-profile {
+  margin-left: 80px;
+  padding-top: 100px;
+}
+
+/*//////////////////////////////////|
+---------------profile--------------|
+////////////////////////////////////|*/
+
+.profilecontainer {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  background-color: #80dfd7;
+  display: flex;
+}
+
+.profilecontainer .profilepic {
+  width: 15%;
+  height: auto;
+}
+
+.profilecontainer .profilepic img {
+  width: 100%;
+}
+
+.profilecontainer .data {
+  color: white;
+  width: 35%;
+  height: 100%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.profilecontainer .data p {
+  margin-left: -5px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.profilecontainer .data .input-edit {
+  display: flex;
+}
+
+.profilecontainer .data .input-edit button {
+  font-size: 15px;
+  background-color: #547cff;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
