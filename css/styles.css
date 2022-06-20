@@ -1878,6 +1878,7 @@
 }
 
 .sidenav .content a p i {
+  width: fit-content;
   padding-right: 34px;
   background-color: #547cff;
 }
@@ -1949,4 +1950,7 @@
   padding: 10px 25px 10px 25px;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+.prevFlightsContainer {
 }

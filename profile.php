@@ -65,6 +65,7 @@
           </form>
         </div>
       </div>
+      <div class="prevFlightsContainer"></div>
     </main>
     <script src="js/main.js"></script>
     <script
