@@ -216,71 +216,70 @@
   </div>
   <div class="NewReviewContainer" id="RvwCtnr">
     <div class="NewReview">
-        <form action="" method="post">
-          <div class="from-to">
-            <div class="from">
-              <div>
-                <p>from</p>
-                <input list="from" type="input" class="form__field" placeholder="from" name="from" id='name' required />
-                <datalist id="from">
-                  <option value="Nederland">Nederland</option>
-                  <option value="België">België</option>
-                  <option value="Duitsland">Duitsland</option>
-                  <option value="Polen">Polen</option>
-                  <option value="Spanje">Spanje</option>
-                  <option value="Frankrijk">Frankrijk</option>
-                  <option value="Griekenland">Griekenland</option>
-                </datalist>
-              </div>
-            </div>
-            <div class="to">
-              <div>
-                <p>to</p>
-                <input list="to" type="input" class="form__field" placeholder="from" name="to" id='name' required />
-                <datalist id="to">
-                  <option value="Nederland">Nederland</option>
-                  <option value="België">België</option>
-                  <option value="Duitsland">Duitsland</option>
-                  <option value="Polen">Polen</option>
-                  <option value="Spanje">Spanje</option>
-                  <option value="Frankrijk">Frankrijk</option>
-                  <option value="Griekenland">Griekenland</option>
-                </datalist>
-              </div>
-            </div>
-          </div>
-          <div class="title">
+      <form action="" method="post">
+        <div class="from-to">
+          <div class="from">
             <div>
-              <p>Title</p>
-              <input type="input" class="form__field" placeholder="from" name="title" id='name' required />
+              <p>from</p>
+              <input list="from" type="input" class="form__field" placeholder="from" name="from" id='name' required />
+              <datalist id="from">
+                <option value="Nederland">Nederland</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Polen">Polen</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Griekenland">Griekenland</option>
+              </datalist>
             </div>
           </div>
-          <div class="message">
+          <div class="to">
             <div>
-              <p>message</p>
-              <textarea name="message" cols="30" rows="10"></textarea>
+              <p>to</p>
+              <input list="to" type="input" class="form__field" placeholder="from" name="to" id='name' required />
+              <datalist id="to">
+                <option value="Nederland">Nederland</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Polen">Polen</option>
+                <option value="Spanje">Spanje</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Griekenland">Griekenland</option>
+              </datalist>
             </div>
           </div>
-          <div class="Rate-Send">
-            <div>
-              <p>rating</p>
-              <select name="rating">
-                <option value="1">&#9733;</option>
-                <option value="2">&#9733; &#9733;</option>
-                <option value="3">&#9733; &#9733; &#9733;</option>
-                <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
-                <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
-              </select>
-              <button type="submit"> Send Review</button>
-            </div>
-          </div>
-          <div class="to"></div>
         </div>
-      </form>
+        <div class="title">
+          <div>
+            <p>Title</p>
+            <input type="input" class="form__field" placeholder="from" name="title" id='name' required />
+          </div>
+        </div>
+        <div class="message">
+          <div>
+            <p>message</p>
+            <textarea name="message" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="Rate-Send">
+          <div>
+            <p>rating</p>
+            <select name="rating">
+              <option value="1">&#9733;</option>
+              <option value="2">&#9733; &#9733;</option>
+              <option value="3">&#9733; &#9733; &#9733;</option>
+              <option value="4">&#9733; &#9733; &#9733; &#9733;</option>
+              <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+            </select>
+            <button type="submit"> Send Review</button>
+          </div>
+        </div>
+        <div class="to"></div>
     </div>
-  </div
-  <?php include("footer.php") ?>
-  <script src="js/main.js"></script>
+    </form>
+  </div>
+  </div <?php include("footer.php") ?> <script src="js/main.js">
+  </script>
   <script src="js/slideshow.js"></script>
   <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>
 </body>

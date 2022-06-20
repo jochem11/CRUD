@@ -250,6 +250,23 @@
         </div>
     </div>
     <?php include("footer.php") ?>
+    <!-- -main js doet het niet dus heb hier alleen een beetje javascript toegevoegd voor de accordion-- -->
+    <script>
+        var accordion = document.getElementsByClassName("accordion");
+        var a;
+
+        for (a = 0; a < accordion.length; a++) {
+            accordion[a].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>
 </body>
