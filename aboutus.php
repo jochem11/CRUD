@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include("navbar.php") ?>
+    <?php include("navbar.php"); ?>
     <div class="overons_container">
         <h1>Welkom bij CRUDAirlines</h1>
         <div class="overons_tekst">
@@ -54,7 +54,7 @@
             </p>
         </div>
     </div>
-    <?php include("footer.php") ?>
+    <?php include("footer.php"); ?>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>
 </body>

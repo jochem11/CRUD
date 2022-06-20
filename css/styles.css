@@ -326,7 +326,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 90px;
   z-index: 10;
   flex-direction: column;
   background-color: #f75590;
@@ -485,6 +488,48 @@
   color: #fff;
 }
 
+.footer_lijst {
+  width: 100%;
+  height: auto;
+  background-color: #333333b0;
+}
+
+.footer .footer_lijst ul {
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.footer .footer_lijst h3 {
+  font-size: 25px;
+  color: #ffe74c;
+}
+
+.footer .footer_lijst li {
+  font-size: 15px;
+}
+
+.footer .footer_lijst a {
+  color: #89daff;
+  transition: 1s;
+  font-size: 15px;
+}
+
+.footer .footer_lijst a:hover {
+  color: #f75590;
+}
+
+.footer .footer_lijst .download_crudairlines_footer img {
+  background-color: #fff;
+  width: 135px;
+  height: auto;
+  border-radius: 10px;
+}
+
 .contact_linkjes_container {
   width: 100%;
   height: auto;
@@ -494,7 +539,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: #ffdbb5;
+  background-color: #ffc68a;
   text-align: center;
 }
 
@@ -556,70 +601,28 @@
   color: #f75590;
 }
 
-.footer_lijst {
+.algemene_voorwaarden {
   width: 100%;
   height: auto;
-  background-color: #f75590;
-}
-
-.footer .footer_lijst ul {
-  width: 100%;
-  height: auto;
-  list-style-type: none;
+  padding: 14px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
+  justify-content: center;
+  background-color: #21897e;
 }
 
-.footer .footer_lijst h3 {
-  font-size: 25px;
-  color: #ffe74c;
+.algemene_voorwaarden p {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.footer .footer_lijst li {
-  font-size: 15px;
-}
-
-.footer .footer_lijst a {
-  color: #89daff;
+.algemene_voorwaarden a {
+  color: #000;
   transition: 1s;
-  font-size: 15px;
 }
 
-.footer .footer_lijst a:hover {
-  color: #f75590;
-}
-
-.footer .footer_lijst .download_crudairlines_footer img {
-  background-color: #fff;
-  width: 135px;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 1350px) {
-  .footer {
-    padding-top: 50px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 50px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .footer {
-    padding-top: 60px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 60px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .footer .footer_lijst h3 {
-    margin: 15px;
-  }
+.algemene_voorwaarden a:hover {
+  color: #ffe74c;
+  transition: 1s;
 }
 
 /*///////////////////////////////////////|
@@ -1698,30 +1701,6 @@
 /*/ ///////////////////////////////////////|
 ----------------algemene voorwaarden-------------------|
 //////////////////////////////////////////|*/
-
-.algemene_voorwaarden {
-  width: 100%;
-  height: auto;
-  padding: 14px;
-  display: flex;
-  justify-content: center;
-  background-color: #21897e;
-}
-
-.algemene_voorwaarden p {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.algemene_voorwaarden a {
-  color: #000;
-  transition: 1s;
-}
-
-.algemene_voorwaarden a:hover {
-  color: #ffe74c;
-  transition: 1s;
-}
 
 .algemene_voorwaarden_container {
   display: flex;
