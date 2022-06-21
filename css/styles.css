@@ -326,10 +326,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 90px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 90px;
+  padding: 90px;
   z-index: 10;
   flex-direction: column;
   background-color: #f75590;
@@ -486,48 +483,7 @@
   height: auto;
   background-color: #576490;
   color: #fff;
-}
-
-.footer_lijst {
-  width: 100%;
-  height: auto;
-  background-color: #333333b0;
-}
-
-.footer .footer_lijst ul {
-  width: 100%;
-  height: auto;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
-}
-
-.footer .footer_lijst h3 {
-  font-size: 25px;
-  color: #ffe74c;
-}
-
-.footer .footer_lijst li {
-  font-size: 15px;
-}
-
-.footer .footer_lijst a {
-  color: #89daff;
-  transition: 1s;
-  font-size: 15px;
-}
-
-.footer .footer_lijst a:hover {
-  color: #f75590;
-}
-
-.footer .footer_lijst .download_crudairlines_footer img {
-  background-color: #fff;
-  width: 135px;
-  height: auto;
-  border-radius: 10px;
+  z-index: 120;
 }
 
 .contact_linkjes_container {
@@ -539,7 +495,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: #ffc68a;
+  background-color: #ffdbb5;
   text-align: center;
 }
 
@@ -601,28 +557,70 @@
   color: #f75590;
 }
 
-.algemene_voorwaarden {
+.footer_lijst {
   width: 100%;
   height: auto;
-  padding: 14px;
+  background-color: #f75590;
+}
+
+.footer .footer_lijst ul {
+  width: 100%;
+  height: auto;
+  list-style-type: none;
   display: flex;
-  justify-content: center;
-  background-color: #21897e;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
 }
 
-.algemene_voorwaarden p {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.algemene_voorwaarden a {
-  color: #000;
-  transition: 1s;
-}
-
-.algemene_voorwaarden a:hover {
+.footer .footer_lijst h3 {
+  font-size: 25px;
   color: #ffe74c;
+}
+
+.footer .footer_lijst li {
+  font-size: 15px;
+}
+
+.footer .footer_lijst a {
+  color: #89daff;
   transition: 1s;
+  font-size: 15px;
+}
+
+.footer .footer_lijst a:hover {
+  color: #f75590;
+}
+
+.footer .footer_lijst .download_crudairlines_footer img {
+  background-color: #fff;
+  width: 135px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .footer {
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer {
+    padding-top: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer .footer_lijst h3 {
+    margin: 15px;
+  }
 }
 
 /*///////////////////////////////////////|
@@ -1702,6 +1700,30 @@
 ----------------algemene voorwaarden-------------------|
 //////////////////////////////////////////|*/
 
+.algemene_voorwaarden {
+  width: 100%;
+  height: auto;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #21897e;
+}
+
+.algemene_voorwaarden p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.algemene_voorwaarden a {
+  color: #000;
+  transition: 1s;
+}
+
+.algemene_voorwaarden a:hover {
+  color: #ffe74c;
+  transition: 1s;
+}
+
 .algemene_voorwaarden_container {
   display: flex;
   justify-content: center;
@@ -1824,7 +1846,7 @@
   position: fixed;
   background-color: #547cff;
   width: 80px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .sidenav .content {
@@ -1857,7 +1879,6 @@
 }
 
 .sidenav .content a p i {
-  width: fit-content;
   padding-right: 34px;
   background-color: #547cff;
 }
@@ -1932,4 +1953,35 @@
 }
 
 .prevFlightsContainer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #98dfd9;
+}
+
+.prevFlightsContainer h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  margin-bottom: 5px;
+}
+
+.prevFlightsContainer .flightsContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 500px;
+  background-color: #547cff;
+  overflow-y: auto;
+}
+
+.prevFlightsContainer .flightsContainer table {
+  width: 100%;
+}
+
+.prevFlightsContainer .flightsContainer table thead tr th,
+.prevFlightsContainer .flightsContainer table tbody tr td {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
