@@ -30,20 +30,20 @@ if (isset($_POST['submit'])) {
 <body>
   <?php include("navbar.php"); ?>
   <div class="wil_je_contact_opnemen">
-    <h2>Wil je met ons contact opnemen?</h2>
-    <h2>Wij staan er altijd open voor!</h2>
+    <h2>Do you want contact us?</h2>
+    <h2>We are always here for you!</h2>
   </div>
   <div class="contact_form">
-    <h2>Neem contact op!</h2>
+    <h2>Contact us!</h2>
     <form method="post">
       <label for="titel">Titel: </label>
       <input type="text" name="titel" id="titel" placeholder="Titel: " required />
-      <label for="naam">Naam: </label>
-      <input type="text" name="naam" id="naam" placeholder="Naam: " required />
+      <label for="naam">Name: </label>
+      <input type="text" name="naam" id="naam" placeholder="Name: " required />
       <label for="email">Email:</label>
-      <input type="text" name="email" id="email" placeholder="Titel: " required />
-      <label for="rating">Bericht: </label>
-      <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required />
+      <input type="text" name="email" id="email" placeholder="Email: " required />
+      <label for="rating">Message: </label>
+      <input type="text" name="bericht" id="bericht" placeholder="Message: " required />
       <input type="submit" value="submit" name="submit" id="submit" />
     </form>
   </div>

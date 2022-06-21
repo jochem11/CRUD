@@ -16,29 +16,29 @@
     <div class="footer">
         <nav class="footer_lijst">
             <ul>
-                <h3 class="contact_opties_footer">Neem contact op<br>
+                <h3 class="contact_opties_footer">Contact us<br>
                     <li><a href="contact.php">Contact</a></li>
                 </h3>
-                <h3 class="over_crudairlines_footer">Over CRUDAirlines<br>
-                    <li><a href="aboutus.php">Over ons</a></li>
+                <h3 class="over_crudairlines_footer">About CRUDAirlines<br>
+                    <li><a href="aboutus.php">About us</a></li>
                 </h3>
                 <h3 class="download_crudairlines_footer">Download CRUDAirlines<br>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="pictures/download_foto_apple.png" alt="apple download image"></a><br><a href="https://www.youtube.com/" target="_blank"><img src="pictures/download_foto_samsung.png" alt="download play store foto"></a></li>
+                    <li><a href="https://apps.apple.com/app/apple-store/id391732065" target="_blank"><img src="pictures/download_foto_apple.png" alt="apple download image"></a><br><a href="https://play.google.com/store/search?q=klm+app&c=apps&gl=NL" target="_blank"><img src="pictures/download_foto_samsung.png" alt="download play store foto"></a></li>
                 </h3>
-                <h3 class="reisgidsen_footer">Reisgidsen<br>
+                <h3 class="reisgidsen_footer">Travel guides<br>
                     <li><a href="https://www.youtube.com/">Afrika</li></a>
                 </h3>
-                <h3 class="topbestemmingen_footer">Topbestemmingen<br>
+                <h3 class="topbestemmingen_footer">Top destinations<br>
                     <li><a href="https://www.youtube.com/">Bangkok<br></li></a><a href="https://www.youtube.com">Los Angeles</a>
                 </h3>
-                <h3 class="populaire_landen_footer">Populaire landen<br>
+                <h3 class="populaire_landen_footer">Popular countries<br>
                     <li><a href="https://www.youtube.com/">Canada<br></li></a><a href="https://www.youtube.com">Japan</a>
                 </h3>
             </ul>
         </nav>
     </div>
     <div class="contact_linkjes_container">
-        <h2>Volg ons op de sociale media</h2>
+        <h2>Follow us social media!</h2>
         <div class="contact_linkjes">
             <div class="contact_linkjes_instagram">
                 <a href="https://www.instagram.com/officialrickastley/"><img src="pictures/instagram_link_logo.png" alt="instagram link"></a>
@@ -67,9 +67,9 @@
         </div>
     </div>
     <div class="algemene_voorwaarden">
-        <a href="algemenevoorwaarden.php">Algemene voorwaarden</a>
+        <a href="termsofconditions.php">Terms and conditions</a>
         <p>||</p>
-        <a href="privacy.php">Privacybeleid</a>
+        <a href="privacy.php">Privacy policy</a>
     </div>
 </body>
 

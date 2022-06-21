@@ -30,20 +30,20 @@ if (isset($_POST['submit'])) {
 <body>
     <?php include("navbar.php") ?>
     <div class="wil_je_een_review_achterlaten">
-        <h2>Wil je iets kwijtraken?</h2>
-        <h2>Laat het dan achter!</h2>
+        <h2>Do you want to leave a review?</h2>
+        <h2>Then leave it behind!</h2>
     </div>
     <div class="review_form">
-        <h2>Voeg hier een review toe!</h2>
+        <h2>Make a review!</h2>
         <form method="post">
-            <label for="naam">Naam: </label>
-            <input type="text" name="naam" id="naam" placeholder="Naam: " required />
-            <label for="titel">Titel: </label>
-            <input type="text" name="titel" id="titel" placeholder="Titel: " required />
-            <label for="bericht">Bericht:</label>
-            <input type="text" name="bericht" id="bericht" placeholder="Bericht: " required />
+            <label for="naam">Name: </label>
+            <input type="text" name="naam" id="naam" placeholder="Name: " required />
+            <label for="titel">Title: </label>
+            <input type="text" name="titel" id="titel" placeholder="Title: " required />
+            <label for="bericht">Message:</label>
+            <input type="text" name="bericht" id="bericht" placeholder="Message: " required />
             <label for="rating">Rating: </label>
-            <input type="text" name="rating" id="rating" placeholder="Kies tussen de 1 en 5: " required />
+            <input type="text" name="rating" id="rating" placeholder="Choose between 1 and 5: " required />
             <input type="submit" value="submit" name="submit" id="submit" />
         </form>
     </div>

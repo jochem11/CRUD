@@ -182,9 +182,6 @@
 .slideshow-container .boekcontainer .rij1 .van-waar input {
   width: 100%;
   height: 24px;
-  padding-top: 12px;
-  padding-bottom: 2px;
-  padding-left: 3px;
   border: none;
   background-color: #b5f8fe;
   border-bottom: 2px solid black;
@@ -568,9 +565,8 @@
   height: auto;
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
+  justify-content: center;
+  background-color: #b5f8fe;
 }
 
 .footer .footer_lijst h3 {
@@ -582,8 +578,8 @@
   font-size: 15px;
 }
 
-.footer .footer_lijst a {
-  color: #89daff;
+.algemene_voorwaarden a:hover {
+  color: #f75590;
   transition: 1s;
   font-size: 15px;
 }
@@ -1052,7 +1048,10 @@
   display: flex;
   justify-content: center;
   background-color: #b5f8fe;
-  padding: 90px;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 90px;
   font-weight: 700;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1905,7 +1904,7 @@
   padding-top: 100px;
 }
 
-/*//////////////////////////////////|
+/*/ /////////////////////////////////|
 ---------------profile--------------|
 ////////////////////////////////////|*/
 

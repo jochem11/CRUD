@@ -35,14 +35,14 @@ $result_review = $stmt_review->fetchAll();
 
     <div class="contact_container_read">
         <p>Contact</p>
-        <p><a href="http://localhost/CRUD/php/create.php">Voeg hier een nieuwe account aan!</a></p>
+        <p><a href="http://localhost/CRUD/php/create.php">Add here new a contact!</a></p>
         <table class="table_container_read">
             <tr class="table_contact">
                 <th>ID</th>
-                <th>Naam</th>
+                <th>Name</th>
                 <th>Email</th>
-                <th>Titel</th>
-                <th>Bericht</th>
+                <th>Title</th>
+                <th>Message</th>
                 <th>Update</th>
                 <th>Delete</th>
             </tr>
@@ -69,13 +69,13 @@ $result_review = $stmt_review->fetchAll();
 
     <div class="review_container_read">
         <p>Review</p>
-        <p><a href="http://localhost/CRUD/php/create.php">Voeg hier een nieuwe reviews toe!</a></p>
+        <p><a href="http://localhost/CRUD/php/create.php">Add here new reviews!</a></p>
         <table class="table_container_review">
             <tr class="table_review">
                 <th>ID</th>
-                <th>Naam</th>
-                <th>Titel</th>
-                <th>Bericht</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Message</th>
                 <th>Rating</th>
                 <th>Update</th>
                 <th>Delete</th>
