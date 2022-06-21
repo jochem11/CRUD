@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 18 jun 2022 om 22:28
+-- Gegenereerd op: 21 jun 2022 om 22:01
 -- Serverversie: 10.4.24-MariaDB
 -- PHP-versie: 8.1.6
 
@@ -56,8 +56,17 @@ CREATE TABLE `gebruiker` (
   `ID` int(11) NOT NULL,
   `naam` varchar(255) NOT NULL,
   `wachtwoord` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `admin` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `gebruiker`
+--
+
+INSERT INTO `gebruiker` (`ID`, `naam`, `wachtwoord`, `email`, `admin`) VALUES
+(1, 'bababoei', 'bababoei', 'bababoei@gmail.com', 0),
+(2, 'admin', 'admin', 'admin@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -142,7 +151,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT voor een tabel `gebruiker`
 --
 ALTER TABLE `gebruiker`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT voor een tabel `review`

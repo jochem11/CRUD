@@ -15,40 +15,42 @@
 <body>
     <?php include("navbar.php"); ?>
     <div class="overons_container">
-        <h1>Welkom bij CRUDAirlines</h1>
+        <h1>Welcome to CRUDAirlines</h1>
         <div class="overons_tekst">
-            <p>Welkom bij de CRUDAirlines. Door BBC news in 2000 verkozen tot beste online reisbureau van 2000 tot 2022 tot populairste online reisbureau van Nederland. Maar dat niet alleen; sinds 2000 strijden wij al voor de laagste prijzen. En hierdoor gingen meer dan 696.969 trouwe klanten je al voor.</p>
+            <p>Welcome to CRUDAirlines. Voted best online travel agency in 2000 by BBC news as the most popular online travel agency in the Netherlands from 2000 to 2022. But not only that; since 2000 we have been fighting for the lowest prices. And because of this, more than 696,969 loyal customers have already preceded you.</p>
         </div>
         <div class="overons_geschiedenis">
-            <p>CRUDAirlines is in 1969 begonnen in Nijmegen en is groot geworden door zich volledig toe te leggen op goedkope vakanties. Een team van medewerkers belde in de begintijd elke dag de reisorganisaties of luchtvaartmaatschappijen waar we mee samenwerkten om de beste vakantie aanbiedingen op te halen. En eigenlijk doen we dat nog steeds, alleen is er nu veel meer geautomatiseerd en werken we nu vanuit de hele wereld. We zijn in al die jaren niets veranderd; we willen nog steeds alleen de beste deals en de aller-, aller laagste prijzen. En natuurlijk de beste accommodaties. In ons aanbod vind je er meer dan 10.000 verdeeld over meer dan 50 landen. Als je hier geen reis naar wens kunt vinden dan weten wij het ook niet meer.</p>
+            <p>CRUDAirlines started in 1969 in Nijmegen and has grown by fully focusing on cheap holidays. In the early days, a team of employees called the travel companies or airlines we worked with every day to get the best vacation deals. And in fact we still do that, only it is now much more automated and we now work from all over the world. We have not changed in all these years; we still only want the best deals and the very, very lowest prices. And of course the best accommodations. In our offer you will find more than 10,000 spread over more than 50 countries. If you can't find a trip to your liking here, then we don't know what will.</p>
         </div>
         <div class="overons_waarom">
-            <h2>Waarom kunnen wij onze reizen zo voordelig aanbieden?</h2>
+            <h2>Why can we offer our trips so cheaply?</h2>
             <ul>
-                <li>Wij hebben géén dure winkels op dure locaties waar werknemers dagen zitten te wachten tot er iemand binnenkomt. Dé CRUDdiscounter heeft alles op één locatie en daar werken we 7 dagen in de week, ook in de avonduren. Wel zo efficiënt.</li>
-                <li>Alles gaat via het internet en veel selfservice. Vanzelfsprekend kun je ons bellen als je een vraag hebt, maar in principe is alles via de website te regelen. We sturen ook alles per mail, inclusief de reisbescheiden. Betalingen kunnen gedaan worden via o.a. via iDEAL en VISA (gratis) en American Express (extra kosten). Hiermee besparen we kosten en dat komt weer terug in een nóg lagere prijs.</li>
-                <li>Volumes stapelen. Dé VakantieDiscounter is uitgegroeid tot hét vakantie discount en last minute kanaal van Nederland en we kopen groot in. We kopen ook liever meer in bij minder aanbieders omdat we daar nóg betere prijzen mee krijgen.</li>
-                <li>Niet álles willen doen. Alleen maar reizen die we echt goedkoper kunnen aanbieden. We doen dus ook heel veel niet. Traditioneel hebben we spectaculaire prijzen op zonvakanties naar de Middellandse Zee en verre zonbestemmingen.</li>
-                <li>Meer last minutes dan wie dan ook. Last minute vakanties zijn vaak goedkoper en daarom doen wij er alles aan om uit te blinken in last minutes. Door onze jarenlange ervaring weten wij ook waar de laatste/beste last minutes te halen zijn.</li>
-                <li>100% onafhankelijk. We hebben inkoopcontracten met haast alle Nederlandse reisorganisaties. Om nóg betere prijzen te kunnen bieden hebben we ook de belangrijkste Duitse reisorganisaties gecontracteerd. Het maakt ons niet uit wie de reis uitvoert, we gaan altijd voor de beste deal!</li>
+                <li>We do not have expensive stores in expensive locations where employees spend days waiting for someone to come in. The CRUDdiscounter has everything in one location and we work there 7 days a week, even in the evenings. So efficient.</li>
+                <li>Everything goes through the internet and a lot of self-service. Of course you can call us if you have a question, but in principle everything can be arranged via the website. We also send everything by email, including the travel documents. Payments can be made via iDEAL and VISA (free) and American Express (extra costs). This saves costs and that is reflected in an even lower price.</li>
+                <li>Stack volumes. Dé VakantieDiscounter has grown into the holiday discount and last minute channel in the Netherlands and we buy in bulk. We also prefer to buy more from fewer suppliers because that gives us even better prices.</li>
+                <li>Not wanting to do everything. Only travel that we can really offer cheaper. So we don't do a lot. Traditionally we have spectacular prices on sun holidays to the Mediterranean and distant sun destinations.</li>
+                <li>More last minutes than anyone else. Last minute holidays are often cheaper and that is why we do everything we can to excel in last minutes. Thanks to our many years of experience, we also know where to get the last/best last minutes.</li>
+                <li>
+                    100% independent. We have purchase contracts with almost all Dutch travel organizations. In order to be able to offer even better prices, we have also contracted the most important German travel organizations. We don't care who runs the trip, we always go for the best deal!</li>
             </ul>
         </div>
         <div class="overons_veiligheid">
-            <p>Al sinds 2000 vallen alle aangeboden reizen onder de Stichting Garantiefonds Reisgelden (SGR:2626). Bovendien is dé CRUDdiscounter lid van het Algemeen Nederlands Verbond van Reisondernemingen (ANVR: 3072). Dé CRUDdiscounter.nl is volledig onafhankelijk en daarom in staat een zo objectief mogelijke selectie aan te bieden.</p>
+            <p>Since 2000, all trips offered have been covered by the Stichting Garantiefonds Reisgelden (SGR: 2626). Moreover, the CRUD discounter is a member of the General Dutch Association of Travel Companies (ANVR: 3072). The CRUDdiscounter.nl is completely independent and therefore able to offer the most objective possible selection.</p>
         </div>
         <div class="overons_belofte">
-            <p>Veel sites zeggen goedkoop te zijn, maar wij zíjn het. Andere bieden ‘korting’ en gooien er dan hoge boekingskosten bovenop. Bij dé CRUDdiscounter krijg je dezelfde lage prijs én geen boekings- of andere dubieuze kosten. Álle kortingen, álle aanbiedingen. Alle euro’s korting geven we één-op-één door. Dat lijkt normaal, maar wij weten: dat is het niet!</p>
+            <p>Many sites say they are cheap, but we are. Others offer a 'discount' and then throw high booking costs on top. At the CRUDdiscounter you get the same low price and no booking or other dubious costs. All discounts, all offers. We pass on all euro discount one-on-one. That seems normal, but we know: it is not!</p>
         </div>
         <div class="overons_adres">
-            <h3>Adres</h3>
+            <h3>Addres</h3>
             <p>
                 <br>
-                de CRUDdiscounter is onderdeel van CRUDAirlines<br>
+                The CRUDdiscounter is part of CRUDAirlines<br>
                 Suikersilo-West 41<br>
                 1165 MP Halfweg<br>
-                Nederland<br>
+                The Netherlands<br>
 
-                <span>LET OP:</span> dit is geen bezoekadres<br><br>
+                <span>WATCH OUT:</span> this is not a visiting address
+                <br><br>
 
                 BTW-nummer: NL816.195.262.B.01
             </p>

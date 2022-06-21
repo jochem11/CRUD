@@ -1,3 +1,7 @@
+<?php
+include_once("includes/session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,13 +20,13 @@
     <div class="navbar_admin">
         <nav>
             <ul>
-                <li><a href="index.php">Log uit</a></li>
+                <li><a href="index.php">Log out</a></li>
                 <li><a href="admin.php">Home admin</a></li>
             </ul>
         </nav>
     </div>
     <div class="welkom_admin">
-        <p>Welkom admin</p>
+        <p>Welcome admin</p>
         <div class="content_contact_admin">
             <?php include('./php/read.php') ?>
         </div>
