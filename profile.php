@@ -65,8 +65,29 @@
           </form>
         </div>
       </div>
-      <div class="prevFlightsContainer"></div>
+      <div class="prevFlightsContainer">
+        <h2>previous flights</h2>
+        <div class="flightsContainer">
+          <table>
+            <thead>
+              <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Netherlands</td>
+                <td>Belguim</td>
+                <td>10-6-1958</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
+    <?php include("footer.php")?>
     <script src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/33689bd479.js"
