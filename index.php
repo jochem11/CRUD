@@ -87,23 +87,33 @@
   </div>
   <div class="vluchtencontainer">
     <form action="" method="post">
+      <?php
+      $query = "SELECT * FROM vluchten";
+
+      $stmt = $connect->prepare($query);
+      $stmt->execute();
+      $result = $stmt->fetchAll();
+      foreach($result as $vlucht) {
+      ?>
       <div class="vlucht">
-        <div class="plaatje">plaatje</div>
+        <div class="plaatje">
+          <img src="pictures/vluchtenplaatjes/<?php $vlucht['plaatje']; ?>" alt="img">
+        </div>
         <div class="tekst">
           <div class="van-naar">
-            <div class="van">Nederland</div>
-            <div class="tussenstuk">naar</div>
-            <div class="naar">Italië</div>
+            <div class="van"><?php echo $vlucht['van']; ?></div>
+            <div class="tussenstuk">To</div>
+            <div class="naar"><?php echo $vlucht['naar']; ?></div>
           </div>
           <div class="tijden">
-            <div class="begintijd">12:30-5-22</div>
-            <div class="tot">tot</div>
-            <div class="eindtijd">15:00-5-25</div>
+            <div class="begintijd"><?php echo $vlucht['begintijd']; ?></div>
+            <div class="tot">until</div>
+            <div class="eindtijd"><?php echo $vlucht['eindtijd']; ?></div>
           </div>
-          <div class="zitplaatsen">zitplaatsen over: 58</div>
+          <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
           <div class="prijs-aantal">
             <div class="prijs">
-              <p>prijs per ticket: </br> &euro; 58,00</p>
+              <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
             </div>
             <div class="aantal-pers">
               <div>
@@ -117,6 +127,9 @@
           </div>
         </div>
       </div>
+      <?php
+     }
+     ?>
     </form>
   </div>
   <div class="reviewcontainer">

@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class="prevFlightsContainer">
-        <h2>previous flights</h2>
+        <h2>Previous Flights</h2>
         <div class="flightsContainer">
           <table>
             <thead>
@@ -78,16 +78,15 @@
             </thead>
             <tbody>
               <tr>
-                <td>Netherlands</td>
-                <td>Belguim</td>
-                <td>10-6-1958</td>
+                <td>Nederland</td>
+                <td>Bergium</td>
+                <td>12:00-02-08-1989</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </main>
-    <?php include("footer.php")?>
     <script src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/33689bd479.js"

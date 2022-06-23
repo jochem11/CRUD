@@ -1149,6 +1149,11 @@
   border-right: 2px solid black;
 }
 
+.vluchtencontainer .vlucht .plaatje img {
+  height: 100%;
+  overflow: hidden;
+}
+
 .vluchtencontainer .vlucht .tekst .van-naar {
   width: 100%;
   height: 15%;
@@ -1188,27 +1193,30 @@
 }
 
 .vluchtencontainer .vlucht .tekst .tijden .begintijd {
-  width: 33%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
 }
 
 .vluchtencontainer .vlucht .tekst .tijden .tot {
-  width: 34%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
 }
 
 .vluchtencontainer .vlucht .tijden .eindtijd {
-  width: 33%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
 }
 
 .vluchtencontainer .vlucht .zitplaatsen {
@@ -1263,6 +1271,7 @@
   width: 40%;
   background-color: orange;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /*////////////////////////////////////////|

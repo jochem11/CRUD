@@ -12,7 +12,7 @@
           >cancelled flights
           <p><i class="fa-solid fa-plane-circle-xmark cancelled_flights"></i></p
         ></a>
-        <a href="#"
+        <a href="index.php"
           >Logout
           <p><i class="fa-solid fa-right-from-bracket Logout"></i></p
         ></a>
