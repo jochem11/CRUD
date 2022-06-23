@@ -36,7 +36,7 @@
           <div class="van-waar">
             <div class="labelInput">
               <label for="from">from</label>
-              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" required />
+              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer"/>
               <datalist id="landen">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -51,7 +51,7 @@
           <div class="van-waar">
             <div class="labelInput">
               <label for="to">to</label>
-              <input list="landen2" name="landen2" placeholder="to" required />
+              <input list="landen2" name="landen2" placeholder="to"/>
               <datalist id="landen2">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -67,11 +67,11 @@
         <div class="rij2">
           <div class="rij2Blok">
             <i class="fa-solid fa-calendar"></i>
-            <input type="datetime-local" name="date" placeholder="date-time" required />
+            <input type="datetime-local" name="date" placeholder="date-time"/>
           </div>
           <div class="rij2Blok">
             <i class="fa-solid fa-users"></i>
-            <input type="number" name="aantal" placeholder="amount" min="0" required />
+            <input type="number" name="aantal" placeholder="amount" min="0"/>
           </div>
           <div class="rij2Blok">
             <i class="fa-brands fa-atlassian"></i>
@@ -131,7 +131,14 @@
         <button>make your review</button>
       </div>
       <div class="aantalReviews">
-        <p>reviews(20)</p>
+        <p>reviews(<?php
+        include_once('includes/connect.php');
+        $sql = "SELECT COUNT(*) FROM review WHERE Verify = 2 ";
+        $stmt = $connect->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchColumn();
+        print_r($result);
+        ?>)</p>
       </div>
       <div class="filters" id="filters">
         <form action="" method="post">
@@ -178,45 +185,68 @@
       </div>
     </div>
     <div class="reviews">
+      <?php
+      include_once('includes/connect.php');
+      $query = "SELECT * FROM review";
+
+      $stmt = $connect->prepare($query);
+      $stmt->execute();
+      $result = $stmt->fetchAll();
+      foreach($result as $review) {
+      if ($review['Verify'] == 2) {
+      ?>
       <div class="review">
         <div class="user">
-          <p>UserName</p>
+          <p><?php echo $review['naam']; ?></p>
         </div>
         <div class="from-to">
           <div class="tekst">
             <p>trip:</p>
           </div>
           <div class="from">
-            <p>Nederland</p>
+            <p><?php echo $review['van']; ?></p>
           </div>
           <div class="tussenstuk">
             <p> --- </p>
           </div>
           <div class="to">
-            <p>Nederland</p>
+            <p><?php echo $review['naar']; ?></p>
           </div>
         </div>
         <div class="title">
-          <h4>Title</h4>
+          <h4><?php echo $review['titel']; ?></h4>
         </div>
         <div class="message">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit enim, quasi, harum delectus temporibus hic officiis amet sint corporis cupiditate eveniet veniam repellat maxime animi impedit voluptas, eligendi facere! Similique nemo officia cupiditate nostrum rem beatae. Eos, illum iusto non sint facere pariatur ut incidunt maxime. Perferendis consequatur perspiciatis voluptate?
-          </p>
+          <p><?php echo $review['bericht']; ?></p>
         </div>
         <div class="rating">
           <p>
-            rating: &#9733; &#9733; &#9733; &#9733; &#9733;
+            rating: <?php
+            if ($review['rating'] == 1) {
+              echo '&#9733;';
+            } elseif ($review['rating'] == 2) {
+              echo '&#9733; &#9733;';
+            } elseif ($review['rating'] == 3) {
+              echo '&#9733; &#9733; &#9733;';
+            } elseif ($review['rating'] == 4) {
+              echo '&#9733; &#9733; &#9733; &#9733;';
+            } else {
+              echo '&#9733; &#9733; &#9733; &#9733; &#9733;';
+            }
+            ?>
           </p>
         </div>
       </div>
-      </form>
+      <?php
+      }
+      }
+      ?>
     </div>
   </div>
   </div>
   <div class="NewReviewContainer" id="RvwCtnr">
     <div class="NewReview">
-      <form action="" method="post">
+      <form action="php/NewReview.php" method="post">
         <div class="from-to">
           <div class="from">
             <div>
@@ -236,7 +266,7 @@
           <div class="to">
             <div>
               <p>to</p>
-              <input list="to" type="input" class="form__field" placeholder="from" name="to" id='name' required />
+              <input list="to" type="input" class="form__field" placeholder="to" name="to" id='name' required />
               <datalist id="to">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
