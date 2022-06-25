@@ -1,28 +1,16 @@
 <?php
-include_once('includes/connect.php');
+include('includes/connect.php');
 
-if (isset($_POST['submit'])) {
+if ((isset($_POST['naam'])) && (isset($_POST['wachtwoord']))) {
 
     $sql = "SELECT naam FROM gebruiker WHERE naam = :naam AND wachtwoord = :wachtwoord";
     $stmt = $connect->prepare($sql);
     $stmt->bindParam(":naam", $_POST['naam']);
     $stmt->bindParam(":wachtwoord", $_POST['wachtwoord']);
-    $stmt->bindParam(":email", $_POST['email']);
-    $stmt->bindParam(":admin", $_POST['admin']);
     $stmt->execute();
     $result = $stmt->fetch();
 
-
-    if (isset($result['admin']) === 1) {
-        session_start();
-
-        $_SESSION["admin"] = true;
-
-        header("Location: http://localhost/CRUD/admin.php");
-        exit();
-    }
-
-    if (isset($result['gebruiker']) && $result['gebruiker'] === 'admin') {
+    if (isset($result['naam']) && $result['naam'] === 'admin') {
         session_start();
 
         $_SESSION["admin"] = true;

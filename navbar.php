@@ -11,7 +11,7 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
   $stmt_contact->bindParam(":email", $_POST['email']);
   $stmt_contact->execute();
 
-  header("Location: http://localhost/CRUD/profile.php");
+  header("Location: http://localhost/CRUD/index.php");
   exit();
 }
 ?>
@@ -45,14 +45,14 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
       <img src="pictures/loginPicture.png" alt="loginPicture" />
     </div>
     <div class="invoerContainer">
-      <form action="profile.php" method="post">
+      <form action="index.php" method="post">
         <label for="name">Name</label>
         <input type="text" name="naam" placeholder="name:" required />
         <label for="password">Password</label>
         <input type="password" name="wachtwoord" placeholder="password:" required />
         <label for="email">Email</label>
         <input type="text" name="email" placeholder="email" required>
-        <button type="submit" value="submit">Make</button>
+        <input type="submit" name="submit" value="Make"></input>
       </form>
     </div>
   </div>
@@ -63,12 +63,12 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
       <img src="pictures/loginPicture.png" alt="loginPicture" />
     </div>
     <div class="invoerContainer">
-      <form method="post" action="php/checklogin.php">
+      <form action="php/checklogin.php" action="post">
         <label for="name">Name</label>
         <input type="text" name="naam" placeholder="name:" required />
         <label for="password">Password</label>
         <input type="password" name="wachtwoord" placeholder="password:" required />
-        <button type="submit" value="submit">Make</button>
+        <input type="submit" name="submit" value="submit"></input>
       </form>
     </div>
   </div>
