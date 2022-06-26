@@ -26,13 +26,13 @@
                     <li><a href="https://apps.apple.com/app/apple-store/id391732065" target="_blank"><img src="pictures/download_foto_apple.png" alt="apple download image"></a><br><a href="https://play.google.com/store/search?q=klm+app&c=apps&gl=NL" target="_blank"><img src="pictures/download_foto_samsung.png" alt="download play store foto"></a></li>
                 </h3>
                 <h3 class="reisgidsen_footer">Travel guides<br>
-                    <li><a href="https://www.youtube.com/">Afrika</li></a>
+                    <li><a href="informationaboutlocation.php#france">France</li></a><a href="informationaboutlocation.php#skorea">Seoul</a>
                 </h3>
                 <h3 class="topbestemmingen_footer">Top destinations<br>
-                    <li><a href="https://www.youtube.com/">Bangkok<br></li></a><a href="https://www.youtube.com">Los Angeles</a>
+                    <li><a href="informationaboutlocation.php#canada">Toronto<br></li></a><a href="informationaboutlocation.php#japan">Tokyo</a>
                 </h3>
                 <h3 class="populaire_landen_footer">Popular countries<br>
-                    <li><a href="https://www.youtube.com/">Canada<br></li></a><a href="https://www.youtube.com">Japan</a>
+                    <li><a href="informationaboutlocation.php#canada">Canada<br></li></a><a href="informationaboutlocation.php#japan">Japan</a><br><a href="informationaboutlocation.php#france">France</a><br><a href="informationaboutlocation.php#skorea">South Korea</a>
                 </h3>
             </ul>
         </nav>

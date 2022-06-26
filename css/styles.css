@@ -453,8 +453,8 @@
   border-radius: 5px;
 }
 
-.logincontainer .invoerContainer button,
-.logincontainer .signupContainer .invoerContainer button {
+.logincontainer .invoerContainer input[type="submit"],
+.logincontainer .signupContainer .invoerContainer input[type="submit"] {
   width: 65px;
   height: 40px;
   border-radius: 20px;
@@ -566,26 +566,30 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  background-color: #b5f8fe;
+  background-color: #444;
+  flex-wrap: wrap;
+  padding: 25px;
 }
 
 .footer .footer_lijst h3 {
+  margin: 10px;
   font-size: 25px;
   color: #ffe74c;
 }
 
 .footer .footer_lijst li {
   font-size: 15px;
+  color: #f75590;
 }
 
-.algemene_voorwaarden a:hover {
+.footer .footer_lijst a {
+  font-size: 15px;
   color: #f75590;
   transition: 1s;
-  font-size: 15px;
 }
 
 .footer .footer_lijst a:hover {
-  color: #f75590;
+  color: #89daff;
 }
 
 .footer .footer_lijst .download_crudairlines_footer img {
@@ -593,30 +597,6 @@
   width: 135px;
   height: auto;
   border-radius: 10px;
-}
-
-@media only screen and (max-width: 1350px) {
-  .footer {
-    padding-top: 50px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 50px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .footer {
-    padding-top: 60px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 60px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .footer .footer_lijst h3 {
-    margin: 15px;
-  }
 }
 
 /*///////////////////////////////////////|
@@ -1716,7 +1696,7 @@
   padding: 14px;
   display: flex;
   justify-content: center;
-  background-color: #21897e;
+  background-color: #89daff;
 }
 
 .algemene_voorwaarden p {
@@ -1730,7 +1710,7 @@
 }
 
 .algemene_voorwaarden a:hover {
-  color: #ffe74c;
+  color: #f75590;
   transition: 1s;
 }
 
@@ -2032,6 +2012,217 @@
 .BookedFlightsContainer table tbody tr td {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+/*/////////////////////////////////////|
+-------------informatie over locaties---------|
+///////////////////////////////////////|*/
+
+.informatie_over_locaties_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: linear-gradient(#f75590, #ffe74c, #b5f8fe);
+}
+
+.informatie_over_locaties_container img {
+  width: 100%;
+  height: auto;
+  background-image: url("pictures/japan.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: cover;
+}
+
+.info_locatie_slideshow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tekst_info_locatie_slideshow h2 {
+  text-align: center;
+  overflow: auto;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.tekst_info_locatie_slideshow p {
+  text-align: center;
+  overflow: auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.tekst_info_locatie_slideshow {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  color: #fff;
+  flex-direction: column;
+}
+
+.japan_informatie_locatie {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.japan_informatie_locatie h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.japan_informatie_locatie p {
+  font-size: 17px;
+}
+
+.japan_fotos_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.japan_fotos_container img {
+  width: 40%;
+  height: auto;
+  margin: 10px;
+}
+
+.meer_locaties {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #576490;
+  color: #ffe74c;
+}
+
+.canada_informatie_locatie {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.canada_informatie_locatie h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.canada_informatie_locatie p {
+  font-size: 17px;
+}
+
+.canada_fotos_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.canada_fotos_container img {
+  width: 40%;
+  height: auto;
+  margin: 10px;
+}
+
+.france_informatie_locatie {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.france_informatie_locatie h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.france_fotos_container p {
+  font-size: 17px;
+}
+
+.france_fotos_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.france_fotos_container img {
+  width: 40%;
+  height: auto;
+  margin: 10px;
+}
+
+.skorea_informatie_locatie {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skorea_fotos_container h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.skorea_fotos_container p {
+  font-size: 17px;
+}
+
+.skorea_fotos_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.skorea_fotos_container img {
+  width: 40%;
+  height: auto;
+  margin: 10px;
 }
 
 /*/////////////////////////////////////|
