@@ -68,7 +68,7 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
         <input type="text" name="naam" placeholder="name:" required />
         <label for="password">Password</label>
         <input type="password" name="wachtwoord" placeholder="password:" required />
-        <button type="submit" value="submit">Make</button>
+        <button type="submit" value="submit" name="submit">Log in</button>
       </form>
     </div>
   </div>
