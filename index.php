@@ -36,7 +36,7 @@
           <div class="van-waar">
             <div class="labelInput">
               <label for="from">from</label>
-              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer"/>
+              <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" />
               <datalist id="landen">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -51,7 +51,7 @@
           <div class="van-waar">
             <div class="labelInput">
               <label for="to">to</label>
-              <input list="landen2" name="landen2" placeholder="to"/>
+              <input list="landen2" name="landen2" placeholder="to" />
               <datalist id="landen2">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -67,11 +67,11 @@
         <div class="rij2">
           <div class="rij2Blok">
             <i class="fa-solid fa-calendar"></i>
-            <input type="datetime-local" name="date" placeholder="date-time"/>
+            <input type="datetime-local" name="date" placeholder="date-time" />
           </div>
           <div class="rij2Blok">
             <i class="fa-solid fa-users"></i>
-            <input type="number" name="aantal" placeholder="amount" min="0"/>
+            <input type="number" name="aantal" placeholder="amount" min="0" />
           </div>
           <div class="rij2Blok">
             <i class="fa-brands fa-atlassian"></i>
@@ -93,43 +93,43 @@
       $stmt = $connect->prepare($query);
       $stmt->execute();
       $result = $stmt->fetchAll();
-      foreach($result as $vlucht) {
+      foreach ($result as $vlucht) {
       ?>
-      <div class="vlucht">
-        <div class="plaatje">
-          <img src="pictures/vluchtenplaatjes/<?php $vlucht['plaatje']; ?>" alt="img">
-        </div>
-        <div class="tekst">
-          <div class="van-naar">
-            <div class="van"><?php echo $vlucht['van']; ?></div>
-            <div class="tussenstuk">To</div>
-            <div class="naar"><?php echo $vlucht['naar']; ?></div>
+        <div class="vlucht">
+          <div class="plaatje">
+            <img src="pictures/vluchtenplaatjes/<?php echo $vlucht['plaatje']; ?>" alt="img">
           </div>
-          <div class="tijden">
-            <div class="begintijd"><?php echo $vlucht['begintijd']; ?></div>
-            <div class="tot">until</div>
-            <div class="eindtijd"><?php echo $vlucht['eindtijd']; ?></div>
-          </div>
-          <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
-          <div class="prijs-aantal">
-            <div class="prijs">
-              <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
+          <div class="tekst">
+            <div class="van-naar">
+              <div class="van"><?php echo $vlucht['van']; ?></div>
+              <div class="tussenstuk">To</div>
+              <div class="naar"><?php echo $vlucht['naar']; ?></div>
             </div>
-            <div class="aantal-pers">
-              <div>
-                <p>aantal tickets:</p>
-                <input type="number" name="tickets" min="0">
+            <div class="tijden">
+              <div class="begintijd"><?php echo $vlucht['begintijd']; ?></div>
+              <div class="tot">until</div>
+              <div class="eindtijd"><?php echo $vlucht['eindtijd']; ?></div>
+            </div>
+            <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
+            <div class="prijs-aantal">
+              <div class="prijs">
+                <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
+              </div>
+              <div class="aantal-pers">
+                <div>
+                  <p>aantal tickets:</p>
+                  <input type="number" name="tickets" min="0">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="stuur">
-            <button type="submit">stuur</button>
+            <div class="stuur">
+              <button type="submit">stuur</button>
+            </div>
           </div>
         </div>
-      </div>
       <?php
-     }
-     ?>
+      }
+      ?>
     </form>
   </div>
   <div class="reviewcontainer">
@@ -145,34 +145,44 @@
       </div>
       <div class="aantalReviews">
         <p>reviews(<?php
-        include_once('includes/connect.php');
-        $sql = "SELECT COUNT(*) FROM review WHERE Verify = 2 ";
-        $stmt = $connect->prepare($sql);
-        $stmt->execute();
-        $result = $stmt->fetchColumn();
-        print_r($result);
-        ?>)</p>
+                    include_once('includes/connect.php');
+                    $sql = "SELECT COUNT(*) FROM review WHERE Verify = 2 ";
+                    $stmt = $connect->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->fetchColumn();
+                    print_r($result);
+                    ?>)</p>
       </div>
+      <?php
+      include_once("includes/connect.php");
+      $sql = "SELECT * FROM vluchten";
+      $stmt = $connect->prepare($sql);
+      $stmt->execute();
+      $result = $stmt->fetch();
+      if (!isset($_POST["submit"])) {
+        $query = "SELECT * FROM vluchten WHERE van like '%" . $_GET["van"] . "%' and begintijd like '" . $_GET["begintijd"] . "%' and eindtijd like '%" . $_GET["eindtijd"] . "%'";
+      }
+      ?>
       <div class="filters" id="filters">
         <form action="" method="post">
           <div class="from-to">
             <div class="from">
               <div>
                 <p>from</p>
-                <input type="input" class="form__field" placeholder="From" name="from" id='name' required />
+                <input type="input" class="form__field" placeholder="From" name="van" id='name' required />
               </div>
             </div>
             <div class="to">
               <div>
                 <p>to</p>
-                <input type="input" class="form__field" placeholder="To" name="to" id='name' required />
+                <input type="input" class="form__field" placeholder="To" name="naar" id='name' required />
               </div>
             </div>
           </div>
           <div class="title">
             <div>
               <p>title</p>
-              <input type="input" class="form__field" placeholder="Title" name="title" id='name' required />
+              <input type="input" class="form__field" placeholder="Title" name="titel" id='name' required />
             </div>
           </div>
           <div class="bericht">
@@ -192,7 +202,7 @@
                 <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
               </select>
             </div>
-            <button type="submit">filter</button>
+            <input type="submit" name="submit">filter</input>
           </div>
         </form>
       </div>
@@ -205,53 +215,53 @@
       $stmt = $connect->prepare($query);
       $stmt->execute();
       $result = $stmt->fetchAll();
-      foreach($result as $review) {
-      if ($review['Verify'] == 2) {
+      foreach ($result as $review) {
+        if ($review['Verify'] == 2) {
       ?>
-      <div class="review">
-        <div class="user">
-          <p><?php echo $review['naam']; ?></p>
-        </div>
-        <div class="from-to">
-          <div class="tekst">
-            <p>trip:</p>
+          <div class="review">
+            <div class="user">
+              <p><?php echo $review['naam']; ?></p>
+            </div>
+            <div class="from-to">
+              <div class="tekst">
+                <p>trip:</p>
+              </div>
+              <div class="from">
+                <p><?php echo $review['van']; ?></p>
+              </div>
+              <div class="tussenstuk">
+                <p> --- </p>
+              </div>
+              <div class="to">
+                <p><?php echo $review['naar']; ?></p>
+              </div>
+            </div>
+            <div class="title">
+              <h4><?php echo $review['titel']; ?></h4>
+            </div>
+            <div class="message">
+              <p><?php echo $review['bericht']; ?></p>
+            </div>
+            <div class="rating">
+              <p>
+                rating: <?php
+                        if ($review['rating'] == 1) {
+                          echo '&#9733;';
+                        } elseif ($review['rating'] == 2) {
+                          echo '&#9733; &#9733;';
+                        } elseif ($review['rating'] == 3) {
+                          echo '&#9733; &#9733; &#9733;';
+                        } elseif ($review['rating'] == 4) {
+                          echo '&#9733; &#9733; &#9733; &#9733;';
+                        } else {
+                          echo '&#9733; &#9733; &#9733; &#9733; &#9733;';
+                        }
+                        ?>
+              </p>
+            </div>
           </div>
-          <div class="from">
-            <p><?php echo $review['van']; ?></p>
-          </div>
-          <div class="tussenstuk">
-            <p> --- </p>
-          </div>
-          <div class="to">
-            <p><?php echo $review['naar']; ?></p>
-          </div>
-        </div>
-        <div class="title">
-          <h4><?php echo $review['titel']; ?></h4>
-        </div>
-        <div class="message">
-          <p><?php echo $review['bericht']; ?></p>
-        </div>
-        <div class="rating">
-          <p>
-            rating: <?php
-            if ($review['rating'] == 1) {
-              echo '&#9733;';
-            } elseif ($review['rating'] == 2) {
-              echo '&#9733; &#9733;';
-            } elseif ($review['rating'] == 3) {
-              echo '&#9733; &#9733; &#9733;';
-            } elseif ($review['rating'] == 4) {
-              echo '&#9733; &#9733; &#9733; &#9733;';
-            } else {
-              echo '&#9733; &#9733; &#9733; &#9733; &#9733;';
-            }
-            ?>
-          </p>
-        </div>
-      </div>
       <?php
-      }
+        }
       }
       ?>
     </div>

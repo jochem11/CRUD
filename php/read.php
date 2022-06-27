@@ -13,6 +13,11 @@ $stmt_review = $connect->prepare($sql_review);
 $stmt_review->execute();
 $result_review = $stmt_review->fetchAll();
 
+$sql_vluchten = "SELECT * FROM vluchten";
+$stmt_vluchten = $connect->prepare($sql_vluchten);
+$stmt_vluchten->execute();
+$result_vluchten = $stmt_vluchten->fetchAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -103,6 +108,44 @@ $result_review = $stmt_review->fetchAll();
                 echo '</tr>';
             }
             ?>
+        </table>
+    </div>
+
+    <div class="vluchten_container_read">
+        <p>Flights</p>
+        <p><a href="http://localhost/CRUD/php/createVlucht.php">Add here new flights!</a></p>
+        <table class="table_container_read">
+            <tr class="table_vluchten">
+                <th>ID</th>
+                <th>Total</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Begin date</th>
+                <th>End date</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <?php
+
+            foreach ($result_vluchten as $vluchten) {
+
+                echo '<tr>';
+                echo '<td>' . $vluchten['ID'] . '</td>';
+                echo '<td>' . $vluchten['aantal'] . '</td>';
+                echo '<td>' . $vluchten['van'] . '</td>';
+                echo '<td>' . $vluchten['naar'] . '</td>';
+                echo '<td>' . $vluchten['begintijd'] . '</td>';
+                echo '<td>' . $vluchten['eindtijd'] . '</td>';
+                echo '<td>' . $vluchten['prijs'] . '</td>';
+                echo '<td>' . $vluchten['plaatje'] . '</td>';
+                echo '<td class="vluchten_update_knop"><a href="php/updateVlucht.php?ID=' . $vluchten['ID'] . '">Update</a></td>';
+                echo '<td class="vluchten_delete_knop"><a href="php/delete.php?ID=' . $vluchten['ID'] . '">Delete</a></td>';
+                echo '</tr>';
+            }
+            ?>
+
         </table>
     </div>
 

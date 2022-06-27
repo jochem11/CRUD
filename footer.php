@@ -17,7 +17,8 @@
         <nav class="footer_lijst">
             <ul>
                 <h3 class="contact_opties_footer">Contact us<br>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="contact.php">Contact<br></a></li><br>
+                    <li><a href="review.php">Review</a></li>
                 </h3>
                 <h3 class="over_crudairlines_footer">About CRUDAirlines<br>
                     <li><a href="aboutus.php">About us</a></li>
@@ -41,8 +42,8 @@
         <h2>Follow us social media!</h2>
         <div class="contact_linkjes">
             <div class="contact_linkjes_instagram">
-                <a href="https://www.instagram.com/officialrickastley/"><img src="pictures/instagram_link_logo.png" alt="instagram link"></a>
-                <a href="https://www.instagram.com/officialrickastley/">
+                <a href="https://www.instagram.com/klm/"><img src="pictures/instagram_link_logo.png" alt="instagram link"></a>
+                <a href="https://www.instagram.com/klm/">
                     <p>Instagram</p>
                 </a>
             </div>
@@ -53,14 +54,14 @@
                 </a>
             </div>
             <div class="contact_linkjes_youtube">
-                <a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw"><img src="pictures/youtube_link_logo.png" alt="youtube link"></a>
-                <a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw">
+                <a href="https://www.youtube.com/c/KLM"><img src="pictures/youtube_link_logo.png" alt="youtube link"></a>
+                <a href="https://www.youtube.com/c/KLM">
                     <p>Youtube</p>
                 </a>
             </div>
             <div class="contact_linkjes_twitter">
-                <a href="https://twitter.com/rickastley"><img src="pictures/twitter_link_logo.png" alt="twitter logo"></a>
-                <a href="https://twitter.com/rickastley">
+                <a href="https://twitter.com/KLM"><img src="pictures/twitter_link_logo.png" alt="twitter logo"></a>
+                <a href="https://twitter.com/KLM">
                     <p>Twitter</p>
                 </a>
             </div>
