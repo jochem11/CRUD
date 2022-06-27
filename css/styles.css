@@ -144,7 +144,6 @@
   position: absolute;
   min-width: 80%;
   width: auto;
-  min-height: 350px;
   height: auto;
   background-color: #b5f8fe;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -218,7 +217,7 @@
 }
 
 .slideshow-container .boekcontainer .rij2Blok {
-  width: 30%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -236,6 +235,51 @@
   float: right;
   margin-right: 10px;
   padding: 5px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width:750px) {
+  .slideshow-container .boekcontainer {
+    margin-top: 100px;
+    min-width: none;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .slideshow-container .boekcontainer .rij2 {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slideshow-container .boekcontainer .rij1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .slideshow-container .boekcontainer .rij1 .van-waar {
+    width: 60%;
+  }
+  .slideshow-container .boekcontainer .rij2 {
+    width: 60%;
+  }
+  .slideshow-container .boekcontainer .rij2 .rij2Blok {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slideshow-container .boekcontainer {
+    margin-top: 150px;
+  }
 }
 /*//////////////////////////////////////|
 -----------overons------------|
@@ -1268,6 +1312,24 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 500px) {
+  .vluchtencontainer {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .vluchtencontainer .vlucht {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .vluchtencontainer {
+    padding-top: 100px;
+  }
+}
+
 /*////////////////////////////////////////|
 ----------------reviews-------------------|
 //////////////////////////////////////////|*/
@@ -1699,6 +1761,65 @@
   padding: 7px 40px 7px 40px;
   border-radius: 10px;
   background-color: #547cff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reviewcontainer .bovenbalk .filterButton {
+    width: 20%;
+  }
+  .reviewcontainer .bovenbalk .aantalReviews {
+    width: 20%;
+  }
+  .reviewcontainer .bovenbalk .MakeReview {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .reviewcontainer .bovenbalk .filterButton .button p {
+    font-size: 20px;
+  }
+  .reviewcontainer .bovenbalk .filterButton img {
+    height: 20px;
+  }
+  .reviewcontainer .bovenbalk .MakeReview button {
+    width: 80%;
+    font-size: 20px;
+  }
+  .reviewcontainer .bovenbalk .aantalReviews p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .reviewcontainer .bovenbalk .filterButton .button p {
+    font-size: 15px;
+  }
+  .reviewcontainer .bovenbalk .filterButton img {
+    height: 20%;
+  }
+  .reviewcontainer .bovenbalk .MakeReview button {
+    width: 80%;
+    font-size: 15px;
+  }
+  .reviewcontainer .bovenbalk .aantalReviews p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .reviewcontainer .bovenbalk .filters .from-to {
+    flex-direction: column;
+  }
+  .reviewcontainer .bovenbalk .filters form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .reviewcontainer .reviews .review {
+    width: 80%;
+  }
 }
 /*/ ///////////////////////////////////////|
 ----------------algemene voorwaarden-------------------|

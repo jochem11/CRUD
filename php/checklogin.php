@@ -73,17 +73,21 @@ if (isset($_POST["submit"])) {
     $user = $stmt->fetch();
     if ($user['admin'] == 1) {
         session_start();
+        $_SESSION['ID'] = $user['ID'];
         $_SESSION['admin'] = true;
         $_SESSION['loggedIn'] = true;
         $_SESSION['naam'] = $user["naam"];
         $_SESSION['wachtwoord'] = $user["wachtwoord"];
+        $_SESSION['email'] = $user["email"];
         header("location: ../admin.php");
     } else {
         session_start();
+        $_SESSION['ID'] = $user['ID'];
         $_SESSION['admin'] = false;
         $_SESSION['loggedIn'] = true;
         $_SESSION['naam'] = $user["naam"];
         $_SESSION['wachtwoord'] = $user["wachtwoord"];
-        header("location: ../index.php");
+        $_SESSION['email'] = $user["email"];
+        header("location: ../profile.php");
     }
 }

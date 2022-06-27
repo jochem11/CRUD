@@ -16,7 +16,6 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
   header("Location: http://localhost/CRUD/index.php");
   exit();
 }
-session_start();
 ?>
 
 <div class="navbar">
@@ -78,7 +77,7 @@ session_start();
         <input type="text" name="naam" placeholder="name:" required />
         <label for="password">Password</label>
         <input type="password" name="wachtwoord" placeholder="password:" required />
-        <button type="submit" value="submit" name="submit">Log in</button>
+        <input type="submit" value="Log in" name="submit"></input>
       </form>
     </div>
   </div>
