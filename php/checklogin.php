@@ -64,7 +64,7 @@ include('../includes/connect.php');
 //         }
 //     }
 
-if (isset($_POST['submit'])) { 
+if (isset($_POST["submit"])) { 
     $query = "SELECT * FROM gebruiker WHERE naam = :naam AND wachtwoord = :wachtwoord";
     $stmt = $connect->prepare($query);
     $stmt->bindParam(":naam", $_POST["naam"]);
@@ -74,12 +74,14 @@ if (isset($_POST['submit'])) {
     if ($user['admin'] == 1) {
         session_start();
         $_SESSION['admin'] = true;
-        $_SESSION['naam'] = $_POST["naam"];
-        $_SESSION['wachtwoord'] = $_POST["wachtwoord"];
-        echo $_SESSION['naam'] . "<br>";
-        echo $_SESSION['wachtwoord'];
-        // header("location: ../admin.php");
+        $_SESSION['naam'] = $user["naam"];
+        $_SESSION['wachtwoord'] = $user["wachtwoord"];
+        header("location: ../admin.php");
     } else {
-        echo "user";
+        session_start();
+        $_SESSION['admin'] = false;
+        $_SESSION['naam'] = $user["naam"];
+        $_SESSION['wachtwoord'] = $user["wachtwoord"];
+        header("location: ../index.php");
     }
 }

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -264,6 +268,7 @@
           <div class="from">
             <div>
               <p>from</p>
+              <input type="hidden" value="<?php $_SESSION['naam']; ?>">
               <input list="from" type="input" class="form__field" placeholder="from" name="from" id='name' required />
               <datalist id="from">
                 <option value="Nederland">Nederland</option>
