@@ -77,9 +77,10 @@ $result_review = $stmt_review->fetchAll();
                 <th>Title</th>
                 <th>Message</th>
                 <th>Rating</th>
-                <th>Verify</th>
+                <th>Verify value</th>
                 <th>From</th>
                 <th>To</th>
+                <th>Verify</th>
                 <th>Update</th>
                 <th>Delete</th>
             </tr>
@@ -96,6 +97,7 @@ $result_review = $stmt_review->fetchAll();
                 echo '<td>' . $review['Verify'] . '</td>';
                 echo '<td>' . $review['van'] . '</td>';
                 echo '<td>' . $review['naar'] . '</td>';
+                echo '<td class="verify_knop"><a href="php/verify.php?ID=' . $review['ID'] . '">Verify</a></td>';
                 echo '<td class="review_update_knop"><a href="php/update.php?ID=' . $review['ID'] . '">Update</a></td>';
                 echo '<td class="review_delete_knop"><a href="php/delete.php?ID=' . $review['ID'] . '">Delete</a></td>';
                 echo '</tr>';

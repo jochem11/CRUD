@@ -3,13 +3,15 @@ include('includes/connect.php');
 
 if (isset($_POST['submit'])) {
 
-    $sql = "INSERT INTO review (naam, titel, bericht, rating) VALUES(:naam, :titel, :bericht, :rating)";
+    $sql = "INSERT INTO review (naam, titel, bericht, rating, van, naar) VALUES(:naam, :titel, :bericht, :rating, :van, :naar)";
 
     $stmt = $connect->prepare($sql);
     $stmt->bindParam(":naam", $_POST['naam']);
     $stmt->bindParam(":titel", $_POST['titel']);
     $stmt->bindParam(":bericht", $_POST['bericht']);
     $stmt->bindParam(":rating", $_POST['rating']);
+    $stmt->bindParam(":van", $_POST['van']);
+    $stmt->bindParam(":naar", $_POST['naar']);
     $stmt->execute();
 } ?>
 
@@ -44,10 +46,13 @@ if (isset($_POST['submit'])) {
             <input type="text" name="bericht" id="bericht" placeholder="Message: " required />
             <label for="rating">Rating: </label>
             <input type="text" name="rating" id="rating" placeholder="Choose between 1 and 5: " required />
+            <label for="from">From: </label>
+            <input type="text" name="van" id="from" placeholder="From: " required />
+            <label for="naar">To: </label>
+            <input type="text" name="naar" id="to" placeholder="To: " required />
             <input type="submit" value="submit" name="submit" id="submit" />
         </form>
     </div>
-
     <?php include("footer.php") ?>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>

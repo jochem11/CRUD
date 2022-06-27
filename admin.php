@@ -1,7 +1,5 @@
 <?php
 session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +18,7 @@ session_start();
     <div class="navbar_admin">
         <nav>
             <ul>
-                <li><a href="index.php">Log out</a></li>
+                <li><a href="php/logout.php">Log out</a></li>
                 <li><a href="admin.php">Home admin</a></li>
             </ul>
         </nav>
@@ -28,7 +26,7 @@ session_start();
     <div class="welkom_admin">
         <p>Welcome <?php echo $_SESSION['naam']; ?></p>
         <div class="content_contact_admin">
-            <?php include('./php/read.php') ?>
+            <?php include('php/read.php') ?>
         </div>
     </div>
 </body>
