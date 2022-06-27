@@ -16,6 +16,15 @@
   <body>
     <?php include("navbar.php"); ?>
     <?php include("sidenav.php"); ?>
+    <?php 
+    if (isset($_SESSION['naam']) && $_SESSION['naam'] != "") {
+      
+    } else {
+      header('location:index.php');
+      session_destroy();
+    }
+    ?>
+
     <main class="main-profile">
       <div class="profilecontainer">
         <div class="profilepic">

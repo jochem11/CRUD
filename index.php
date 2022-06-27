@@ -185,6 +185,7 @@
             <div>
               <p>rating</p>
               <select name="rating">
+                <option value="#">None</option>
                 <option value="1">&#9733;</option>
                 <option value="2">&#9733; &#9733;</option>
                 <option value="3">&#9733; &#9733; &#9733;</option>

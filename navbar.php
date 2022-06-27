@@ -1,6 +1,8 @@
 <?php
 include("includes/connect.php");
 
+
+
 if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'])) {
 
   $sql_contact = "INSERT INTO gebruiker (naam, wachtwoord, email) VALUES(:naam, :wachtwoord, :email)";
@@ -14,8 +16,8 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
   header("Location: http://localhost/CRUD/index.php");
   exit();
 }
+session_start();
 ?>
-
 
 <div class="navbar">
   <div class="logoContainer">
@@ -31,7 +33,15 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
     </a>
     <div class="login" id="loginBtn">
       <i class="fa-solid fa-user-tie"></i>
-      <p>login</p>
+      <p>
+      <?php
+      if (!isset($_SESSION['loggedIn'])) {
+        echo "login";
+      } else {
+        echo $_SESSION['naam'];
+      }
+      ?>
+    </p>
     </div>
     <div class="login" id="signUpBtn">
       <i class="fa-solid fa-person-circle-plus"></i>
