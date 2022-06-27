@@ -744,6 +744,21 @@
   padding: 5px;
 }
 
+.review_container_read .verify_knop {
+  background-color: #89daff;
+  transition: 1s;
+}
+
+.review_container_read .verify_knop a {
+  color: #000;
+  transition: 1s;
+}
+
+.review_container_read .verify_knop a:hover {
+  color: #ffe74c;
+  transition: 1s;
+}
+
 .review_container_read .review_update_knop {
   background-color: #ffe74c;
   transition: 1s;
@@ -932,7 +947,6 @@
 
 .update_form_contact a:hover {
   color: #f75590;
-  text-decoration: underline;
 }
 
 .update_form_contact input {
@@ -977,8 +991,7 @@
 }
 
 .update_form_review a:hover {
-  color: #ffe74c;
-  text-decoration: underline;
+  color: #b5f8fe;
 }
 
 .update_form_review p {
@@ -1010,6 +1023,7 @@
   background-color: #f75590;
   box-shadow: 3px 3px #000;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .update_form_review input[type="submit"]:active {
@@ -2252,4 +2266,66 @@
 .CancelledFlightsContainer table tbody tr td {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+/*/////////////////////////////////////|
+-------------verify----------|
+///////////////////////////////////////|*/
+
+.verify_form_container {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#576490, #b5f8fe);
+  padding: 10px;
+}
+
+.verify_form_container h2 {
+  text-align: center;
+}
+
+.verify_form_container p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.verify_form_container form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.verify_form_container a {
+  color: #000;
+  transition: 1s;
+}
+
+.verify_form_container a:hover {
+  color: #f75590;
+}
+
+.verify_form_container input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.verify_form_container label {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.verify_form_container input[type="submit"] {
+  background-color: #b5f8fe;
+  box-shadow: 3px 3px #000;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.verify_form_container input[type="submit"]:active {
+  background-color: #ffe74c;
+  transform: translateY(4px);
+  border-radius: 5px;
 }
