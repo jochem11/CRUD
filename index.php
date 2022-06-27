@@ -295,7 +295,7 @@
         <div class="title">
           <div>
             <p>Title</p>
-            <input type="input" class="form__field" placeholder="from" name="title" id='name' required />
+            <input type="input" class="form__field" placeholder="Title" name="title" id='name' required />
           </div>
         </div>
         <div class="message">

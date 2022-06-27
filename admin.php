@@ -1,5 +1,5 @@
 <?php
-// include_once("includes/session.php");
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
         </nav>
     </div>
     <div class="welkom_admin">
-        <p>Welcome admin</p>
+        <p>Welcome <?php echo $_SESSION['naam']; ?></p>
         <div class="content_contact_admin">
             <?php include('./php/read.php') ?>
         </div>
