@@ -24,6 +24,7 @@ if ($_SESSION['admin'] != true) {
             <ul>
                 <li><a href="php/logout.php">Log out</a></li>
                 <li><a href="admin.php">Home admin</a></li>
+                <li><a href="php/createVlucht.php">Create flight</a></li>
             </ul>
         </nav>
     </div>

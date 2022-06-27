@@ -48,37 +48,37 @@ if (isset($_POST['naam']) && isset($_POST['titel']) && isset($_POST['bericht']) 
 
 <body>
     <div class="create_form_contact">
-        <p>Voeg hier een nieuwe contact toe!</p>
+        <p>Add here new contacts!</p>
         <form action="#" method="post">
-            <label for="naam">Naam contact</label>
+            <label for="naam">Name contact</label>
             <input type="text" name="naam" placeholder="Naam contact" required>
             <label for="email">Email contact</label>
             <input type="text" name="email" placeholder="Email contact" id="email" required>
-            <label for="titel">Titel contact</label>
+            <label for="titel">Title contact</label>
             <input type="text" name="titel" placeholder="Titel contact" id="titel" required>
-            <label for="bericht">Bericht contact</label>
+            <label for="bericht">Message contact</label>
             <input type="text" name="bericht" placeholder="Bericht contact" id="bericht" required>
-            <input type="submit" name="create" value="submit"><br>
-            <a href="http://localhost/CRUD/admin.php">Ga terug</a>
+            <input type="submit" name="create" value="Submit"><br>
+            <a href="http://localhost/CRUD/admin.php">Go back</a>
         </form>
     </div>
     <div class="create_form_review">
-        <p>Voeg hier een nieuwe review toe!</p>
+        <p>Add here new reviews!</p>
         <form action="#" method="post">
-            <label for="naam">Naam review</label>
-            <input type="text" name="naam" placeholder="Naam review" required>
+            <label for="naam">Name review</label>
+            <input type="text" name="naam" placeholder="Naam review:" required>
             <label for="titel">Email review</label>
-            <input type="text" name="titel" placeholder="Titel review" id="titel" required>
-            <label for="bericht">Titel review</label>
-            <input type="text" name="bericht" placeholder="Bericht review" id="bericht" required>
+            <input type="text" name="titel" placeholder="Titel review:" id="titel" required>
+            <label for="bericht">Titlte review</label>
+            <input type="text" name="bericht" placeholder="Bericht review:" id="bericht" required>
             <label for="rating">Rating review</label>
-            <input type="text" name="rating" placeholder="Rating review" id="rating" required>
-            <label for="from">From review</label>
-            <input type="text" name="van" placeholder="From review" id="van" required>
-            <label for="rating">Rating review</label>
-            <input type="text" name="naar" placeholder="To review" id="naar" required>
-            <input type="submit" name="create" value="submit">
-            <a href="http://localhost/CRUD/admin.php">Ga terug</a>
+            <input type="text" name="rating" placeholder="Rating review:" id="rating" required>
+            <label for="van">From</label>
+            <input type="text" name="van" placeholder="From:" id="van" required>
+            <label for="naar">To</label>
+            <input type="text" name="naar" placeholder="To:" id="naar" required>
+            <input type="submit" name="create" value="Submit">
+            <a href="http://localhost/CRUD/admin.php">Go back</a>
         </form>
     </div>
 </body>
