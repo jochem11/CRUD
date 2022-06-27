@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +86,7 @@ session_start();
     </div>
   </div>
   <div class="vluchtencontainer">
-    <form action="php/bookFlight.php" method="post">
+    <form action="" method="post">
       <?php
       $query = "SELECT * FROM vluchten";
 
@@ -99,34 +95,31 @@ session_start();
       $result = $stmt->fetchAll();
       foreach ($result as $vlucht) {
       ?>
-      <div class="vlucht">
-        <div class="plaatje">
-          <img src="pictures/vluchtenplaatjes/<?php $vlucht['plaatje']; ?>" alt="img">
-        </div>
-        <div class="tekst">
-          <div class="van-naar">
-            <input type="hidden" name="van" value="<?php echo $vlucht['van']; ?>">
-            <div class="van"><?php echo $vlucht['van']; ?></div>
-            <div class="tussenstuk">To</div>
-            <input type="hidden" name="naar" value="<?php echo $vlucht['naar']; ?>">
-            <div class="naar"><?php echo $vlucht['naar']; ?></div>
+        <div class="vlucht">
+          <div class="plaatje">
+            <img src="pictures/vluchtenplaatjes/<?php echo $vlucht['plaatje']; ?>" alt="img">
           </div>
-          <div class="tijden">
-            <input type="hidden" name="tijd" value="<?php echo $vlucht['begintijd']; ?>">
-            <div class="begintijd"><?php echo $vlucht['begintijd']; ?></div>
-            <div class="tot">until</div>
-            <div class="eindtijd"><?php echo $vlucht['eindtijd']; ?></div>
-          </div>
-          <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
-          <div class="prijs-aantal">
-            <div class="prijs">
-              <input type="hidden" name="prijs" value="<?php echo $vlucht['prijs']; ?>">
-              <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
+          <div class="tekst">
+            <div class="van-naar">
+              <div class="van"><?php echo $vlucht['van']; ?></div>
+              <div class="tussenstuk">To</div>
+              <div class="naar"><?php echo $vlucht['naar']; ?></div>
             </div>
-            <div class="aantal-pers">
-              <div>
-                <p>aantal tickets:</p>
-                <input type="number" name="aantal-tickets" min="0">
+            <div class="tijden">
+              <div class="begintijd"><?php echo $vlucht['begintijd']; ?></div>
+              <div class="tot">until</div>
+              <div class="eindtijd"><?php echo $vlucht['eindtijd']; ?></div>
+            </div>
+            <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
+            <div class="prijs-aantal">
+              <div class="prijs">
+                <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
+              </div>
+              <div class="aantal-pers">
+                <div>
+                  <p>aantal tickets:</p>
+                  <input type="number" name="tickets" min="0">
+                </div>
               </div>
             </div>
             <div class="stuur">
@@ -160,16 +153,6 @@ session_start();
                     print_r($result);
                     ?>)</p>
       </div>
-      <?php
-      include_once("includes/connect.php");
-      $sql = "SELECT * FROM vluchten";
-      $stmt = $connect->prepare($sql);
-      $stmt->execute();
-      $result = $stmt->fetch();
-      if (!isset($_POST["submit"])) {
-        $query = "SELECT * FROM vluchten WHERE van like '%" . $_GET["van"] . "%' and begintijd like '" . $_GET["begintijd"] . "%' and eindtijd like '%" . $_GET["eindtijd"] . "%'";
-      }
-      ?>
       <div class="filters" id="filters">
         <form action="" method="post">
           <div class="from-to">
@@ -202,7 +185,6 @@ session_start();
             <div>
               <p>rating</p>
               <select name="rating">
-                <option value="#">None</option>
                 <option value="1">&#9733;</option>
                 <option value="2">&#9733; &#9733;</option>
                 <option value="3">&#9733; &#9733; &#9733;</option>
@@ -282,7 +264,6 @@ session_start();
           <div class="from">
             <div>
               <p>from</p>
-              <input type="hidden" value="<?php $_SESSION['naam']; ?>">
               <input list="from" type="input" class="form__field" placeholder="from" name="from" id='name' required />
               <datalist id="from">
                 <option value="Nederland">Nederland</option>
