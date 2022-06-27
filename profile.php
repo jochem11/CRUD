@@ -14,8 +14,18 @@
     />
   </head>
   <body>
-    <?php include("navbar.php"); ?>
-    <?php include("sidenav.php"); ?>
+    <?php
+    include("navbar.php"); 
+    include("sidenav.php"); 
+    session_start();
+    if (isset($_SESSION['naam']) && $_SESSION['naam'] != "") {
+      
+    } else {
+      header('location:index.php');
+      session_destroy();
+    }
+    ?>
+
     <main class="main-profile">
       <div class="profilecontainer">
         <div class="profilepic">
@@ -26,7 +36,7 @@
             <p>Name</p>
             <div class="input-edit">
               <input
-                value="Name"
+                value="<?php echo $_SESSION['naam'];?>"
                 type="input"
                 class="form__field"
                 placeholder="Name"
@@ -39,7 +49,7 @@
             <p>e-mail</p>
             <div class="input-edit">
               <input
-                value="pik@pik.pik"
+                value="<?php echo $_SESSION['email']; ?>"
                 type="input"
                 class="form__field"
                 placeholder="e-mail"
@@ -52,8 +62,8 @@
             <p>Password</p>
             <div class="input-edit">
               <input
-                value="Password"
-                type="password"
+                value="<?php echo $_SESSION['wachtwoord']; ?>"
+                type="text"
                 class="form__field"
                 placeholder="Password"
                 name="password"

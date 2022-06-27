@@ -13,7 +13,14 @@
 <body>
     <?php
     include("sidenav.php");
-    include("navbar.php")
+    include("navbar.php");
+    session_start();
+    if (isset($_SESSION['naam']) && $_SESSION['naam'] != "") {
+      
+    } else {
+      header('location:index.php');
+      session_destroy();
+    }
     ?>
     <main class="main-profile">
         <h2 class="h2">Booked Flights</h2>
@@ -25,19 +32,28 @@
                         <th>To</th>
                         <th>Date-Time</th>
                         <th>Passagers</th>
-                        <th>Class</th>
                         <th>Price</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+                    include_once('includes/connect.php');
+                    $query = "SELECT * FROM bookedflights WHERE userid = '".$_SESSION['ID']."'";
+                    $stmt = $connect->prepare($query);
+                    $stmt->execute();
+                    $result = $stmt->fetchAll();
+                    foreach($result as $flight) {
+                    ?>
                     <tr>
-                        <td>Netherlands</td>
-                        <td>Belguim</td>
-                        <td>12:00-2-7-2024</td>
-                        <td>3</td>
-                        <td>First class</td>
-                        <td>&euro; 69</td>
+                        <td><?php echo $flight['van']; ?></td>
+                        <td><?php echo $flight['naar']; ?></td>
+                        <td><?php echo $flight['tijd']; ?></td>
+                        <td><?php echo $flight['passagers']; ?></td>
+                        <td>&euro; <?php echo $flight['price']; ?></td>
                     </tr>
+                    <?php
+                }
+                ?>
                 </tbody>
             </table>
         </div>

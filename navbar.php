@@ -1,6 +1,8 @@
 <?php
 include("includes/connect.php");
 
+
+
 if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'])) {
 
   $sql_contact = "INSERT INTO gebruiker (naam, wachtwoord, email) VALUES(:naam, :wachtwoord, :email)";
@@ -16,7 +18,6 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
 }
 ?>
 
-
 <div class="navbar">
   <div class="logoContainer">
     <a href="index.php"><img src="pictures/nieuwe_logo.png" alt="logo" /></a>
@@ -31,7 +32,15 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
     </a>
     <div class="login" id="loginBtn">
       <i class="fa-solid fa-user-tie"></i>
-      <p>login</p>
+      <p>
+      <?php
+      if (!isset($_SESSION['loggedIn'])) {
+        echo "login";
+      } else {
+        echo $_SESSION['naam'];
+      }
+      ?>
+    </p>
     </div>
     <div class="login" id="signUpBtn">
       <i class="fa-solid fa-person-circle-plus"></i>
@@ -68,7 +77,7 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
         <input type="text" name="naam" placeholder="name:" required />
         <label for="password">Password</label>
         <input type="password" name="wachtwoord" placeholder="password:" required />
-        <input type="submit" value="log in" name="submit"></input>
+        <input type="submit" value="Log in" name="submit"></input>
       </form>
     </div>
   </div>
