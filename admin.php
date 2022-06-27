@@ -4,7 +4,6 @@ if ($_SESSION['admin'] != true) {
     header("location: index.php");
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +22,7 @@ if ($_SESSION['admin'] != true) {
     <div class="navbar_admin">
         <nav>
             <ul>
-                <li><a href="index.php">Log out</a></li>
+                <li><a href="php/logout.php">Log out</a></li>
                 <li><a href="admin.php">Home admin</a></li>
             </ul>
         </nav>
@@ -31,7 +30,7 @@ if ($_SESSION['admin'] != true) {
     <div class="welkom_admin">
         <p>Welcome <?php echo $_SESSION['naam']; ?></p>
         <div class="content_contact_admin">
-            <?php include('./php/read.php') ?>
+            <?php include('php/read.php') ?>
         </div>
     </div>
 </body>

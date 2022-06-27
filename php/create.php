@@ -73,6 +73,10 @@ if (isset($_POST['naam']) && isset($_POST['titel']) && isset($_POST['bericht']) 
             <input type="text" name="bericht" placeholder="Bericht review" id="bericht" required>
             <label for="rating">Rating review</label>
             <input type="text" name="rating" placeholder="Rating review" id="rating" required>
+            <label for="from">From review</label>
+            <input type="text" name="van" placeholder="From review" id="van" required>
+            <label for="rating">Rating review</label>
+            <input type="text" name="naar" placeholder="To review" id="naar" required>
             <input type="submit" name="create" value="submit">
             <a href="http://localhost/CRUD/admin.php">Ga terug</a>
         </form>

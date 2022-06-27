@@ -21,7 +21,7 @@ if (isset($_POST['update'])) {
 if (isset($_POST['updates'])) {
 
   //review update query
-  $sql_review = "UPDATE review SET naam = :naam, titel = :titel, bericht = :bericht, rating = :rating WHERE ID = :ID";
+  $sql_review = "UPDATE review SET naam = :naam, titel = :titel, bericht = :bericht, rating = :rating, Verify = :Verify WHERE ID = :ID";
 
   $stmt_review = $connect->prepare($sql_review);
   $stmt_review->bindParam(":ID", $_POST['ID']);
@@ -29,6 +29,7 @@ if (isset($_POST['updates'])) {
   $stmt_review->bindParam(":titel", $_POST['titel']);
   $stmt_review->bindParam(":bericht", $_POST['bericht']);
   $stmt_review->bindParam(":rating", $_POST['rating']);
+  $stmt_review->bindParam(":Verify", $_POST['Verify']);
   $stmt_review->execute();
   header("Location: http://localhost/CRUD/admin.php");
   exit();
@@ -86,6 +87,8 @@ if (isset($_POST['updates'])) {
       <input type="text" name="bericht" placeholder="Bericht review" id="bericht" required>
       <label for="rating">Rating review</label>
       <input type="text" name="rating" placeholder="Rating review" id="rating" required>
+      <label for="verify">Verify review</label>
+      <input type="text" name="Verify" placeholder="Verify review" id="Verify" required>
       <input type="submit" name="updates" value="update"><br>
       <a href="http://localhost/CRUD/admin.php">Ga terug</a>
     </form>

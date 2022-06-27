@@ -74,12 +74,14 @@ if (isset($_POST["submit"])) {
     if ($user['admin'] == 1) {
         session_start();
         $_SESSION['admin'] = true;
+        $_SESSION['loggedIn'] = true;
         $_SESSION['naam'] = $user["naam"];
         $_SESSION['wachtwoord'] = $user["wachtwoord"];
         header("location: ../admin.php");
     } else {
         session_start();
         $_SESSION['admin'] = false;
+        $_SESSION['loggedIn'] = true;
         $_SESSION['naam'] = $user["naam"];
         $_SESSION['wachtwoord'] = $user["wachtwoord"];
         header("location: ../index.php");
