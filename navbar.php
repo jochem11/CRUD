@@ -77,6 +77,7 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
         <input type="text" name="naam" placeholder="name:" required />
         <label for="password">Password</label>
         <input type="password" name="wachtwoord" placeholder="password:" required />
+        <p>forgot password: <a href="resetpw.php">reset password</a></p>
         <input type="submit" value="Log in" name="submit"></input>
       </form>
     </div>

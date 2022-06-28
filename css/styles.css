@@ -238,14 +238,14 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width: 750px) {
   .slideshow-container .boekcontainer {
     margin-top: 100px;
     min-width: none;
   }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .slideshow-container .boekcontainer .rij2 {
     width: 45%;
     margin-left: auto;
@@ -2631,4 +2631,8 @@
   background-color: #ffe74c;
   transform: translateY(4px);
   border-radius: 5px;
+}
+
+.fromResetpw {
+  padding-top: 100px;
 }
