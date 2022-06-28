@@ -238,14 +238,14 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width: 750px) {
   .slideshow-container .boekcontainer {
     margin-top: 100px;
     min-width: none;
   }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .slideshow-container .boekcontainer .rij2 {
     width: 45%;
     margin-left: auto;
@@ -1129,6 +1129,7 @@
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .update_form_contact input[type="submit"]:active {
@@ -1250,6 +1251,7 @@
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .update_form_vluchten input[type="submit"]:active {

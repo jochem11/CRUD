@@ -17,8 +17,7 @@
         <nav class="footer_lijst">
             <ul>
                 <h3 class="contact_opties_footer">Contact us<br>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="review.php">Review</a></li>
+                    <li><a href="contact.php">Contact<br></li></a><a href="review.php">Review</a><br>
                 </h3>
                 <h3 class="over_crudairlines_footer">About CRUDAirlines<br>
                     <li><a href="aboutus.php">About us</a></li>
