@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,13 +18,6 @@
     <?php
     include("navbar.php"); 
     include("sidenav.php"); 
-    session_start();
-    if (isset($_SESSION['naam']) && $_SESSION['naam'] != "") {
-      
-    } else {
-      header('location:index.php');
-      session_destroy();
-    }
     ?>
 
     <main class="main-profile">

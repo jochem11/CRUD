@@ -2633,6 +2633,32 @@
   border-radius: 5px;
 }
 
-.fromResetpw {
-  padding-top: 100px;
+.resetpwContainer {
+  background-image: url("../pictures/japan_mount_fuji.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resetpwContainer form {
+  width: fit-content;
+  height: fit-content;
+}
+
+.resetpwContainer form p {
+  font-size: 15px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.resetpwContainer form button {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: #547cff;
 }

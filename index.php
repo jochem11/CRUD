@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,8 +89,7 @@
     </div>
   </div>
   <div class="vluchtencontainer">
-    <form action="" method="post">
-      <?php
+  <?php
       $query = "SELECT * FROM vluchten";
 
       $stmt = $connect->prepare($query);
@@ -95,17 +97,21 @@
       $result = $stmt->fetchAll();
       foreach ($result as $vlucht) {
       ?>
+    <form action="php/bookFlight.php" method="post">
         <div class="vlucht">
           <div class="plaatje">
             <img src="pictures/vluchtenplaatjes/<?php echo $vlucht['plaatje']; ?>" alt="img">
           </div>
           <div class="tekst">
             <div class="van-naar">
+              <input type="hidden" name="van" value="<?php echo $vlucht['van']; ?>">
               <div class="van"><?php echo $vlucht['van']; ?></div>
               <div class="tussenstuk">To</div>
+              <input type="hidden" name="naar" value="<?php echo $vlucht['naar']; ?>">
               <div class="naar"><?php echo $vlucht['naar']; ?></div>
             </div>
             <div class="tijden">
+              <input type="hidden" name="tijd" value="<?php echo $vlucht['begintijd']; ?>">
               <div class="begintijd"><?php echo $vlucht['begintijd']; ?></div>
               <div class="tot">until</div>
               <div class="eindtijd"><?php echo $vlucht['eindtijd']; ?></div>
@@ -113,12 +119,13 @@
             <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
             <div class="prijs-aantal">
               <div class="prijs">
+                <input type="hidden" name="prijs" value="<?php $vlucht['prijs']; ?>">
                 <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
               </div>
               <div class="aantal-pers">
                 <div>
                   <p>aantal tickets:</p>
-                  <input type="number" name="tickets" min="0">
+                  <input type="number" name="aantal-tickets" min="0">
                 </div>
               </div>
             </div>
@@ -127,10 +134,10 @@
             </div>
           </div>
         </div>
-      <?php
+    </form>
+    <?php
       }
       ?>
-    </form>
   </div>
   <div class="reviewcontainer">
     <div class="bovenbalk">

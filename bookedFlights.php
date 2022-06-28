@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,13 +15,6 @@
     <?php
     include("sidenav.php");
     include("navbar.php");
-    session_start();
-    if (isset($_SESSION['naam']) && $_SESSION['naam'] != "") {
-      
-    } else {
-      header('location:index.php');
-      session_destroy();
-    }
     ?>
     <main class="main-profile">
         <h2 class="h2">Booked Flights</h2>

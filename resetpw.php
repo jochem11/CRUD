@@ -15,14 +15,16 @@
     include("includes/connect.php");
     include("navbar.php");
     ?>
-    <form action="php/resetPw.php" method="post" class="fromResetpw">
-        <p>naam</p>
-        <input type="text" name="naam">
-        <p>e-mail</p>
-        <input type="email" name="email">
-        <p>New Password</p>
-        <input type="text" name="newpw"> <br>
-        <button type="submit">reset passoword</button>
-    </form>
+    <div class="resetpwContainer">
+        <form action="php/resetPw.php" method="post">
+            <p>naam</p>
+            <input type="input" class="form__field" placeholder="name" name="naam" id='name' required />
+            <p>e-mail</p>
+            <input type="input" class="form__field" placeholder="email" name="email" id='name' required />
+            <p>New Password</p>
+            <input type="input" class="form__field" placeholder="new Password" name="newpw" id='name' required /> <br>
+            <button type="submit">reset passoword</button>
+        </form>
+    </div>
 </body>
 </html>
