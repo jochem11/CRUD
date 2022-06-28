@@ -26,6 +26,12 @@ if (isset($_GET['ID'])) {
     $stmt_gebruiker->bindParam(":ID", $_GET['ID']);
     $stmt_gebruiker->execute();
 
+    //delete resetpw
+    $sql_resetpw = "DELETE FROM resetpw WHERE ID = :ID";
+    $stmt_resetpw = $connect->prepare($sql_resetpw);
+    $stmt_resetpw->bindParam(":ID", $_GET['ID']);
+    $stmt_resetpw->execute();
+
     header("Location: http://localhost/CRUD/admin.php");
     exit();
 } else {

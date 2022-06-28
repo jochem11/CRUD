@@ -25,6 +25,12 @@ $stmt_gebruiker = $connect->prepare($sql_gebruiker);
 $stmt_gebruiker->execute();
 $result_gebruiker = $stmt_gebruiker->fetchAll();
 
+//read van resetpw
+$sql_resetpw = "SELECT * FROM resetpw";
+$stmt_resetpw = $connect->prepare($sql_resetpw);
+$stmt_resetpw->execute();
+$result_resetpw = $stmt_resetpw->fetchAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -184,6 +190,35 @@ $result_gebruiker = $stmt_gebruiker->fetchAll();
                 echo '<td>' . $gebruiker['admin'] . '</td>';
                 echo '<td class="gebruiker_update_knop"><a href="php/update.php?ID=' . $gebruiker['ID'] . '">Update</a></td>';
                 echo '<td class="gebruiker_delete_knop"><a href="php/delete.php?ID=' . $gebruiker['ID'] . '">Delete</a></td>';
+                echo '</tr>';
+            }
+            ?>
+
+        </table>
+    </div>
+
+    <!-----radn van resetpw----->
+
+    <div class="resetpw_container_read">
+        <p>Reset password</p>
+        <table class="table_container_read">
+            <tr class="table_resetpw">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>New password</th>
+                <th>Delete</th>
+            </tr>
+            <?php
+
+            foreach ($result_resetpw as $resetpw) {
+
+                echo '<tr>';
+                echo '<td>' . $resetpw['ID'] . '</td>';
+                echo '<td>' . $resetpw['naam'] . '</td>';
+                echo '<td>' . $resetpw['email'] . '</td>';
+                echo '<td>' . $resetpw['newpw'] . '</td>';
+                echo '<td class="resetpw_delete_knop"><a href="php/delete.php?ID=' . $resetpw['ID'] . '">Delete</a></td>';
                 echo '</tr>';
             }
             ?>

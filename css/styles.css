@@ -694,6 +694,8 @@
   text-align: center;
 }
 
+/* contact read*/
+
 .contact_container_read {
   width: 100%;
   height: auto;
@@ -754,6 +756,8 @@
   color: #ffe74c;
   transition: 1s;
 }
+
+/* review read */
 
 .table_container_review {
   width: 100%;
@@ -833,6 +837,8 @@
   transition: 1s;
 }
 
+/* vluchten read */
+
 .vluchten_container_read {
   width: 100%;
   height: auto;
@@ -894,6 +900,8 @@
   transition: 1s;
 }
 
+/* gebruiker read */
+
 .gebruiker_container_read {
   width: 100%;
   height: auto;
@@ -951,6 +959,54 @@
 }
 
 .gebruiker_container_read .gebruiker_delete_knop a:hover {
+  color: #ffe74c;
+  transition: 1s;
+}
+
+/* resetpw read */
+
+.resetpw_container_read {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.resetpw_container_read a {
+  color: #000;
+  transition: 1s;
+}
+
+.resetpw_container_read a:hover {
+  color: #f75590;
+}
+
+.resetpw_container_read table {
+  border: 3px solid #000;
+  padding: 5px;
+  background-color: #21897e;
+  color: #fff;
+}
+
+.resetpw_container_read td {
+  border: 3px solid #000;
+  padding: 5px;
+}
+
+.resetpw_container_read .resetpw_delete_knop {
+  background-color: #f75590;
+  transition: 1s;
+}
+
+.resetpw_container_read .resetpw_delete_knop a {
+  color: #000;
+  transition: 1s;
+}
+
+.resetpw_container_read .resetpw_delete_knop a:hover {
   color: #ffe74c;
   transition: 1s;
 }
