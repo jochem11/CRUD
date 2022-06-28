@@ -20,6 +20,12 @@ if (isset($_GET['ID'])) {
     $stmt_vluchten->bindParam(":ID", $_GET['ID']);
     $stmt_vluchten->execute();
 
+    //delete gebruiker
+    $sql_gebruiker = "DELETE FROM gebruiker WHERE ID = :ID";
+    $stmt_gebruiker = $connect->prepare($sql_gebruiker);
+    $stmt_gebruiker->bindParam(":ID", $_GET['ID']);
+    $stmt_gebruiker->execute();
+
     header("Location: http://localhost/CRUD/admin.php");
     exit();
 } else {
