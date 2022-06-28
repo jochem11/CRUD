@@ -47,7 +47,13 @@
 
 .navbar .linkjesRechts .login p,
 .navbar .linkjesRechts .contact p {
+  color: black;
   font-size: 15px;
+}
+
+.navbar .linkjesRechts .login i,
+.navbar .linkjesRechts .contact i {
+  color: black;
 }
 
 .navbar .linkjesRechts .login .fa-person-circle-plus,
