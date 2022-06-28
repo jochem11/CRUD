@@ -33,14 +33,14 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
     <div class="login" id="loginBtn">
       <i class="fa-solid fa-user-tie"></i>
       <p>
-      <?php
-      if (!isset($_SESSION['loggedIn'])) {
-        echo "login";
-      } else {
-        echo $_SESSION['naam'];
-      }
-      ?>
-    </p>
+        <?php
+        if (!isset($_SESSION['loggedIn'])) {
+          echo "login";
+        } else {
+          echo $_SESSION['naam'];
+        }
+        ?>
+      </p>
     </div>
     <div class="login" id="signUpBtn">
       <i class="fa-solid fa-person-circle-plus"></i>
@@ -54,13 +54,13 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
       <img src="pictures/loginPicture.png" alt="loginPicture" />
     </div>
     <div class="invoerContainer">
-      <form action="index.php" method="post">
+      <form action="profile.php" method="post" name="signup" onsubmit="return validateForm()">
         <label for="name">Name</label>
-        <input type="text" name="naam" placeholder="name:" required />
+        <input type="text" name="naam" placeholder="name:" />
         <label for="password">Password</label>
-        <input type="password" name="wachtwoord" placeholder="password:" required />
+        <input type="password" name="wachtwoord" placeholder="password:" />
         <label for="email">Email</label>
-        <input type="text" name="email" placeholder="email" required>
+        <input type="text" name="email" placeholder="email">
         <input type="submit" name="submit" value="Make"></input>
       </form>
     </div>

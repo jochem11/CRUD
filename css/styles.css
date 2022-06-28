@@ -1129,6 +1129,7 @@
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .update_form_contact input[type="submit"]:active {
@@ -1250,6 +1251,7 @@
   background-color: #b5f8fe;
   box-shadow: 3px 3px #000;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .update_form_vluchten input[type="submit"]:active {

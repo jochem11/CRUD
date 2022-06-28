@@ -329,7 +329,7 @@ session_start();
     </form>
   </div>
   <?php include("footer.php") ?>
-
+  <script src="js/validate.js"></script>
   <script src="js/slideshow.js"></script>
   <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/33689bd479.js" crossorigin="anonymous"></script>
