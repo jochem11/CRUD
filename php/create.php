@@ -30,6 +30,21 @@ if (isset($_POST['naam']) && isset($_POST['titel']) && isset($_POST['bericht']) 
     header("Location: http://localhost/CRUD/admin.php");
     exit();
 }
+
+if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email']) && isset($_POST['admin'])) {
+
+    $sql_gebruiker = "INSERT INTO gebruiker (naam, wachtwoord, email, admin) VALUES(:naam, :wachtwoord, :email, :admin)";
+
+    $stmt_gebruiker = $connect->prepare($sql_gebruiker);
+    $stmt_gebruiker->bindParam(":naam", $_POST['naam']);
+    $stmt_gebruiker->bindParam(":wachtwoord", $_POST['wachtwoord']);
+    $stmt_gebruiker->bindParam(":email", $_POST['email']);
+    $stmt_gebruiker->bindParam(":admin", $_POST['admin']);
+    $stmt_gebruiker->execute();
+
+    header("Location: http://localhost/CRUD/admin.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -78,6 +93,21 @@ if (isset($_POST['naam']) && isset($_POST['titel']) && isset($_POST['bericht']) 
             <label for="naar">To</label>
             <input type="text" name="naar" placeholder="To:" id="naar" required>
             <input type="submit" name="create" value="Submit">
+            <a href="http://localhost/CRUD/admin.php">Go back</a>
+        </form>
+    </div>
+    <div class="create_form_gebruiker">
+        <p>Add here new users!</p>
+        <form action="#" method="post">
+            <label for="naam">Name user</label>
+            <input type="text" name="naam" placeholder="Naam user" id="naam" required>
+            <label for="wachtwoord">Password user</label>
+            <input type="text" name="wachtwoord" placeholder="Password user:" id="wachtwoord" required>
+            <label for="email">Email user</label>
+            <input type="text" name="email" placeholder="Email user:" id="email" required>
+            <label for="admin">Admin value user</label>
+            <input type="text" name="admin" placeholder="Set value to zero:" id="admin" required>
+            <input type="submit" name="create" value="Submit"><br>
             <a href="http://localhost/CRUD/admin.php">Go back</a>
         </form>
     </div>

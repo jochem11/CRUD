@@ -13,10 +13,23 @@ $stmt_review = $connect->prepare($sql_review);
 $stmt_review->execute();
 $result_review = $stmt_review->fetchAll();
 
+//read van vluchten
 $sql_vluchten = "SELECT * FROM vluchten";
 $stmt_vluchten = $connect->prepare($sql_vluchten);
 $stmt_vluchten->execute();
 $result_vluchten = $stmt_vluchten->fetchAll();
+
+//read van gebruiker
+$sql_gebruiker = "SELECT * FROM gebruiker";
+$stmt_gebruiker = $connect->prepare($sql_gebruiker);
+$stmt_gebruiker->execute();
+$result_gebruiker = $stmt_gebruiker->fetchAll();
+
+//read van resetpw
+$sql_resetpw = "SELECT * FROM resetpw";
+$stmt_resetpw = $connect->prepare($sql_resetpw);
+$stmt_resetpw->execute();
+$result_resetpw = $stmt_resetpw->fetchAll();
 
 ?>
 
@@ -111,6 +124,8 @@ $result_vluchten = $stmt_vluchten->fetchAll();
         </table>
     </div>
 
+    <!----read van vluchten--->
+
     <div class="vluchten_container_read">
         <p>Flights</p>
         <p><a href="http://localhost/CRUD/php/createVlucht.php">Add here new flights!</a></p>
@@ -149,6 +164,67 @@ $result_vluchten = $stmt_vluchten->fetchAll();
         </table>
     </div>
 
+    <!-----read van gebruikers------>
+
+    <div class="gebruiker_container_read">
+        <p>User</p>
+        <p><a href="http://localhost/CRUD/php/create.php">Add here new users!</a></p>
+        <table class="table_container_read">
+            <tr class="table_gebruiker">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Admin value</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <?php
+
+            foreach ($result_gebruiker as $gebruiker) {
+
+                echo '<tr>';
+                echo '<td>' . $gebruiker['ID'] . '</td>';
+                echo '<td>' . $gebruiker['naam'] . '</td>';
+                echo '<td>' . $gebruiker['wachtwoord'] . '</td>';
+                echo '<td>' . $gebruiker['email'] . '</td>';
+                echo '<td>' . $gebruiker['admin'] . '</td>';
+                echo '<td class="gebruiker_update_knop"><a href="php/update.php?ID=' . $gebruiker['ID'] . '">Update</a></td>';
+                echo '<td class="gebruiker_delete_knop"><a href="php/delete.php?ID=' . $gebruiker['ID'] . '">Delete</a></td>';
+                echo '</tr>';
+            }
+            ?>
+
+        </table>
+    </div>
+
+    <!-----radn van resetpw----->
+
+    <div class="resetpw_container_read">
+        <p>Reset password</p>
+        <table class="table_container_read">
+            <tr class="table_resetpw">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>New password</th>
+                <th>Delete</th>
+            </tr>
+            <?php
+
+            foreach ($result_resetpw as $resetpw) {
+
+                echo '<tr>';
+                echo '<td>' . $resetpw['ID'] . '</td>';
+                echo '<td>' . $resetpw['naam'] . '</td>';
+                echo '<td>' . $resetpw['email'] . '</td>';
+                echo '<td>' . $resetpw['newpw'] . '</td>';
+                echo '<td class="resetpw_delete_knop"><a href="php/delete.php?ID=' . $resetpw['ID'] . '">Delete</a></td>';
+                echo '</tr>';
+            }
+            ?>
+
+        </table>
+    </div>
 </body>
 
 </html>

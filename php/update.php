@@ -34,6 +34,24 @@ if (isset($_POST['updates'])) {
   header("Location: http://localhost/CRUD/admin.php");
   exit();
 }
+
+if (isset($_POST['updatess'])) {
+
+  //review update query
+  $sql_gebruiker = "UPDATE gebruiker SET naam = :naam, wachtwoord = :wachtwoord, email = :email, admin = :admin WHERE ID = :ID";
+
+  $stmt_gebruiker = $connect->prepare($sql_gebruiker);
+  $stmt_gebruiker->bindParam(":ID", $_POST['ID']);
+  $stmt_gebruiker->bindParam(":naam", $_POST['naam']);
+  $stmt_gebruiker->bindParam(":wachtwoord", $_POST['wachtwoord']);
+  $stmt_gebruiker->bindParam(":email", $_POST['email']);
+  $stmt_gebruiker->bindParam(":admin", $_POST['admin']);
+  $stmt_gebruiker->execute();
+  header("Location: http://localhost/CRUD/admin.php");
+  exit();
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +75,7 @@ if (isset($_POST['updates'])) {
   <div class="update_form_contact">
     <h2>Update hier de contact gegevens</h2>
     <form method="post" action="#">
-      <label for="contact id">Huidig ID van contact</label>
+      <label for="contact id">ID contact</label>
       <input type="text" name="ID" placeholder="Naam gerecht" value="<?php echo $_GET['ID']; ?>" readonly>
       <label for="naam">Naam contact</label>
       <input type="text" name="naam" placeholder="Naam contact" required>
@@ -68,29 +86,49 @@ if (isset($_POST['updates'])) {
       <label for="bericht">Bericht contact</label>
       <input type="text" name="bericht" placeholder="Bericht contact" id="bericht" required>
       <input type="submit" name="update" value="update"><br>
-      <a href="http://localhost/CRUD/admin.php">Ga terug</a>
+      <a href="http://localhost/CRUD/admin.php">Go back</a>
     </form>
   </div>
 
   <!---update contact form---->
 
   <div class="update_form_review">
-    <h2>Update hier de review gegevens</h2>
+    <h2>Update here the review!</h2>
     <form method="post" action="#">
       <label for="review id">Huidig ID van review</label>
-      <input type="text" name="ID" placeholder="ID review" value="<?php echo $_GET['ID']; ?>" readonly>
+      <input type="text" name="ID" placeholder="ID review:" value="<?php echo $_GET['ID']; ?>" readonly>
       <label for="naam">Naam review</label>
-      <input type="text" name="naam" placeholder="Naam review" required>
-      <label for="titel">Email review</label>
-      <input type="text" name="titel" placeholder="Titel review" id="titel" required>
-      <label for="bericht">Titel review</label>
-      <input type="text" name="bericht" placeholder="Bericht review" id="bericht" required>
+      <input type="text" name="naam" placeholder="Name review:" required>
+      <label for="titel">Titel review</label>
+      <input type="text" name="titel" placeholder="Title review:" id="titel" required>
+      <label for="bericht">Message review</label>
+      <input type="text" name="bericht" placeholder="Message review:" id="bericht" required>
       <label for="rating">Rating review</label>
-      <input type="text" name="rating" placeholder="Rating review" id="rating" required>
+      <input type="text" name="rating" placeholder="Rating review:" id="rating" required>
       <label for="verify">Verify review</label>
-      <input type="text" name="Verify" placeholder="Verify review" id="Verify" required>
+      <input type="text" name="Verify" placeholder="Verify review:" id="Verify" required>
       <input type="submit" name="updates" value="update"><br>
-      <a href="http://localhost/CRUD/admin.php">Ga terug</a>
+      <a href="http://localhost/CRUD/admin.php">Go back</a>
+    </form>
+  </div>
+
+  <!---update gebruiker form---->
+
+  <div class="update_form_gebruiker">
+    <h2>Update here the user!</h2>
+    <form method="post" action="#">
+      <label for="contact id">ID of user</label>
+      <input type="text" name="ID" placeholder="ID user" value="<?php echo $_GET['ID']; ?>" readonly>
+      <label for="naam">Name user</label>
+      <input type="text" name="naam" placeholder="Name user:" id="naam" required>
+      <label for="wachtwoord">Password user</label>
+      <input type="text" name="wachtwoord" placeholder="Email contact" id="wachtwoord" required>
+      <label for="email">Email user</label>
+      <input type="text" name="email" placeholder="Titel contact" id="email" required>
+      <label for="admin">Admin value</label>
+      <input type="text" name="admin" placeholder="Set value to zero:" id="admin" required>
+      <input type="submit" name="updatess" value="update"><br>
+      <a href="http://localhost/CRUD/admin.php">Go back</a>
     </form>
   </div>
 </body>
