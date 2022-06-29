@@ -30,22 +30,35 @@ if (isset($_POST['naam']) && isset($_POST['wachtwoord']) && isset($_POST['email'
         <p>contact</p>
       </div>
     </a>
-    <div class="login" id="loginBtn">
-      <i class="fa-solid fa-user-tie"></i>
-      <p>
-        <?php
-        if (!isset($_SESSION['loggedIn'])) {
-          echo "login";
-        } else {
-          echo $_SESSION['naam'];
-        }
-        ?>
-      </p>
-    </div>
-    <div class="login" id="signUpBtn">
-      <i class="fa-solid fa-person-circle-plus"></i>
-      <p>sign up</p>
-    </div>
+    <?php
+    if (isset($_SESSION['loggedIn'])) {
+    ?>
+    <a href="profile.php">
+      <div class="login">
+      <i class="fa-solid fa-user"></i>
+        <p>Profile</p>
+      </div>
+    </a>
+    <a href="php/logout.php">
+      <div class="login">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <p>Logout</p>
+      </div>
+    </a>
+    <?php      
+    } else {
+    ?>
+       <div class="login" id="loginBtn">
+        <i class="fa-solid fa-user-tie"></i>
+        <p>login</p>
+       </div>
+       <div class="login" id="signUpBtn">
+         <i class="fa-solid fa-person-circle-plus"></i>
+         <p>sign up</p>
+       </div>
+    <?php
+    }
+    ?>
   </div>
 </div>
 <div class="logincontainer" id="signupcontainer">

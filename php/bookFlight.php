@@ -12,9 +12,10 @@ if (!isset($_SESSION['loggedIn'])) {
     $stmt->bindParam(":tijd", $_POST['tijd']);
     $stmt->bindParam(":passagers", $_POST['aantal-tickets']);
     $aantalTickets = $_POST['aantal-tickets'];
+    echo $aantalTickets;
     $intvalue = intval($aantalTickets);
     $prijs1 = $_POST['prijs'];
-    $intvalue2 = intval($_POST['prijs']);
+    $intvalue2 = intval($prijs1);
     $prijs = $intvalue * $intvalue2;
     $stmt->bindParam(":prijs", $prijs);
     $stmt->execute();
