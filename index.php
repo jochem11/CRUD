@@ -33,6 +33,9 @@ session_start();
     <div class="mySlides fade">
       <img src="pictures/slideshow/slider_vliegtuig.jpg" alt="slideshow vliegtuig" />
     </div>
+    <?php
+    include_once("includes/connect.php");
+    ?>
     <div class="boekcontainer">
       <form action="" method="post">
         <div class="rij1">
@@ -41,13 +44,13 @@ session_start();
               <label for="from">from</label>
               <input list="landen" name="landen" placeholder="from" id="from-to-boekcontainer" />
               <datalist id="landen">
-                <option value="Nederland">Nederland</option>
-                <option value="België">België</option>
-                <option value="Duitsland">Duitsland</option>
-                <option value="Polen">Polen</option>
-                <option value="Spanje">Spanje</option>
-                <option value="Frankrijk">Frankrijk</option>
-                <option value="Griekenland">Griekenland</option>
+                <option value="The Netherlands">The Netherlands</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Germany">Germany</option>
+                <option value="Poland">Poland</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                <option value="Greece">Greece</option>
               </datalist>
             </div>
           </div>
@@ -56,13 +59,13 @@ session_start();
               <label for="to">to</label>
               <input list="landen2" name="landen2" placeholder="to" />
               <datalist id="landen2">
-                <option value="Nederland">Nederland</option>
-                <option value="België">België</option>
-                <option value="Duitsland">Duitsland</option>
-                <option value="Polen">Polen</option>
-                <option value="Spanje">Spanje</option>
-                <option value="Frankrijk">Frankrijk</option>
-                <option value="Griekenland">Griekenland</option>
+                <option value="The Netherlands">The Netherlands</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Germany">Germany</option>
+                <option value="Poland">Poland</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                <option value="Greece">Greece</option>
               </datalist>
             </div>
           </div>
@@ -84,20 +87,41 @@ session_start();
             </select>
           </div>
         </div>
-        <button type="submit">search flights</button>
+        <button type="submit" name="submit">search flights</button>
       </form>
     </div>
   </div>
   <div class="vluchtencontainer">
-  <?php
-      $query = "SELECT * FROM vluchten";
-
-      $stmt = $connect->prepare($query);
+    <?php
+    if (isset($_POST["submit"])) {
+      $key = $_POST['landen'];
+      $sql = $connect->prepare("SELECT * FROM vluchten WHERE van LIKE :keyword OR naar LIKE :keyword ORDER BY van ");
+      $stmt->bindParam(':keyword', '%' . $key . '%', PDO::PARAM_STR);
       $stmt->execute();
       $result = $stmt->fetchAll();
-      foreach ($result as $vlucht) {
-      ?>
-    <form action="php/bookFlight.php" method="post">
+      $rows = $stmt->rowCount();
+
+      // $query = "SELECT * FROM vluchten";
+
+      // $stmt = $connect->prepare($query);
+      // $stmt->execute();
+      // $result = $stmt->fetchAll();
+      // foreach ($result as $vlucht) 
+      // }
+
+    ?>
+      <div class="search_booking">
+        <?php
+        if ($rows != 0) {
+          foreach ($result as $search) {
+            echo '<h4>' . $rows['van'] . ' ' . $rows['naar'] . '</h4>';
+          }
+        } else {
+          echo "geen vluchten";
+        }
+        ?>
+      </div>
+      <form action="php/bookFlight.php" method="post">
         <div class="vlucht">
           <div class="plaatje">
             <img src="pictures/vluchtenplaatjes/<?php echo $vlucht['plaatje']; ?>" alt="img">
@@ -134,10 +158,11 @@ session_start();
             </div>
           </div>
         </div>
-    </form>
+      </form>
     <?php
-      }
-      ?>
+    }
+    // }
+    ?>
   </div>
   <div class="reviewcontainer">
     <div class="bovenbalk">
@@ -199,7 +224,7 @@ session_start();
                 <option value="5">&#9733; &#9733; &#9733; &#9733; &#9733;</option>
               </select>
             </div>
-            <input type="submit" name="submit">filter</input>
+            <input type="submit" name="filter">filter</input>
           </div>
         </form>
       </div>
