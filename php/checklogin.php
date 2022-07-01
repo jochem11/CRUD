@@ -64,30 +64,35 @@ include('../includes/connect.php');
 //         }
 //     }
 
-if (isset($_POST["submit"])) { 
+if (isset($_POST["submit"])) {
     $query = "SELECT * FROM gebruiker WHERE naam = :naam AND wachtwoord = :wachtwoord";
     $stmt = $connect->prepare($query);
     $stmt->bindParam(":naam", $_POST["naam"]);
     $stmt->bindParam(":wachtwoord", $_POST["wachtwoord"]);
     $stmt->execute();
+    $rowcount = $stmt->rowCount();
     $user = $stmt->fetch();
-    if ($user['admin'] == 1) {
-        session_start();
-        $_SESSION['ID'] = $user['ID'];
-        $_SESSION['admin'] = true;
-        $_SESSION['loggedIn'] = true;
-        $_SESSION['naam'] = $user["naam"];
-        $_SESSION['wachtwoord'] = $user["wachtwoord"];
-        $_SESSION['email'] = $user["email"];
-        header("location: ../admin.php");
+    if ($rowcount >= 1) {
+        if ($user['admin'] == 1) {
+            session_start();
+            $_SESSION['ID'] = $user['ID'];
+            $_SESSION['admin'] = true;
+            $_SESSION['loggedIn'] = true;
+            $_SESSION['naam'] = $user["naam"];
+            $_SESSION['wachtwoord'] = $user["wachtwoord"];
+            $_SESSION['email'] = $user["email"];
+            header("location: ../admin.php");
+        } else {
+            session_start();
+            $_SESSION['ID'] = $user['ID'];
+            $_SESSION['admin'] = false;
+            $_SESSION['loggedIn'] = true;
+            $_SESSION['naam'] = $user["naam"];
+            $_SESSION['wachtwoord'] = $user["wachtwoord"];
+            $_SESSION['email'] = $user["email"];
+            header("location: ../index.php");
+        }
     } else {
-        session_start();
-        $_SESSION['ID'] = $user['ID'];
-        $_SESSION['admin'] = false;
-        $_SESSION['loggedIn'] = true;
-        $_SESSION['naam'] = $user["naam"];
-        $_SESSION['wachtwoord'] = $user["wachtwoord"];
-        $_SESSION['email'] = $user["email"];
-        header("location: ../profile.php");
+        header("location: ../index.php");
     }
 }

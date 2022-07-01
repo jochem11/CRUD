@@ -54,7 +54,7 @@ session_start();
           <div class="van-waar">
             <div class="labelInput">
               <label for="to">to</label>
-              <input list="landen2" name="landen2" placeholder="to" />
+              <input list="landen2" name="landen" placeholder="to" />
               <datalist id="landen2">
                 <option value="Nederland">Nederland</option>
                 <option value="België">België</option>
@@ -119,7 +119,7 @@ session_start();
             <div class="zitplaatsen">zitplaatsen: <?php echo $vlucht['aantal']; ?></div>
             <div class="prijs-aantal">
               <div class="prijs">
-                <input type="hidden" name="prijs" value="<?php $vlucht['prijs']; ?>">
+                <input type="hidden" name="prijs" value="<?php echo $vlucht['prijs']; ?>">
                 <p>prijs per ticket: </br> &euro; <?php echo $vlucht['prijs']; ?></p>
               </div>
               <div class="aantal-pers">
